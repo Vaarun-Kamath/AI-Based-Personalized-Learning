@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for Ai-Based-Learning",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js -L",
+    "start": "node index.js"
+  },
+  "author": "Straw Hats",
+  "license": "GNU GPLv3",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
