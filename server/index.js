@@ -27,6 +27,8 @@ const mongo_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 8000;
 const questionModelHREF = 'http://localhost:9000';
 const NUM_QUESTIONS = 40;
+const TOPICS = ["Electricity and Magnetism", "Mechanics and Motion", "Thermodynamics and Quantum Mechanics", "Waves and Optics"]
+const LEVELS = ["Easy", "Medium", "Hard"];
 
 async function connect() {
   await mongoose
@@ -57,7 +59,6 @@ app.get('/api/getExamStartTime', async (req, res, err) => {
     status: 200,
     statusText: 'Success',
     time: new Date(exam.createdAt).getTime(),
-    time: new Date(exam.createdAt).getTime(),
   });
 });
 
@@ -78,6 +79,9 @@ app.get('/api/getSolution', async (req, res, err) => {
   res.status(200).json({
     status: 200,
     statusText: 'Success',
+    question: phyQuestion.question,
+    options: phyQuestion.options,
+    optionsSelected: exam.selectedOptions,
     solution: result.content,
   });
 });
@@ -122,11 +126,42 @@ app.post('/api/createExam', async (req, res) => {
     return;
   }
 
-  const questions = await Physics.find().limit(NUM_QUESTIONS);
+  pickedQuestions = [];
+  for (let i = 0; i < TOPICS.length; i++) {
+    const questions = await Physics.find({ topic: TOPICS[i] });
+    
+    // for(let j=0;j<LEVELS.length;j++){
+
+    // }
+    let prob1 = Math.round(user.probability[i][0] * 10)
+    pickedQuestions =
+      pickedQuestions +
+      questions
+        .filter((q) => q.Level == 'Easy')
+        .sort(() => Math.random() - 0.5)
+        .slice(0, prob1);
+
+    let prob2 = Math.round(user.probability[i][1] * 10)
+    pickedQuestions =
+      pickedQuestions +
+      questions
+        .filter((q) => q.Level == 'Medium')
+        .sort(() => Math.random() - 0.5)
+        .slice(0, prob2);
+
+    let prob3 = 10-prob1 - prob2
+    pickedQuestions =
+      pickedQuestions +
+      questions
+        .filter((q) => q.Level == 'Hard')
+        .sort(() => Math.random() - 0.5)
+        .slice(0, prob3);
+  }
+
   const selectedOptions = Array(NUM_QUESTIONS).fill(-1);
   const newExam = new Exam({
     username,
-    questions: questions.map((question) => question._id),
+    questions: pickedQuestions.map((question) => question._id),
     selectedOptions,
     subject: 'Physics',
   });
@@ -172,11 +207,11 @@ app.post('/api/selectOption', async (req, res) => {
 app.post('/api/submitExam', async (req, res) => {
   const { examId } = req.body;
 
-  topics = {};
+  var topics = {};
   try {
     const exam = await Exam.findById(examId);
     for (let i = 0; i < exam.questions.length; i++) {
-      const question = await Exam.findById(exam.questions[i]);
+      const question = await Physics.findById(exam.questions[i]);
       val = question.answer == exam.selectedOptions[i] ? 1 : 0;
       currTopic = question.topic in topics ? topics[question.topic] : {};
       currTopic[question.Level] =
