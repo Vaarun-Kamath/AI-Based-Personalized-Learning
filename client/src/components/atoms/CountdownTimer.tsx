@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { FaCircle } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { FaCircle } from 'react-icons/fa';
 
-function CountdownTimer({ initialTime }: { initialTime: number }) {
-  const [time, setTime] = useState(initialTime);
+function CountdownTimer(props: {
+  initialTime: number;
+  attempted: number;
+  unanswered: number;
+}) {
+  const [time, setTime] = useState(props.initialTime);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,31 +20,31 @@ function CountdownTimer({ initialTime }: { initialTime: number }) {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [initialTime]);
+  }, [props.initialTime]);
 
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
-    return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   };
 
   return (
-    <div className="flex flex-row gap-10 w-full justify-center ">
-      <div className="font-semibold text-6xl text-gray-600 w-1/2 ">
-        <div className="text-center">{formatTime(time)}</div>
+    <div className='flex flex-row gap-10 w-full justify-center '>
+      <div className='font-semibold text-6xl text-gray-600 w-1/2 '>
+        <div className='text-center'>{formatTime(time)}</div>
       </div>
-      <div className="flex flex-col w-1/2 justify-center">
-        <span className="flex flex-row gap-2 items-center">
-          <span className="text-green-500">
+      <div className='flex flex-col w-1/2 justify-center'>
+        <span className='flex flex-row gap-2 items-center'>
+          <span className='text-green-500'>
             <FaCircle />
           </span>
-          Attempted:{" "}
+          Attempted: {props.attempted}
         </span>
-        <span className="flex flex-row gap-2 items-center">
-          <span className="text-gray-300">
+        <span className='flex flex-row gap-2 items-center'>
+          <span className='text-gray-300'>
             <FaCircle />
           </span>
-          Unanswered:{" "}
+          Unanswered:{props.unanswered}
         </span>
       </div>
     </div>

@@ -59,3 +59,25 @@ export const postSelectedOption = async (
     }
   }
 };
+
+export const createExam = async (username: string) => {
+  try {
+    const response = await axiosInstance.post(`${BACKEND_URL}/api/createExam`, {
+      username,
+    });
+    const { data } = response;
+    return data;
+  } catch (error) {
+    if (isAxiosError(error) && error.response) {
+      const { status, errorCode, errorMessage } = error.response.data;
+      return { status, errorCode, errorMessage };
+    } else {
+      console.error(error);
+      return {
+        status: 500,
+        errorCode: 'SEND_SELECTED_OPTION_POST_API_CALL_ERROR',
+        errorMessage: 'Please try again later.',
+      };
+    }
+  }
+};

@@ -24,7 +24,6 @@ function DisplayQuestion(props: {
     sendSelectedOption();
   };
 
-
   return (
     <div className='text-xl flex flex-col gap-10'>
       <span>

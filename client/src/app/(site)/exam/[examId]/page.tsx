@@ -12,7 +12,6 @@ function ExamPage({ params }: { params: { examId: number } }) {
   const [numQuestions, setNumQuestions] = useState(30);
   const [time, setTime] = useState(30 * 60);
   const [qno, setQno] = useState<number>(0);
-  const [optionCheck, setOptionCheck] = useState<boolean>(false);
 
   const [optionsSelected, setOptionsSelected] = useState<Array<number>>([]); //! Fetch question only when option is selected
   const [currQuestion, setCurrQuestion] = useState<string>('');
@@ -29,11 +28,12 @@ function ExamPage({ params }: { params: { examId: number } }) {
   const user = session?.user;
 
   const handleButtonClick = (questionNumber: number) => {
-    setQno(questionNumber);
-    setCurrQuestion('');
-    setOptions([]);
-    setOptionCheck(false);
-    setOptionSelectedIndex(optionsSelected[questionNumber]);
+    if (questionNumber != qno) {
+      setQno(questionNumber);
+      setCurrQuestion('');
+      setOptions([]);
+      setOptionSelectedIndex(optionsSelected[questionNumber]);
+    }
   };
 
   useEffect(() => {
@@ -72,7 +72,14 @@ function ExamPage({ params }: { params: { examId: number } }) {
       <div className='flex flex-col border-2 w-1/4 h-full justify-center items-center gap-5'>
         <div className='col-span-5 flex flex-row gap-5'>
           {/*Insert Timer div here*/}
-          <CountdownTimer initialTime={time} />
+          <CountdownTimer
+            initialTime={time}
+            attempted={optionsSelected.filter((value) => value !== -1).length}
+            unanswered={
+              optionsSelected.length -
+              optionsSelected.filter((value) => value !== -1).length
+            }
+          />
         </div>
         <div className='grid grid-cols-5 py-10 gap-4'>
           {Array.from({ length: numQuestions }, (_, index) => {
@@ -84,7 +91,7 @@ function ExamPage({ params }: { params: { examId: number } }) {
                   qno === index ? 'bg-blue-600' : ''
                 } 
                 ${
-                  optionsSelected[index] !== -1
+                  optionsSelected && optionsSelected[index] !== -1
                     ? ' bg-green-500'
                     : ' bg-blue-500 hover:bg-blue-600'
                 }

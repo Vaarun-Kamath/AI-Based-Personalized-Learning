@@ -27,7 +27,7 @@ module.exports.examSchema = new mongoose.Schema(
     questions: { type: Array, required: true },
     selectedOptions: { type: Array, required: true },
     subject: { type: String, required: true },
-    probability: 
+    probability: [[Number]],
   },
   {
     timestamps: true,

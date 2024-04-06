@@ -104,7 +104,7 @@ app.post('/api/createExam', async (req, res) => {
   newExam
     .save()
     .then(async () => {
-      const exam = Exam.findOne({}, '_id')
+      Exam.findOne({}, '_id')
         .sort({ createdAt: -1 })
         .then(async (exam) => {
           const user = await User.findOneAndUpdate(
@@ -112,9 +112,12 @@ app.post('/api/createExam', async (req, res) => {
             { currExam: exam._id },
             { new: true }
           );
+          res.status(200).json({
+            status: 200,
+            statusText: 'Exam added successfully',
+            examId: exam._id,
+          });
         });
-
-      res.status(200).send('Exam added successfully');
     })
     .catch((err) => {
       res.status(500).json({ msg: 'Error in adding Exam', err: err });
@@ -129,18 +132,17 @@ app.post('/api/selectOption', async (req, res) => {
 
   exam.selectedOptions[questionNo] = selectedOption;
   exam.save();
-  
+
   return res.status(200).json({
-    
     status: 200,
     statusText: 'SUCCESS',
   });
 });
 
 //url:"/api/submitExam"
-app.post("/api/submitExam", async (req, res) => {
+app.post('/api/submitExam', async (req, res) => {
   const { examId } = req.body;
-})
+});
 
 app.post('/api/insertQuestion', async (req, res) => {
   const { question, options, answer, reason, topic } = req.body;
