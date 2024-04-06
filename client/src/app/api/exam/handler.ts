@@ -81,3 +81,52 @@ export const createExam = async (username: string) => {
     }
   }
 };
+
+export const isUserInExam = async (username: string) => {
+  try {
+    const response = await axiosInstance.get(
+      `${BACKEND_URL}/api/isUserInExam`,
+      {
+        params: {
+          username: username,
+        },
+      }
+    );
+    const { data } = response;
+    return data;
+  } catch (error) {
+    if (isAxiosError(error) && error.response) {
+      const { status, errorCode, errorMessage } = error.response.data;
+      return { status, errorCode, errorMessage };
+    } else {
+      console.error(error);
+      return {
+        status: 500,
+        errorCode: 'GET_EXAMS_GET_API_CALL_ERROR',
+        errorMessage: 'Please try again later.',
+      };
+    }
+  }
+};
+
+export const submitExam = async (examId: number) => {
+  try {
+    const response = await axiosInstance.post(`${BACKEND_URL}/api/submitExam`, {
+      examId,
+    });
+    const { data } = response;
+    return data;
+  } catch (error) {
+    if (isAxiosError(error) && error.response) {
+      const { status, errorCode, errorMessage } = error.response.data;
+      return { status, errorCode, errorMessage };
+    } else {
+      console.error(error);
+      return {
+        status: 500,
+        errorCode: 'SUBMIT_TEST_POST_API_CALL_ERROR',
+        errorMessage: 'Please try again later.',
+      };
+    }
+  }
+};

@@ -25,7 +25,7 @@ const Exam = require('./model').exam;
 
 const mongo_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 8000;
-const questionModelHREF = "http://localhost:9000";
+const questionModelHREF = 'http://localhost:9000';
 
 async function connect() {
   await mongoose
@@ -120,7 +120,7 @@ app.post('/api/createExam', async (req, res) => {
         .then(async (exam) => {
           const user = await User.findOneAndUpdate(
             { username: username },
-            { currExam: exam._id },
+            { currentExam: exam._id },
             { new: true }
           );
           res.status(200).json({
@@ -166,7 +166,6 @@ app.post('/api/submitExam', async (req, res) => {
       topics[question.topic] = currTopic;
     }
 
-    
     const response = await axios.post(`${questionModelHREF}/newQuestions`, {
       probability: exam.probability,
       topic: topics,
@@ -174,7 +173,7 @@ app.post('/api/submitExam', async (req, res) => {
 
     const user = await User.findOneAndUpdate(
       { username: exam.username },
-      { currExam: '', probability: response.data.probability},
+      { currExam: '', probability: response.data.probability },
       { new: true }
     );
 
@@ -184,6 +183,43 @@ app.post('/api/submitExam', async (req, res) => {
   } catch (error) {
     console.error('Error sending POST request:', error);
     res.status(500).send('Internal server error');
+  }
+});
+
+// app.get('/api/isUserInExam', async (req, res) => {
+//   const { username } = req.query;
+//   const exam = await Exam.findOne({ username: username });
+//   if (exam) {
+//     return res.status(200).json({
+//       status: 200,
+//       statusText: 'User is in exam',
+//       examId: exam._id,
+//     });
+//   } else {
+//     return res.status(404).json({
+//       status: 404,
+//       statusText: 'User is not in exam',
+//     });
+//   }
+// });
+
+app.get('/api/isUserInExam', async (req, res) => {
+  const { username } = req.query;
+  const user = await User.findOne({
+    username: username,
+  });
+  const exam = await Exam.findById(user.currentExam);
+  if (exam) {
+    return res.status(200).json({
+      status: 200,
+      statusText: 'User is in exam',
+      examId: exam._id,
+    });
+  } else {
+    return res.status(404).json({
+      status: 404,
+      statusText: 'User is not in exam',
+    });
   }
 });
 

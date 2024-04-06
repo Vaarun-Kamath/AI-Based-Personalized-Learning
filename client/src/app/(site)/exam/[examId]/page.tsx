@@ -1,6 +1,6 @@
 'use client';
 
-import { getQuestion } from '@/app/api/exam/handler';
+import { getQuestion, submitExam } from '@/app/api/exam/handler';
 import CountdownTimer from '@/components/atoms/CountdownTimer';
 import DisplayQuestion from '@/components/atoms/DisplayQuestion';
 import { useSession } from 'next-auth/react';
@@ -57,6 +57,24 @@ function ExamPage({ params }: { params: { examId: number } }) {
     fetchQuestion();
   }, [params.examId, qno]);
 
+  const handleTestSubmit = async () => {
+    try {
+      if (!user) {
+        console.error('User is undefined');
+        return;
+      }
+      const res = await submitExam(params.examId);
+      if (res.errorCode) {
+        console.error('Error submitting exam', res.errorMessage);
+      } else if (res.status === 200) {
+        console.log('res:', res);
+        redirect(`/exam/${params.examId}/solutions`);
+      }
+    } catch {
+      console.error('Please try again after some time');
+    }
+  };
+
   return (
     <div className='w-full flex flex-row gap-5'>
       <div className='border-2 w-3/4 h-full p-10'>
@@ -103,7 +121,10 @@ function ExamPage({ params }: { params: { examId: number } }) {
           })}
         </div>
         <div>
-          <button className='bg-red-500 hover:bg-red-600 p-4 rounded-md text-white font-semibold flex flex-row gap-2 justify-center items-center'>
+          <button
+            onClick={handleTestSubmit}
+            className='bg-red-500 hover:bg-red-600 p-4 rounded-md text-white font-semibold flex flex-row gap-2 justify-center items-center'
+          >
             End Test
             <span className='text-xl'>
               <IoExit />

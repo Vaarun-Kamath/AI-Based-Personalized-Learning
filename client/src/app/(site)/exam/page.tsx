@@ -6,7 +6,7 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 import { examsList } from '@/components/constants/exams';
 import { ExamType } from '@/types';
 import { useSession } from 'next-auth/react';
-import { createExam } from '@/app/api/exam/handler';
+import { createExam, isUserInExam } from '@/app/api/exam/handler';
 
 function ExamHomePage() {
   const searchParams = useSearchParams();
@@ -21,9 +21,30 @@ function ExamHomePage() {
   });
 
   const user = session?.user;
-  if (!user) {
-    redirect('/');
-  }
+
+  // if (!user) {
+  //   redirect('/');
+  // }
+
+  // useEffect(() => {
+  //   const checkUserInExam = async () => {
+  //     try {
+  //       if (!user) {
+  //         console.error('User is undefined');
+  //         return;
+  //       }
+  //       const res = await isUserInExam(user.username);
+  //       if (res.errorCode) {
+  //         console.error('Error fetching question', res.errorMessage);
+  //       } else if (res.status === 200) {
+  //         router.push('/exam/' + res.examId);
+  //       }
+  //     } catch (error) {
+  //       console.error('Please try again after some time');
+  //     }
+  //   };
+  //   checkUserInExam();
+  // }, [user, router]);
 
   useEffect(() => {
     if (searchParams.get('id') !== null) {
@@ -40,6 +61,10 @@ function ExamHomePage() {
 
   const handleExamAccept = async () => {
     try {
+      if (!user) {
+        console.error('User is undefined');
+        return;
+      }
       const res = await createExam(user.username);
       if (res.errorCode) {
         console.error('Error fetching question', res.errorMessage);
