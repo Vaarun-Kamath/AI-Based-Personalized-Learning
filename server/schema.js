@@ -21,3 +21,7 @@ module.exports.physicsSchema = new mongoose.Schema({
   reason: { type: String, required: true },
   topic: { type: String, required: true },
 });
+module.exports.examSchema = new mongoose.Schema({
+  questions: { type: Array, required: true },
+  selectedOptions: { type: Array, required: true },
+});

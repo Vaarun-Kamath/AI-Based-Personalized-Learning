@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 
 const Physics = require('./model').Physics;
 const User = require('./model').User;
+const Exam = require('./model').exam;
 
 const mongo_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 8000;
@@ -59,37 +60,47 @@ app.get('/api/getExams', async (req, res) => {
   res.status(200).json(exams);
 });
 
-//url:/api/getQuestion?examId={}&question={}&username
-app.get('/api/getQuestion', async (req, res) => {
+//url:/api/getQuestion?examId={}&question={}
+app.get('/api/getQuestion', async (req, res, err) => {
   if (
     !req.query ||
-    !req.query.examId ||
-    !req.query.username ||
-    !req.query.question
+    !req.query.examId
   ) {
     console.log("Invalid Query!", req.query)
     res.status(400).json({ msg: 'No Query object', err: err });
   }
 
   console.log(" Query!", req.query)
-  const user = await User.findOne({ username: req.query.username });
+  const exam = await Exam.findById(req.query.examId)
+  const question_index = (req.query.question || 0);
+  console.log(" exam!", exam)
+  
+  // const user = await User.findOne({ username: req.query.username });
+  // const examIndex = user.exams.findIndex(
+  //   (exam) => exam.id === req.query.examId
+  // );
 
-  const question_index = req.query.question || 0;
-  const examIndex = user.exams.findIndex(
-    (exam) => exam.id === req.query.examId
-  );
+  // const questionId = user.exams[examIndex].questions[question_index];
+  // const phyQuestion = await Physics.findById(questionId);
 
-  const questionId = user.exams[examIndex].questions[question_index];
-  const phyQuestion = await Physics.findById(questionId);
 
   res
     .status(200)
-    .json({ question: phyQuestion.question, options: phyQuestion.options });
+    .json({ question: exam.questions[question_index], options: exam.selectedOptions });
 });
 
 app.get('/api/makeExam', async (req, res) => {
+  if (
+    !req.query ||
+    !req.query.username
+  ){
+    console.log("Invalid Query!", req.query)
+    res.status(400).json({ msg: 'No Query object', err: err });
+  }
+
   questions = await Physics.find().limit(30);
 res.json(questions.map(question=>question._id));
+
 });
 
 app.post('/api/insertQuestion', async (req, res) => {
