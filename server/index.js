@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const Errors = require('./utils/errors');
+const axios = require('axios');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 const { validationResult } = require('express-validator');
@@ -24,6 +25,7 @@ const Exam = require('./model').exam;
 
 const mongo_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 8000;
+const questionModelHREF = "http://localhost:9000";
 
 async function connect() {
   await mongoose
@@ -93,6 +95,15 @@ app.get('/api/getQuestion', async (req, res, err) => {
 //url:/api/createExam
 app.post('/api/createExam', async (req, res) => {
   const { username } = req.body;
+
+  const user = await User.find({ username: username });
+  if (user.currentExam !== '')
+    res.status(403).json({
+      status: 403,
+      statusText: 'EXAM EXISTS',
+      examId: user.currentExam,
+    });
+
   const questions = await Physics.find().limit(30);
   const selectedOptions = Array(40).fill(-1);
   const newExam = new Exam({
@@ -142,6 +153,38 @@ app.post('/api/selectOption', async (req, res) => {
 //url:"/api/submitExam"
 app.post('/api/submitExam', async (req, res) => {
   const { examId } = req.body;
+
+  topics = {};
+  try {
+    const exam = await Exam.findById(examId);
+    for (let i = 0; i < exam.questions.length; i++) {
+      const question = await Exam.findById(exam.questions[i]);
+      val = question.answer == exam.selectedOptions[i] ? 1 : 0;
+      currTopic = question.topic in topics ? topics[question.topic] : {};
+      currTopic[question.Level] =
+        val + (question.Level in currTopic ? currTopic[question.Level] : 0);
+      topics[question.topic] = currTopic;
+    }
+
+    
+    const response = await axios.post(`${questionModelHREF}/newQuestions`, {
+      probability: exam.probability,
+      topic: topics,
+    });
+
+    const user = await User.findOneAndUpdate(
+      { username: exam.username },
+      { currExam: '', probability: response.data.probability},
+      { new: true }
+    );
+
+    // Log the response from the server
+    console.log('Response from server:', response.data);
+    res.send('Submitted successfully');
+  } catch (error) {
+    console.error('Error sending POST request:', error);
+    res.status(500).send('Internal server error');
+  }
 });
 
 app.post('/api/insertQuestion', async (req, res) => {

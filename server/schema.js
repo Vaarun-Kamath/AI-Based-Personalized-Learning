@@ -5,13 +5,7 @@ module.exports.userSchema = new mongoose.Schema({
   email: String,
   password: String,
   username: String,
-  exams: [
-    {
-      id: String,
-      questions: Array,
-      subject: String,
-    },
-  ],
+  probability: [[Number]],
   currentExam: String,
 });
 module.exports.physicsSchema = new mongoose.Schema({
@@ -20,6 +14,7 @@ module.exports.physicsSchema = new mongoose.Schema({
   answer: { type: String, required: true },
   reason: { type: String, required: true },
   topic: { type: String, required: true },
+  Level: { type: String, required: true },
 });
 module.exports.examSchema = new mongoose.Schema(
   {
@@ -27,7 +22,7 @@ module.exports.examSchema = new mongoose.Schema(
     questions: { type: Array, required: true },
     selectedOptions: { type: Array, required: true },
     subject: { type: String, required: true },
-    probability: [[Number]],
+    probability: [[Number]]
   },
   {
     timestamps: true,
