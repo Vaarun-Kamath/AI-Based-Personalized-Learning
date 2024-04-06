@@ -128,7 +128,7 @@ app.post('/api/selectOption', async (req, res) => {
   console.log(questionNo);
   console.log(selectedOption);
   const updateQuery = {};
-  updateQuery['options.' + questionNo] = selectedOption;
+  updateQuery['selectedOptions.' + questionNo] = selectedOption;
   const exam = Exam.updateOne(
     { _id: examId }, // Find the user by ID and ensure the element at index 6 exists
     { $set: updateQuery } // Update the value at index 6
