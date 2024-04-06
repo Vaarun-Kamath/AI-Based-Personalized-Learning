@@ -16,7 +16,7 @@ function AllExamsSection() {
             href={`/exam?id=${exam.id}`}
             className="border-2 border-gray-300 p-4 text-left hover:border-blue-500 rounded-md flex flex-col gap-2 transition-all duration-200"
           >
-            <span className="font-semibold flex flex-row items-center gap-2">
+            <span className="font-semibold flex flex-row items-center gap-2 text-black">
               <span className="text-black">
                 <FaBook />
               </span>

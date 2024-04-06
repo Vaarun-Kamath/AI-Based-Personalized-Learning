@@ -5,6 +5,14 @@ module.exports.userSchema = new mongoose.Schema({
   email: String,
   password: String,
   username: String,
+  exams: [
+    {
+      id: String,
+      questions: Array,
+      subject: String,
+    },
+  ],
+  currentExam: String
 });
 module.exports.physicsSchema = new mongoose.Schema({
   question: { type: String, required: true },

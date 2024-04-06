@@ -8,11 +8,11 @@ for (const q of qs) {
     for (const child of elems) {
         if(child.innerHTML=="")continue;
         if(child.className.includes("mathjax")){
-            s+=MathJax.startup.document.getMathItemsWithin(child).map(item => item.math).join();
+            s+=" "+MathJax.startup.document.getMathItemsWithin(child).map(item => item.math).join();
             continue
         }
         if(child.getElementsByTagName("img").length){
-            s+=child.getElementsByTagName("img")[0].src+"\n"
+            s+="\n"+child.getElementsByTagName("img")[0].src+"\n"
             continue
         }
         s+=child.innerText;
@@ -38,7 +38,7 @@ for (const q of qs) {
                 continue
             }
             if(child.getElementsByTagName("img").length){
-                options[i]+=child.getElementsByTagName("img")[0].src+"\n"
+                options[i]+="\n"+child.getElementsByTagName("img")[0].src+"\n"
                 continue
             }
             options[i]+=child.innerText;
