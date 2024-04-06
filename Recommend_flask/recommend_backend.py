@@ -45,17 +45,18 @@ def handle_get():
 
     list1 = []
     list2 = []
+    print(data)
     converted_data = {"weights": data["weights"], "test_1": {}}
+    topic_counter = 1
 
-    for i, (topic, difficulty_levels) in enumerate(data.items()):
-        if topic != "weights":
-            topic_key = f"topic{i + 1}"
-            converted_data["test_1"][topic_key] = {}
-            for difficulty, scores in difficulty_levels.items():
-                difficulty_key_prefix = difficulty.lower()
-                for score_type, value in scores.items():
-                    score_key = f"{difficulty_key_prefix}_{score_type}"
-                    converted_data["test_1"][topic_key][score_key] = value
+    for topic, difficulty_levels in data["topic"].items():
+        converted_topic = {}
+        for difficulty, scores in difficulty_levels.items():
+            converted_topic[f"{difficulty.lower()}_correct"] = scores["correct"]
+            converted_topic[f"{difficulty.lower()}_wrong"] = scores["wrong"]
+        converted_data["test_1"][f"topic{topic_counter}"] = converted_topic
+        topic_counter += 1
+      
     dictionary = converted_data
     for topic_key in dictionary["test_1"]:
         print(topic_key)
