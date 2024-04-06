@@ -130,3 +130,30 @@ export const submitExam = async (examId: number) => {
     }
   }
 };
+
+export const getRemainingTime = async (examId: number) => {
+  try {
+    const response = await axiosInstance.get(
+      `${BACKEND_URL}/api/getExamStartTime`,
+      {
+        params: {
+          examId: examId,
+        },
+      }
+    );
+    const { data } = response;
+    return data;
+  } catch (error) {
+    if (isAxiosError(error) && error.response) {
+      const { status, errorCode, errorMessage } = error.response.data;
+      return { status, errorCode, errorMessage };
+    } else {
+      console.error(error);
+      return {
+        status: 500,
+        errorCode: 'GET_REMAINING_TIME_GET_API_CALL_ERROR',
+        errorMessage: 'Please try again later.',
+      };
+    }
+  }
+};

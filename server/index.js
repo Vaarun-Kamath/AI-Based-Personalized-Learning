@@ -26,7 +26,7 @@ const Exam = require('./model').exam;
 const mongo_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 8000;
 const questionModelHREF = 'http://localhost:9000';
-const NUM_QUESTIONS = 30;
+const NUM_QUESTIONS = 40;
 
 async function connect() {
   await mongoose
@@ -43,29 +43,6 @@ app.get('/', (req, res) => {
   res.status(200).send('Hello World!');
 });
 
-// app.get("/api/testDatabase", async (req, res) => {
-//   const physicsData = await Physics.find({});
-//   const customersData = await User.find();
-//   res.status(200).json({ phy: physicsData, msg: customersData });
-// });
-
-//url:/api/getExams&username={}
-// app.get('/api/getExams', async (req, res) => {
-//   //get physics
-//   //makes a new exam (Physics)
-//   if (!req.query || !req.query.username)
-//     res.status(400).json({ msg: 'No Query object', err: err });
-
-//   const exam = await Exam.find()
-//   const user = await User.findOne({ username: req.query.username });
-//   console.log(user, req.query.username);
-//   const exams = user.exams.map((exam) => ({
-//     id: exam.id,
-//     noOfQuestions: exam.questions.length,
-//     subject: exam.subject,
-//   }));
-//   res.status(200).json(exams);
-// });
 
 //url:/api/getExamStartTime?examId={}
 app.get('/api/getExamStartTime', async (req, res, err) => {
@@ -75,9 +52,11 @@ app.get('/api/getExamStartTime', async (req, res, err) => {
   }
   const exam = await Exam.findById(req.query.examId);
 
+
   res.status(200).json({
     status: 200,
     statusText: 'Success',
+    time: new Date(exam.createdAt).getTime(),
     time: new Date(exam.createdAt).getTime(),
   });
 });
@@ -134,7 +113,7 @@ app.post('/api/createExam', async (req, res) => {
   const { username } = req.body;
 
   const user = await User.findOne({ username: username });
-  if (user.currentExam !== ''){
+  if (user.currentExam !== '') {
     res.status(200).json({
       status: 403,
       statusText: 'EXAM EXISTS',
@@ -200,16 +179,18 @@ app.post('/api/submitExam', async (req, res) => {
       const question = await Exam.findById(exam.questions[i]);
       val = question.answer == exam.selectedOptions[i] ? 1 : 0;
       currTopic = question.topic in topics ? topics[question.topic] : {};
-      currTopic[question.Level] = (question.Level in currTopic ? currTopic[question.Level] : {correct: 0, wrong: 0});
-      if(val){
-        currTopic[question.Level]["correct"] +=1
-      }else{
-        currTopic[question.Level]["wrong"] +=1
+      currTopic[question.Level] =
+        question.Level in currTopic
+          ? currTopic[question.Level]
+          : { correct: 0, wrong: 0 };
+      if (val) {
+        currTopic[question.Level]['correct'] += 1;
+      } else {
+        currTopic[question.Level]['wrong'] += 1;
       }
       topics[question.topic] = currTopic;
     }
 
-    
     const response = await axios.get(`${questionModelHREF}/post`, {
       params: {
         probability: exam.probability,

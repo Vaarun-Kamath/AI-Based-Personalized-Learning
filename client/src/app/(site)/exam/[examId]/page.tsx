@@ -9,8 +9,8 @@ import React, { useEffect, useState } from 'react';
 import { IoExit } from 'react-icons/io5';
 
 function ExamPage({ params }: { params: { examId: number } }) {
-  const [numQuestions, setNumQuestions] = useState(30);
-  const [time, setTime] = useState(30 * 60);
+  const [numQuestions, setNumQuestions] = useState(40);
+  const [time, setTime] = useState(100 * 60);
   const [qno, setQno] = useState<number>(0);
 
   const [optionsSelected, setOptionsSelected] = useState<Array<number>>([]); //! Fetch question only when option is selected
@@ -91,7 +91,9 @@ function ExamPage({ params }: { params: { examId: number } }) {
         <div className='col-span-5 flex flex-row gap-5'>
           {/*Insert Timer div here*/}
           <CountdownTimer
+            examId={params.examId}
             initialTime={time}
+            handleTestSubmit={handleTestSubmit}
             attempted={optionsSelected.filter((value) => value !== -1).length}
             unanswered={
               optionsSelected.length -
@@ -105,7 +107,7 @@ function ExamPage({ params }: { params: { examId: number } }) {
               <button
                 key={index}
                 onClick={() => handleButtonClick(index)}
-                className={`rounded-full text-white w-14 h-14  ${
+                className={`rounded-full text-white w-10 h-10  ${
                   qno === index ? 'bg-blue-800' : ''
                 } 
                 ${

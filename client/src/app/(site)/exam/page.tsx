@@ -48,6 +48,30 @@ function ExamHomePage() {
   // }, [user, router]);
 
   useEffect(() => {
+    const checkUserInExam = async () => {
+      try {
+        if (!user) {
+          console.error('User is undefined');
+          return;
+        }
+        const res = await isUserInExam(user.username);
+        if (res.errorCode) {
+          console.error('Error fetching question', res.errorMessage);
+        } else if (res.status === 200) {
+          router.push('/exam/' + res.examId);
+        } else {
+          setLoading(false);
+        }
+      } catch (error) {
+        console.error('Please try again after some time');
+      }
+    };
+    if (user) {
+      checkUserInExam();
+    }
+  }, [user, router]);
+
+  useEffect(() => {
     if (searchParams.get('id') !== null) {
       const listIndex = examsList.findIndex(
         (exam) => exam.id === searchParams.get('id')
@@ -72,10 +96,11 @@ function ExamHomePage() {
         console.error('Error fetching question', res.errorMessage);
       } else if (res.status === 200 || res.status === 403) {
         router.push('/exam/' + res.examId);
+      } else {
+        setLoading(false);
       }
     } catch (error) {
       console.error('Please try again after some time');
-    } finally {
       setLoading(false);
     }
   };
