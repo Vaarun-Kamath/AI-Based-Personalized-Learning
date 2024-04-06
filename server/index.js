@@ -85,6 +85,7 @@ app.get('/api/getQuestion', async (req, res, err) => {
     optionsSelected: exam.selectedOptions,
   });
 });
+
 //url:/api/createExam
 app.post('/api/createExam', async (req, res) => {
   const { username } = req.body;
@@ -104,7 +105,7 @@ app.post('/api/createExam', async (req, res) => {
         .then(async (exam) => {
           const user = await User.findOneAndUpdate(
             { username: username },
-            { currExam: 'newExamValue' },
+            { currExam: exam._id },
             { new: true }
           );
         });
@@ -115,6 +116,8 @@ app.post('/api/createExam', async (req, res) => {
       res.status(500).json({ msg: 'Error in adding Exam', err: err });
     });
 });
+
+app.post("/api/selectOption")
 
 app.post('/api/insertQuestion', async (req, res) => {
   const { question, options, answer, reason, topic } = req.body;
