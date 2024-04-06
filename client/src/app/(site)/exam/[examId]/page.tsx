@@ -30,8 +30,10 @@ function ExamPage({ params }: { params: { examId: number } }) {
 
   const handleButtonClick = (questionNumber: number) => {
     setQno(questionNumber);
+    setCurrQuestion('');
+    setOptions([]);
     setOptionCheck(false);
-    setOptionSelectedIndex(optionsSelected[questionNumber - 1]);
+    setOptionSelectedIndex(optionsSelected[questionNumber]);
   };
 
   useEffect(() => {
@@ -43,8 +45,9 @@ function ExamPage({ params }: { params: { examId: number } }) {
         } else if (res.status === 200) {
           console.log('res:', res);
           setCurrQuestion(res.question);
-          setOptionsSelected(res.optionsSelected);
           setOptions(res.options);
+          setOptionsSelected(res.optionsSelected);
+          setOptionSelectedIndex(res.optionsSelected[qno]);
         }
       } catch (error) {
         console.error('Please try again after some time');
@@ -73,23 +76,21 @@ function ExamPage({ params }: { params: { examId: number } }) {
         </div>
         <div className='grid grid-cols-5 py-10 gap-4'>
           {Array.from({ length: numQuestions }, (_, index) => {
-            const buttonNumber = index + 1;
             return (
               <button
-                key={buttonNumber}
-                onClick={() => handleButtonClick(buttonNumber)}
-                className={`rounded-full text-white w-14 h-14 bg-blue-500 hover:bg-blue-600 ${
-                  qno === buttonNumber ? 'bg-blue-600' : ''
+                key={index}
+                onClick={() => handleButtonClick(index)}
+                className={`rounded-full text-white w-14 h-14  ${
+                  qno === index ? 'bg-blue-600' : ''
                 } 
                 ${
-                  (optionsSelected[index] !== -1 || optionCheck) &&
-                  qno === buttonNumber
-                    ? 'bg-green-500'
-                    : ''
-                } 
+                  optionsSelected[index] !== -1
+                    ? ' bg-green-500'
+                    : ' bg-blue-500 hover:bg-blue-600'
+                }
                 `}
               >
-                {buttonNumber}
+                {index + 1}
               </button>
             );
           })}

@@ -24,9 +24,6 @@ function DisplayQuestion(props: {
     sendSelectedOption();
   };
 
-  useEffect(() => {
-    console.log('DQS: options:', props.options);
-  }, [props.options]);
 
   return (
     <div className='text-xl flex flex-col gap-10'>

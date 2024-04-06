@@ -124,19 +124,27 @@ app.post('/api/createExam', async (req, res) => {
 //url:/api/createExam
 app.post('/api/selectOption', async (req, res) => {
   const { examId, questionNo, selectedOption } = req.body;
-  console.log(examId);
-  console.log(questionNo);
-  console.log(selectedOption);
-  const updateQuery = {};
-  updateQuery['selectedOptions.' + questionNo] = selectedOption;
-  const exam = Exam.updateOne(
-    { _id: examId }, // Find the user by ID and ensure the element at index 6 exists
-    { $set: updateQuery } // Update the value at index 6
-  );
+
+  const exam = await Exam.findById(examId);
+
+  exam.selectedOptions[questionNo] = selectedOption;
+  exam.save();
+  
   return res.status(200).json({
     status: 200,
     statusText: 'SUCCESS',
   });
+
+  // const updateQuery = {};
+  // updateQuery['selectedOptions.' + questionNo] = selectedOption;
+  // const exam = Exam.updateOne(
+  //   { _id: examId }, // Find the user by ID and ensure the element at index 6 exists
+  //   { $set: updateQuery } // Update the value at index 6
+  // );
+  // return res.status(200).json({
+  //   status: 200,
+  //   statusText: 'SUCCESS',
+  // });
 });
 
 app.post('/api/insertQuestion', async (req, res) => {
