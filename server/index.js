@@ -76,12 +76,12 @@ app.get('/api/getQuestion', async (req, res, err) => {
   const question_index = req.query.question || 0;
 
   const q_id = exam.questions[question_index]
-  const question = await Physics.findById(q_id)
+  const phyQuestion = await Physics.findById(q_id)
   
 
   res.status(200).json({
-    question: q_id,
-    options: question.options,
+    question: phyQuestion.question,
+    options: phyQuestion.options,
     optionsSelected: exam.selectedOptions,
   });
 });
@@ -93,7 +93,7 @@ app.post('/api/createExam', async (req, res) => {
   const selectedOptions = Array(30).fill(-1);
   const newExam = new Exam({
     username,
-    questions,
+    questions:questions.map(question=>question._id),
     selectedOptions,
     subject: 'Physics',
   });
@@ -117,8 +117,19 @@ app.post('/api/createExam', async (req, res) => {
     });
 });
 
+//url:/api/createExam
 app.post("/api/selectOption", async (req,res)=>{
-  const {}
+  const { examId, questionNo, selectedOption} = req.body;
+  const updateQuery = {};
+  updateQuery['options.' + questionNo] = selectedOption;
+  const exam = Exam.updateOne(
+    { _id: examId }, // Find the user by ID and ensure the element at index 6 exists
+    { $set: updateQuery } // Update the value at index 6
+  )
+  return res.status(200).json({
+    status: 200,
+    statusText: "SUCCESS"
+  });
 })
 
 app.post('/api/insertQuestion', async (req, res) => {
