@@ -87,6 +87,10 @@ app.get('/api/getQuestion', async (req, res) => {
     .json({ question: phyQuestion.question, options: phyQuestion.options });
 });
 
+app.get('/api/makeExam', async (req, res) => {
+  questions = await Physics.find().limit(30);
+res.json(questions.map(question=>question._id));
+});
 
 app.post('/api/insertQuestion', async (req, res) => {
   const { question, options, answer, reason, topic } = req.body;
