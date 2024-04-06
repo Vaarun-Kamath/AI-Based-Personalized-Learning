@@ -4,7 +4,7 @@ import React from "react";
 
 function HomePage() {
   return (
-    <div className="p-7 w-full flex flex-col gap-8">
+    <div className="w-full flex flex-col gap-8">
       <AllExamsSection />
       <hr className="border-2 border-gray-200 rounded-lg" />
       <UserAnalyticsSection />

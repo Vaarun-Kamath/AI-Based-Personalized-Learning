@@ -6,9 +6,9 @@ export default async function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex max-w-screen mt-20">
+    <>
       <Sidebar />
-      {children}
-    </div>
+      <div className="flex max-w-screen mt-20 p-7">{children}</div>
+    </>
   );
 }

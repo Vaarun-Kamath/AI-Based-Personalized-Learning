@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Personalized Learning</title>  
+        <title>Personalized Learning</title>
+        <meta name="description" content="Straw Hats will win the One Piece!" />
+        <link rel="icon" href="/favicon.ico"/>
       </head>
       <body className={inter.className}>
         <AuthProvider>{children}</AuthProvider>
