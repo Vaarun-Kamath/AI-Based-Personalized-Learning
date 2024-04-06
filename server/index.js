@@ -90,11 +90,11 @@ app.get('/api/getQuestion', async (req, res, err) => {
 app.post('/api/createExam', async (req, res) => {
   const { username } = req.body;
   const questions = await Physics.find().limit(30);
-  const options = Array(30).fill(-1);
+  const selectedOptions = Array(30).fill(-1);
   const newExam = new Exam({
     username,
     questions,
-    options,
+    selectedOptions,
     subject: 'Physics',
   });
   newExam
@@ -117,7 +117,9 @@ app.post('/api/createExam', async (req, res) => {
     });
 });
 
-app.post("/api/selectOption")
+app.post("/api/selectOption", async (req,res)=>{
+  const {}
+})
 
 app.post('/api/insertQuestion', async (req, res) => {
   const { question, options, answer, reason, topic } = req.body;
