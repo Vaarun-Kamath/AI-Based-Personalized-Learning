@@ -26,6 +26,7 @@ const Exam = require('./model').exam;
 const mongo_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 8000;
 const questionModelHREF = 'http://localhost:9000';
+const NUM_QUESTIONS = 30;
 
 async function connect() {
   await mongoose
@@ -66,6 +67,22 @@ app.get('/', (req, res) => {
 //   res.status(200).json(exams);
 // });
 
+//url:/api/getExamStartTime?examId={}
+app.get('/api/getExamStartTime', async (req, res, err) => {
+  if (!req.query || !req.query.examId) {
+    console.log('Invalid Query!', req.query);
+    res.status(400).json({ msg: 'No Query object', err: err });
+  }
+  const exam = await Exam.findById(req.query.examId);
+  
+  res.status(200).json({
+    status: 200,
+    statusText: 'Success',
+    time:(new Date(exam.createdAt)).getTime(),
+  });
+});
+
+
 //url:/api/getQuestion?examId={}&question={}
 app.get('/api/getQuestion', async (req, res, err) => {
   if (!req.query || !req.query.examId) {
@@ -96,8 +113,8 @@ app.get('/api/getQuestion', async (req, res, err) => {
 app.post('/api/createExam', async (req, res) => {
   const { username } = req.body;
 
-  const user = await User.find({ username: username });
-  if (user[0].currentExam !== '') {
+  const user = await User.findOne({ username: username });
+  if (user.currentExam !== ''){
     res.status(200).json({
       status: 403,
       statusText: 'EXAM EXISTS',
@@ -106,8 +123,8 @@ app.post('/api/createExam', async (req, res) => {
     return;
   }
 
-  const questions = await Physics.find().limit(30);
-  const selectedOptions = Array(40).fill(-1);
+  const questions = await Physics.find().limit(NUM_QUESTIONS);
+  const selectedOptions = Array(NUM_QUESTIONS).fill(-1);
   const newExam = new Exam({
     username,
     questions: questions.map((question) => question._id),
@@ -163,14 +180,21 @@ app.post('/api/submitExam', async (req, res) => {
       const question = await Exam.findById(exam.questions[i]);
       val = question.answer == exam.selectedOptions[i] ? 1 : 0;
       currTopic = question.topic in topics ? topics[question.topic] : {};
-      currTopic[question.Level] =
-        val + (question.Level in currTopic ? currTopic[question.Level] : 0);
+      currTopic[question.Level] = (question.Level in currTopic ? currTopic[question.Level] : {correct: 0, wrong: 0});
+      if(val){
+        currTopic[question.Level]["correct"] +=1
+      }else{
+        currTopic[question.Level]["wrong"] +=1
+      }
       topics[question.topic] = currTopic;
     }
 
-    const response = await axios.post(`${questionModelHREF}/newQuestions`, {
-      probability: exam.probability,
-      topic: topics,
+    
+    const response = await axios.get(`${questionModelHREF}/post`, {
+      params: {
+        probability: exam.probability,
+        topic: topics,
+      },
     });
 
     const user = await User.findOneAndUpdate(
@@ -185,6 +209,23 @@ app.post('/api/submitExam', async (req, res) => {
   } catch (error) {
     console.error('Error sending POST request:', error);
     res.status(500).send('Internal server error');
+  }
+});
+
+app.get('/api/isUserInExam', async (req, res) => {
+  const { username } = req.query;
+  const exam = await Exam.findOne({ username: username });
+  if (exam) {
+    return res.status(200).json({
+      status: 200,
+      statusText: 'User is in exam',
+      examId: exam._id,
+    });
+  } else {
+    return res.status(404).json({
+      status: 404,
+      statusText: 'User is not in exam',
+    });
   }
 });
 
