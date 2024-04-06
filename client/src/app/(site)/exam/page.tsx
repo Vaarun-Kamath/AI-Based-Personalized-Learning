@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { examsList } from "@/components/constants/exams";
 import { ExamType } from "@/types";
+import { Router } from "next/router";
 
 function ExamHomePage() {
   const searchParams = useSearchParams();
@@ -14,17 +15,20 @@ function ExamHomePage() {
 
   useEffect(() => {
     if (searchParams.get("id") !== null) {
-      setExam(
-        examsList[
-          examsList.findIndex((exam) => exam.id === searchParams.get("id"))
-        ]
+      const listIndex = examsList.findIndex(
+        (exam) => exam.id === searchParams.get("id")
       );
+      if (listIndex !== -1) {
+        setExam(examsList[listIndex]);
+      } else {
+        router.push("/404");
+      }
     }
-  }, [searchParams]);
+  }, [searchParams, router]);
 
   return (
     <>
-      {searchParams.get("id") === null ? (
+      {searchParams.get("id") === null && !exam ? (
         router.push("/404")
       ) : (
         <div className="flex justify-center items-center w-full">

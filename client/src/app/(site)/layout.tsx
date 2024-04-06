@@ -8,7 +8,7 @@ export default async function MainLayout({
   return (
     <>
       <Sidebar />
-      <div className="flex max-w-screen mt-20 p-7">{children}</div>
+      <div className="flex max-w-screen h-screen pt-20 p-7">{children}</div>
     </>
   );
 }
