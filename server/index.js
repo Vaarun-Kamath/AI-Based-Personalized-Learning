@@ -2,7 +2,10 @@ const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const Errors = require("./utils/errors");
+const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
+const { validationResult } = require("express-validator");
 
 dotenv.config();
 const app = express();
@@ -34,11 +37,11 @@ app.get("/", (req, res) => {
   res.status(200).send("Hello World!");
 });
 
-app.get("/api/testDatabase", async (req, res) => {
-  const physicsData = await Physics.find({});
-  const customersData = await User.find();
-  res.status(200).json({ phy: physicsData, msg: customersData });
-});
+// app.get("/api/testDatabase", async (req, res) => {
+//   const physicsData = await Physics.find({});
+//   const customersData = await User.find();
+//   res.status(200).json({ phy: physicsData, msg: customersData });
+// });
 
 app.post("/api/insertQuestion", async (req, res) => {
   const { question, options, answer, reason, topic } = req.body;
@@ -59,8 +62,38 @@ app.post("/api/insertQuestion", async (req, res) => {
     });
 });
 
-app.post("/api/login", (req, res) => {
-  res.status(200).send("Login API");
+app.post("/api/login", async (req, res) => {
+  try {
+    const validationError = validationResult(req);
+
+    if (!validationError.isEmpty())
+      return res
+        .status(Errors.BAD_REQUEST.status)
+        .send({ ...Errors.BAD_REQUEST, ...validationError });
+
+    const { email, password } = req.body;
+
+    const user = await User.find({ email: email });
+
+    console.log("User:: ", user[0]);
+
+    if (!user[0]) {
+      console.log("User not found :(");
+      return res.status(Errors.NOT_FOUND.status).json(Errors.NOT_FOUND);
+    }
+
+    if (user[0].password !== password) {
+      return res.status(Errors.UNAUTHORIZED.status).json(Errors.UNAUTHORIZED);
+    }
+
+    return res.status(200).json({
+      status: 200,
+      content: user[0],
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(Errors.SERVER_ERROR.status).json(Errors.SERVER_ERROR);
+  }
 });
 
 app.listen(PORT, () => {
