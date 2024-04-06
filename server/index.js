@@ -7,6 +7,7 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 const { validationResult } = require("express-validator");
 const { userSchema } = require('./schema');
+const { exam } = require('./model');
 
 dotenv.config();
 const app = express();
@@ -46,61 +47,73 @@ app.get('/', (req, res) => {
 // });
 
 //url:/api/getExams&username={}
-app.get('/api/getExams', async (req, res) => {
-  if (!req.query || !req.query.username)
-    res.status(400).json({ msg: 'No Query object', err: err });
+// app.get('/api/getExams', async (req, res) => {
+//   //get physics
+//   //makes a new exam (Physics)
+//   if (!req.query || !req.query.username)
+//     res.status(400).json({ msg: 'No Query object', err: err });
 
-  const user = await User.findOne({ username: req.query.username });
-  console.log(user, req.query.username);
-  const exams = user.exams.map((exam) => ({
-    id: exam.id,
-    noOfQuestions: exam.questions.length,
-    subject: exam.subject,
-  }));
-  res.status(200).json(exams);
-});
+//   const exam = await Exam.find()
+//   const user = await User.findOne({ username: req.query.username });
+//   console.log(user, req.query.username);
+//   const exams = user.exams.map((exam) => ({
+//     id: exam.id,
+//     noOfQuestions: exam.questions.length,
+//     subject: exam.subject,
+//   }));
+//   res.status(200).json(exams);
+// });
 
 //url:/api/getQuestion?examId={}&question={}
 app.get('/api/getQuestion', async (req, res, err) => {
-  if (
-    !req.query ||
-    !req.query.examId
-  ) {
-    console.log("Invalid Query!", req.query)
+  if (!req.query || !req.query.examId) {
+    console.log('Invalid Query!', req.query);
     res.status(400).json({ msg: 'No Query object', err: err });
   }
 
-  console.log(" Query!", req.query)
-  const exam = await Exam.findById(req.query.examId)
-  const question_index = (req.query.question || 0);
-  console.log(" exam!", exam)
+  console.log(' Query!', req.query);
+  const exam = await Exam.findById(req.query.examId);
+  const question_index = req.query.question || 0;
+
+  const q_id = exam.questions[question_index]
+  const question = await Physics.findById(q_id)
   
-  // const user = await User.findOne({ username: req.query.username });
-  // const examIndex = user.exams.findIndex(
-  //   (exam) => exam.id === req.query.examId
-  // );
 
-  // const questionId = user.exams[examIndex].questions[question_index];
-  // const phyQuestion = await Physics.findById(questionId);
-
-
-  res
-    .status(200)
-    .json({ question: exam.questions[question_index], options: exam.selectedOptions });
+  res.status(200).json({
+    question: q_id,
+    options: question.options,
+    optionsSelected: exam.selectedOptions,
+  });
 });
+//url:/api/createExam
+app.post('/api/createExam', async (req, res) => {
+  const { username } = req.body;
+  const questions = await Physics.find().limit(30);
+  const options = Array(30).fill(-1);
+  const newExam = new Exam({
+    username,
+    questions,
+    options,
+    subject: 'Physics',
+  });
+  newExam
+    .save()
+    .then(async () => {
+      const exam = Exam.findOne({}, '_id')
+        .sort({ createdAt: -1 })
+        .then(async (exam) => {
+          const user = await User.findOneAndUpdate(
+            { username: username },
+            { currExam: 'newExamValue' },
+            { new: true }
+          );
+        });
 
-app.get('/api/makeExam', async (req, res) => {
-  if (
-    !req.query ||
-    !req.query.username
-  ){
-    console.log("Invalid Query!", req.query)
-    res.status(400).json({ msg: 'No Query object', err: err });
-  }
-
-  questions = await Physics.find().limit(30);
-res.json(questions.map(question=>question._id));
-
+      res.status(200).send('Exam added successfully');
+    })
+    .catch((err) => {
+      res.status(500).json({ msg: 'Error in adding Exam', err: err });
+    });
 });
 
 app.post('/api/insertQuestion', async (req, res) => {
@@ -156,7 +169,7 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
-app.post('/api/getQuestion', async (req, res) => {
+app.post('/api/senOPtion', async (req, res) => {
   try {
     const validationError = validationResult(req);
 
