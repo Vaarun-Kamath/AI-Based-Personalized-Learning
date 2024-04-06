@@ -8,13 +8,13 @@ import { redirect, useRouter } from 'next/navigation';
 import React, { useEffect } from 'react';
 
 function HomePage() {
-  const router = useRouter();
-  const { data: session } = useSession({
-    required: true,
-    onUnauthenticated() {
-      redirect(`/`);
-    },
-  });
+  // const router = useRouter();
+  // const { data: session } = useSession({
+  //   required: true,
+  //   onUnauthenticated() {
+  //     redirect(`/`);
+  //   },
+  // });
 
   // const user = session?.user;
 

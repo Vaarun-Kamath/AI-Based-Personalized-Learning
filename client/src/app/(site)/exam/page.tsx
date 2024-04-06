@@ -12,6 +12,7 @@ function ExamHomePage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [exam, setExam] = useState<ExamType>();
+  const [loading, setLoading] = useState<boolean>(false);
 
   const { data: session } = useSession({
     required: true,
@@ -60,6 +61,7 @@ function ExamHomePage() {
   }, [searchParams, router]);
 
   const handleExamAccept = async () => {
+    setLoading(true);
     try {
       if (!user) {
         console.error('User is undefined');
@@ -68,11 +70,13 @@ function ExamHomePage() {
       const res = await createExam(user.username);
       if (res.errorCode) {
         console.error('Error fetching question', res.errorMessage);
-      } else if (res.status === 200) {
+      } else if (res.status === 200 || res.status === 403) {
         router.push('/exam/' + res.examId);
       }
     } catch (error) {
       console.error('Please try again after some time');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -112,7 +116,13 @@ function ExamHomePage() {
               <button
                 // href={}
                 onClick={handleExamAccept}
-                className='mx-2 bg-blue-500 p-3 rounded-md text-white font-semibold w-fit flex flex-row gap-2 items-center justify-center hover:bg-blue-700 transition-all duration-200'
+                disabled={loading}
+                className={
+                  'mx-2  p-3 rounded-md text-white font-semibold w-fit flex flex-row gap-2 items-center justify-center  transition-all duration-200 ' +
+                  (loading
+                    ? 'bg-gray-500 cursor-not-allowed'
+                    : 'bg-blue-500 hover:bg-blue-700')
+                }
               >
                 Accept and Continue
                 <span className='text-3xl font-bold'>

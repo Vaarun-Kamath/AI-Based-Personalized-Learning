@@ -97,12 +97,14 @@ app.post('/api/createExam', async (req, res) => {
   const { username } = req.body;
 
   const user = await User.find({ username: username });
-  if (user.currentExam !== '')
-    res.status(403).json({
+  if (user[0].currentExam !== '') {
+    res.status(200).json({
       status: 403,
       statusText: 'EXAM EXISTS',
-      examId: user.currentExam,
+      examId: user[0].currentExam,
     });
+    return;
+  }
 
   const questions = await Physics.find().limit(30);
   const selectedOptions = Array(40).fill(-1);
@@ -186,29 +188,9 @@ app.post('/api/submitExam', async (req, res) => {
   }
 });
 
-// app.get('/api/isUserInExam', async (req, res) => {
-//   const { username } = req.query;
-//   const exam = await Exam.findOne({ username: username });
-//   if (exam) {
-//     return res.status(200).json({
-//       status: 200,
-//       statusText: 'User is in exam',
-//       examId: exam._id,
-//     });
-//   } else {
-//     return res.status(404).json({
-//       status: 404,
-//       statusText: 'User is not in exam',
-//     });
-//   }
-// });
-
 app.get('/api/isUserInExam', async (req, res) => {
   const { username } = req.query;
-  const user = await User.findOne({
-    username: username,
-  });
-  const exam = await Exam.findById(user.currentExam);
+  const exam = await Exam.findOne({ username: username });
   if (exam) {
     return res.status(200).json({
       status: 200,
@@ -222,6 +204,26 @@ app.get('/api/isUserInExam', async (req, res) => {
     });
   }
 });
+
+// app.get('/api/isUserInExam', async (req, res) => {
+//   const { username } = req.query;
+//   const user = await User.findOne({
+//     username: username,
+//   });
+//   const exam = await Exam.findById(user.currentExam);
+//   if (exam) {
+//     return res.status(200).json({
+//       status: 200,
+//       statusText: 'User is in exam',
+//       examId: exam._id,
+//     });
+//   } else {
+//     return res.status(404).json({
+//       status: 404,
+//       statusText: 'User is not in exam',
+//     });
+//   }
+// });
 
 app.post('/api/insertQuestion', async (req, res) => {
   const { question, options, answer, reason, topic } = req.body;

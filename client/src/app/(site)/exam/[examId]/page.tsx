@@ -106,7 +106,7 @@ function ExamPage({ params }: { params: { examId: number } }) {
                 key={index}
                 onClick={() => handleButtonClick(index)}
                 className={`rounded-full text-white w-14 h-14  ${
-                  qno === index ? 'bg-blue-600' : ''
+                  qno === index ? 'bg-blue-800' : ''
                 } 
                 ${
                   optionsSelected && optionsSelected[index] !== -1
