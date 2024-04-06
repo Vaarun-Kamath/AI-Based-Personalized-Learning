@@ -6,7 +6,7 @@ const Errors = require('./utils/errors');
 const axios = require('axios');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
-const { validationResult } = require('express-validator');
+const { validationResult, param } = require('express-validator');
 const { userSchema } = require('./schema');
 const { exam } = require('./model');
 
@@ -74,14 +74,34 @@ app.get('/api/getExamStartTime', async (req, res, err) => {
     res.status(400).json({ msg: 'No Query object', err: err });
   }
   const exam = await Exam.findById(req.query.examId);
-  
+
   res.status(200).json({
     status: 200,
     statusText: 'Success',
-    time:(new Date(exam.createdAt)).getTime(),
+    time: new Date(exam.createdAt).getTime(),
   });
 });
 
+//url:/api/getSolution?examId={}&question={}
+app.get('/api/getSolution', async (req, res, err) => {
+  if (!req.query || !req.query.examId || req.query.question != undefined) {
+    console.log('Invalid Query!', req.query);
+    res.status(400).json({ msg: 'No Query object', err: err });
+  }
+
+  const exam = await Exam.findById(examId);
+  const phyQuestion = await Physics.findById(exam.questions[question]);
+  const result = await axios.get(`${questionModelHREF}/solution`, {
+    params: {
+      data: phyQuestion,
+    },
+  });
+  res.status(200).json({
+    status: 200,
+    statusText: 'Success',
+    solution: result.content,
+  });
+});
 
 //url:/api/getQuestion?examId={}&question={}
 app.get('/api/getQuestion', async (req, res, err) => {
