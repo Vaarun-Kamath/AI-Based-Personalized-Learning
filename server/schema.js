@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 module.exports.userSchema = new mongoose.Schema({
   name: String,
@@ -12,7 +12,7 @@ module.exports.userSchema = new mongoose.Schema({
       subject: String,
     },
   ],
-  currentExam: String
+  currentExam: String,
 });
 module.exports.physicsSchema = new mongoose.Schema({
   question: { type: String, required: true },
@@ -23,10 +23,10 @@ module.exports.physicsSchema = new mongoose.Schema({
 });
 module.exports.examSchema = new mongoose.Schema(
   {
-    username: String,
+    username: { type: String, required: true },
     questions: { type: Array, required: true },
     selectedOptions: { type: Array, required: true },
-    subject: String,
+    subject: { type: String, required: true },
   },
   {
     timestamps: true,

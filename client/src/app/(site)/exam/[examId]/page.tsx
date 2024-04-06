@@ -1,40 +1,103 @@
-"use client";
+'use client';
 
-import CountdownTimer from "@/components/atoms/CountdownTimer";
-import React, { useState } from "react";
-import { IoExit } from "react-icons/io5";
+import { getQuestion } from '@/app/api/exam/handler';
+import CountdownTimer from '@/components/atoms/CountdownTimer';
+import DisplayQuestion from '@/components/atoms/DisplayQuestion';
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
+import { IoExit } from 'react-icons/io5';
 
 function ExamPage({ params }: { params: { examId: number } }) {
-  // return <div>ExamPage: {params.examId}</div>;
   const [numQuestions, setNumQuestions] = useState(30);
   const [time, setTime] = useState(30 * 60);
-  const [examName, setExamName] = useState("Exam Name");
+  const [qno, setQno] = useState<number>(0);
+  const [optionCheck, setOptionCheck] = useState<boolean>(false);
 
-  const buttons = [];
-  for (let i = 1; i <= numQuestions; i++) {
-    buttons.push(
-      <button
-        key={i}
-        className="rounded-full text-white w-14 h-14 bg-blue-500 hover:bg-blue-600"
-      >
-        {i}
-      </button>
-    );
-  }
+  const [optionsSelected, setOptionsSelected] = useState<Array<number>>([]); //! Fetch question only when option is selected
+  const [currQuestion, setCurrQuestion] = useState<string>('');
+  const [options, setOptions] = useState<Object>({});
+  const [optionSelectedIndex, setOptionSelectedIndex] = useState<number>(-1);
+
+  const { data: session } = useSession({
+    required: true,
+    onUnauthenticated() {
+      redirect(`/`);
+    },
+  });
+
+  const user = session?.user;
+
+  const handleButtonClick = (questionNumber: number) => {
+    setQno(questionNumber);
+    setOptionCheck(false);
+    setOptionSelectedIndex(optionsSelected[questionNumber - 1]);
+  };
+
+  useEffect(() => {
+    const fetchQuestion = async () => {
+      try {
+        const res = await getQuestion(params.examId, qno);
+        if (res.errorCode) {
+          console.error('Error fetching question', res.errorMessage);
+        } else if (res.status === 200) {
+          console.log('res:', res);
+          setCurrQuestion(res.question);
+          setOptionsSelected(res.optionsSelected);
+          setOptions(res.options);
+        }
+      } catch (error) {
+        console.error('Please try again after some time');
+      }
+    };
+
+    fetchQuestion();
+  }, [params.examId, qno]);
 
   return (
-    <div className="w-full flex flex-row gap-5">
-      <div className="border-2 w-3/4 h-full"></div>
-      <div className="flex flex-col border-2 w-1/4 h-full justify-center items-center gap-5">
-        <div className="col-span-5 flex flex-row gap-5">
+    <div className='w-full flex flex-row gap-5'>
+      <div className='border-2 w-3/4 h-full p-10'>
+        <DisplayQuestion
+          qno={qno}
+          question={currQuestion}
+          options={options}
+          examId={params.examId}
+          setOptionSelectedIndex={setOptionSelectedIndex}
+          optionSelectedIndex={optionSelectedIndex}
+        />
+      </div>
+      <div className='flex flex-col border-2 w-1/4 h-full justify-center items-center gap-5'>
+        <div className='col-span-5 flex flex-row gap-5'>
           {/*Insert Timer div here*/}
           <CountdownTimer initialTime={time} />
         </div>
-        <div className="grid grid-cols-5 py-10 gap-4">{buttons}</div>
+        <div className='grid grid-cols-5 py-10 gap-4'>
+          {Array.from({ length: numQuestions }, (_, index) => {
+            const buttonNumber = index + 1;
+            return (
+              <button
+                key={buttonNumber}
+                onClick={() => handleButtonClick(buttonNumber)}
+                className={`rounded-full text-white w-14 h-14 bg-blue-500 hover:bg-blue-600 ${
+                  qno === buttonNumber ? 'bg-blue-600' : ''
+                } 
+                ${
+                  (optionsSelected[index] !== -1 || optionCheck) &&
+                  qno === buttonNumber
+                    ? 'bg-green-500'
+                    : ''
+                } 
+                `}
+              >
+                {buttonNumber}
+              </button>
+            );
+          })}
+        </div>
         <div>
-          <button className="bg-red-500 hover:bg-red-600 p-4 rounded-md text-white font-semibold flex flex-row gap-2 justify-center items-center">
+          <button className='bg-red-500 hover:bg-red-600 p-4 rounded-md text-white font-semibold flex flex-row gap-2 justify-center items-center'>
             End Test
-            <span className="text-xl">
+            <span className='text-xl'>
               <IoExit />
             </span>
           </button>
