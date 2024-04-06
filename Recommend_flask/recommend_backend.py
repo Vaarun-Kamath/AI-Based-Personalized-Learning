@@ -7,13 +7,24 @@ app = Flask(__name__)
 def handle_get():
     data_string = request.args.get('data', '')
     try:
-        dictionary = json.loads(data_string)
+        data = json.loads(data_string)
     except json.JSONDecodeError:
         return jsonify({'error': 'Invalid JSON format for data'}), 400
 
     list1 = []
     list2 = []
+    converted_data = {"weights": data["weights"], "test_1": {}}
 
+    for i, (topic, difficulty_levels) in enumerate(data.items()):
+        if topic != "weights":
+            topic_key = f"topic{i + 1}"
+            converted_data["test_1"][topic_key] = {}
+            for difficulty, scores in difficulty_levels.items():
+                difficulty_key_prefix = difficulty.lower()
+                for score_type, value in scores.items():
+                    score_key = f"{difficulty_key_prefix}_{score_type}"
+                    converted_data["test_1"][topic_key][score_key] = value
+    dictionary = converted_data
     for topic_key in dictionary["test_1"]:
         print(topic_key)
         topic_data = dictionary["test_1"][topic_key]
@@ -29,10 +40,10 @@ def handle_get():
         list1.append([easy_correct_percent, medium_correct_percent, hard_correct_percent])
 
     print(list1)
-    dist_prob = [[0.5, 0.4, 0.1], [0.5, 0.4, 0.1], [0.5, 0.4, 0.1], [0.5, 0.4, 0.1]]
+    dist_prob = data['weights']
 
-    easy_right = 0.7
-    medium_right = 0.6
+    #easy_right = 0.7
+    #medium_right = 0.6
     right = [0.7, 0.6, 0.0]
     left = [0.0, 0.5, 0.4]
 
