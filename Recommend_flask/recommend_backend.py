@@ -1,39 +1,41 @@
 from flask import Flask, request, jsonify
 import google.generativeai as genai
 import json
+
 genai.configure(api_key="AIzaSyDoO24XUAuwv2C6HmUnxp-F-FlBuY006ac")
 
 generation_config = {
-  "temperature": 0.9,
-  "top_p": 1,
-  "top_k": 1,
-  "max_output_tokens": 2048,
+    "temperature": 0.9,
+    "top_p": 1,
+    "top_k": 1,
+    "max_output_tokens": 2048,
 }
 
 safety_settings = [
-  {
-    "category": "HARM_CATEGORY_HARASSMENT",
-    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-  },
-  {
-    "category": "HARM_CATEGORY_HATE_SPEECH",
-    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-  },
-  {
-    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-  },
-  {
-    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-    "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-  },
+    {
+        "category": "HARM_CATEGORY_HARASSMENT",
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    },
+    {
+        "category": "HARM_CATEGORY_HATE_SPEECH",
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    },
+    {
+        "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    },
+    {
+        "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+        "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    },
 ]
 
 model = genai.GenerativeModel(model_name="gemini-1.0-pro",
                               generation_config=generation_config,
                               safety_settings=safety_settings)
 
-app = Flask(__name__)
+app = Flask(_name_)
+
 
 @app.route('/post/', methods=['GET'])
 def handle_get():
@@ -49,14 +51,14 @@ def handle_get():
     converted_data = {"weights": data["weights"], "test_1": {}}
     topic_counter = 1
 
-    for topic, difficulty_levels in data["topic"].items():
+    for topic, difficulty_levels in data["topics"].items():
         converted_topic = {}
         for difficulty, scores in difficulty_levels.items():
             converted_topic[f"{difficulty.lower()}_correct"] = scores["correct"]
             converted_topic[f"{difficulty.lower()}_wrong"] = scores["wrong"]
         converted_data["test_1"][f"topic{topic_counter}"] = converted_topic
         topic_counter += 1
-      
+
     dictionary = converted_data
     for topic_key in dictionary["test_1"]:
         print(topic_key)
@@ -75,8 +77,8 @@ def handle_get():
     print(list1)
     dist_prob = data['weights']
 
-    #easy_right = 0.7
-    #medium_right = 0.6
+    # easy_right = 0.7
+    # medium_right = 0.6
     right = [0.7, 0.6, 0.0]
     left = [0.0, 0.5, 0.4]
 
@@ -88,18 +90,22 @@ def handle_get():
 
     for i in range(len(list1)):
         if list1[i][0] > right[0]:
-            dist_prob[i][0] -= 0.1
-            dist_prob[i][1] += 0.1
+            if dist_prob[i][0] > 0:
+                dist_prob[i][0] -= 0.1
+                dist_prob[i][1] += 0.1
         if list1[i][1] > right[1]:
-            dist_prob[i][1] -= 0.1
-            dist_prob[i][2] += 0.1
+            if dist_prob[i][1] > 0:
+                dist_prob[i][1] -= 0.1
+                dist_prob[i][2] += 0.1
     for i in range(len(list1) - 1, 0, -1):
         if list1[i][2] < left[2]:
-            dist_prob[i][2] -= 0.1
-            dist_prob[i][1] += 0.1
+            if dist_prob[i][2] > 0:
+                dist_prob[i][2] -= 0.1
+                dist_prob[i][1] += 0.1
         if list1[i][1] < left[1]:
-            dist_prob[i][1] -= 0.1
-            dist_prob[i][0] += 0.1
+            if dist_prob[i][1] > 0:
+                dist_prob[i][1] -= 0.1
+                dist_prob[i][0] += 0.1
 
     # Process the data as needed
     # For example, just return the received data as a response
@@ -136,5 +142,5 @@ def handle_genai():
     return jsonify(response_data)
 
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     app.run(debug=True, port=9000)
