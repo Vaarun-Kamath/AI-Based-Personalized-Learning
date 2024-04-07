@@ -50,6 +50,26 @@ app.get('/', (req, res) => {
   res.status(200).send('Hello World!');
 });
 
+//url:/api/getExams?username={}
+app.get('/api/getExams', async (req, res, err) => {
+  try {
+    if (!req.query || !req.query.username) {
+      console.log('Invalid Query!', req.query);
+      res.status(400).json({ msg: 'No Query object', err: err });
+    }
+    const exams = await Exam.find({username:req.query.username});
+    exams.map(exam => exam._id)
+
+    res.status(200).json({
+      status: 200,
+      statusText: 'Success',
+      exams: exams.map(exam => exam._id)
+    });
+  } catch {
+    res.status(500).json({ msg: 'Error in getting exam ids', err: err });
+  }
+});
+
 //url:/api/getExamStartTime?examId={}
 app.get('/api/getExamStartTime', async (req, res, err) => {
   try {
