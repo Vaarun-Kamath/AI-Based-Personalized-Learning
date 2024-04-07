@@ -34,24 +34,32 @@ model = genai.GenerativeModel(model_name="gemini-1.0-pro",
                               generation_config=generation_config,
                               safety_settings=safety_settings)
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 
-@app.route('/post/', methods=['GET'])
+@app.route('/post/', methods=['POST'])
 def handle_get():
-    data_string = request.args.get('data', '')
-    try:
-        data = json.loads(data_string)
-    except json.JSONDecodeError:
-        return jsonify({'error': 'Invalid JSON format for data'}), 400
+    # data_string = request.args.get('data', '')
+    data = request.json.get('data', {})
+    print("data::",data)
+    weights = data.get('weights', [])
+    topics = data.get('topics', {})
+    # try:
+    #     data = json.loads(data_string)
+    # except json.JSONDecodeError:
+    #     return jsonify({'error': 'Invalid JSON format for data'}), 400
 
     list1 = []
     list2 = []
-    print(data)
-    converted_data = {"weights": data["weights"], "test_1": {}}
+    converted_data = {"weights": weights, "test_1": {}}
+    print()
+    print()
+    print("converted_data::",converted_data)
+    print()
+    print()
     topic_counter = 1
 
-    for topic, difficulty_levels in data["topics"].items():
+    for topic, difficulty_levels in topics.items():
         converted_topic = {}
         for difficulty, scores in difficulty_levels.items():
             converted_topic[f"{difficulty.lower()}_correct"] = scores["correct"]
@@ -64,6 +72,12 @@ def handle_get():
         print(topic_key)
         topic_data = dictionary["test_1"][topic_key]
 
+        print()
+        print()
+        print("topic_data::", topic_data)
+        print()
+        print()
+
         easy_total = topic_data["easy_correct"] + topic_data["easy_wrong"]
         easy_correct_percent = (topic_data["easy_correct"] / easy_total) if easy_total != 0 else 0
 
@@ -75,7 +89,7 @@ def handle_get():
         list1.append([easy_correct_percent, medium_correct_percent, hard_correct_percent])
 
     print(list1)
-    dist_prob = data['weights']
+    dist_prob = weights
 
     # easy_right = 0.7
     # medium_right = 0.6
@@ -90,38 +104,42 @@ def handle_get():
 
     for i in range(len(list1)):
         if list1[i][0] > right[0]:
-            if dist_prob[i][0] > 0:
+            if dist_prob[i][0] > 0.1:
                 dist_prob[i][0] -= 0.1
                 dist_prob[i][1] += 0.1
         if list1[i][1] > right[1]:
-            if dist_prob[i][1] > 0:
+            if dist_prob[i][1] > 0.1:
                 dist_prob[i][1] -= 0.1
                 dist_prob[i][2] += 0.1
     for i in range(len(list1) - 1, 0, -1):
         if list1[i][2] < left[2]:
-            if dist_prob[i][2] > 0:
+            if dist_prob[i][2] > 0.1:
                 dist_prob[i][2] -= 0.1
                 dist_prob[i][1] += 0.1
         if list1[i][1] < left[1]:
-            if dist_prob[i][1] > 0:
+            if dist_prob[i][1] > 0.1:
                 dist_prob[i][1] -= 0.1
                 dist_prob[i][0] += 0.1
 
     # Process the data as needed
     # For example, just return the received data as a response
     response_data = {
-        'updated_weights': dist_prob
+        'updated_weights': weights
     }
     return jsonify(response_data)
 
 
-@app.route('/genai/', methods=['GET'])
+@app.route('/genai/', methods=['POST'])
 def handle_genai():
-    data_string = request.args.get('data', '')
-    try:
-        dictionary = json.loads(data_string)
-    except json.JSONDecodeError:
-        return jsonify({'error': 'Invalid JSON format for data'}), 400
+    # data_string = request.args.get('data', '')
+    # try:
+    #     dictionary = json.loads(data_string)
+    # except json.JSONDecodeError:
+    #     return jsonify({'error': 'Invalid JSON format for data'}), 400
+
+    dictionary = request.json.get('data', {})
+
+    print("dictionary:: ",dictionary)
 
     prompt_parts = [
         "input: A transmitting antenna is kept on the surface of the earth. The minimum height of receiving antenna required to receive the signal in line of sight at 4 km distance from it is \\\\(x\\\\times 10^2\\\\) m. The value of x is (\\\\(Let\\\\), radius of earth \\\\(R=6400\\\\text{ km}\\\\)).\n            A: 125,\n            B: 1.25,\n           C: 12.5,\n            D: 1250\n        answer: A",
@@ -142,5 +160,5 @@ def handle_genai():
     return jsonify(response_data)
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True, port=9000)

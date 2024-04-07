@@ -27,8 +27,13 @@ const mongo_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 8000;
 const questionModelHREF = 'http://localhost:9000';
 const NUM_QUESTIONS = 40;
-const TOPICS = ["Electricity and Magnetism", "Mechanics and Motion", "Thermodynamics and Quantum Mechanics", "Waves and Optics"]
-const LEVELS = ["Easy", "Medium", "Hard"];
+const TOPICS = [
+  'Electricity and Magnetism',
+  'Mechanics and Motion',
+  'Thermodynamics and Quantum Mechanics',
+  'Waves and Optics',
+];
+const LEVELS = ['Easy', 'Medium', 'Hard'];
 
 async function connect() {
   await mongoose
@@ -45,45 +50,56 @@ app.get('/', (req, res) => {
   res.status(200).send('Hello World!');
 });
 
-
 //url:/api/getExamStartTime?examId={}
 app.get('/api/getExamStartTime', async (req, res, err) => {
-  if (!req.query || !req.query.examId) {
-    console.log('Invalid Query!', req.query);
-    res.status(400).json({ msg: 'No Query object', err: err });
+  try {
+    if (!req.query || !req.query.examId) {
+      console.log('Invalid Query!', req.query);
+      res.status(400).json({ msg: 'No Query object', err: err });
+    }
+    const exam = await Exam.findById(req.query.examId);
+
+    res.status(200).json({
+      status: 200,
+      statusText: 'Success',
+      time: new Date(exam.createdAt).getTime(),
+    });
+  } catch {
+    res.status(500).json({ msg: 'Error in getting exam start time', err: err });
   }
-  const exam = await Exam.findById(req.query.examId);
-
-
-  res.status(200).json({
-    status: 200,
-    statusText: 'Success',
-    time: new Date(exam.createdAt).getTime(),
-  });
 });
 
 //url:/api/getSolution?examId={}&question={}
 app.get('/api/getSolution', async (req, res, err) => {
-  if (!req.query || !req.query.examId || req.query.question != undefined) {
-    console.log('Invalid Query!', req.query);
-    res.status(400).json({ msg: 'No Query object', err: err });
-  }
-
-  const exam = await Exam.findById(examId);
-  const phyQuestion = await Physics.findById(exam.questions[question]);
-  const result = await axios.get(`${questionModelHREF}/solution`, {
-    params: {
+  try {
+    if (!req.query || !req.query.examId || req.query.question === undefined) {
+      console.log('Invalid Query!', req.query);
+      res.status(400).json({ msg: 'No Query object', err: err });
+    }
+    console.log('req.q.examid: ', req.query.examId, req.query.question);
+    const exam = await Exam.findById(req.query.examId);
+    console.log('exam; ', exam);
+    console.log('exam.questions', exam.questions[Number(req.query.question)]);
+    const phyQuestion = await Physics.findById(
+      exam.questions[Number(req.query.question)]
+    );
+    console.log('phyQuestion; ', phyQuestion);
+    const result = await axios.post(`${questionModelHREF}/genai`, {
       data: phyQuestion,
-    },
-  });
-  res.status(200).json({
-    status: 200,
-    statusText: 'Success',
-    question: phyQuestion.question,
-    options: phyQuestion.options,
-    optionsSelected: exam.selectedOptions,
-    solution: result.content,
-  });
+    });
+    console.log('result', result);
+    res.status(200).json({
+      status: 200,
+      statusText: 'Success',
+      question: phyQuestion.question,
+      options: phyQuestion.options,
+      optionsSelected: exam.selectedOptions,
+      solution: result.data.gemini_response,
+      correctOption: phyQuestion.answer,
+    });
+  } catch {
+    res.status(500).json({ msg: 'Error in getting solution', err: err });
+  }
 });
 
 //url:/api/getQuestion?examId={}&question={}
@@ -93,123 +109,142 @@ app.get('/api/getQuestion', async (req, res, err) => {
     res.status(400).json({ msg: 'No Query object', err: err });
   }
 
-  console.log(' Query!', req.query);
-  const exam = await Exam.findById(req.query.examId);
-  console.log('exam', exam);
-  const question_index = req.query.question || 0;
+  try {
+    console.log(' Query!', req.query);
+    const exam = await Exam.findById(req.query.examId);
+    console.log('exam', exam);
+    const question_index = req.query.question || 0;
 
-  const q_id = exam.questions[question_index];
-  const phyQuestion = await Physics.findById(q_id);
+    const q_id = exam.questions[question_index];
+    const phyQuestion = await Physics.findById(q_id);
 
-  console.log('phyQuestion', phyQuestion);
+    console.log('phyQuestion', phyQuestion);
 
-  res.status(200).json({
-    status: 200,
-    statusText: 'Success',
-    question: phyQuestion.question,
-    options: phyQuestion.options,
-    optionsSelected: exam.selectedOptions,
-  });
+    res.status(200).json({
+      status: 200,
+      statusText: 'Success',
+      question: phyQuestion.question,
+      options: phyQuestion.options,
+      optionsSelected: exam.selectedOptions,
+    });
+  } catch {
+    res.status(500).json({ msg: 'Error in getting question', err: err });
+  }
 });
 
 //url:/api/createExam
 app.post('/api/createExam', async (req, res) => {
   const { username } = req.body;
 
-  const user = await User.findOne({ username: username });
-  if (user.currentExam !== '') {
-    res.status(200).json({
-      status: 403,
-      statusText: 'EXAM EXISTS',
-      examId: user[0].currentExam,
+  try {
+    const user = await User.findOne({ username: username });
+    if (user.currentExam !== '') {
+      res.status(200).json({
+        status: 403,
+        statusText: 'EXAM EXISTS',
+        examId: user.currentExam,
+      });
+      return;
+    }
+
+    let pickedQuestions = [];
+    for (let i = 0; i < TOPICS.length; i++) {
+      const questions = await Physics.find({ topic: TOPICS[i] });
+
+      // for(let j=0;j<LEVELS.length;j++){
+
+      // }
+      console.log(user.probability[i]);
+      let prob1 = Math.round(user.probability[i][0] * 10);
+      pickedQuestions = pickedQuestions.concat(
+        questions
+          .filter((q) => q.Level == 'Easy')
+          .sort(() => Math.random() - 0.5)
+          .slice(0, prob1)
+      );
+
+      let prob2 = Math.round(user.probability[i][1] * 10);
+      pickedQuestions = pickedQuestions.concat(
+        questions
+          .filter((q) => q.Level == 'Medium')
+          .sort(() => Math.random() - 0.5)
+          .slice(0, prob2)
+      );
+
+      let prob3 = 10 - prob1 - prob2;
+      pickedQuestions = pickedQuestions.concat(
+        questions
+          .filter((q) => q.Level == 'Hard')
+          .sort(() => Math.random() - 0.5)
+          .slice(0, prob3)
+      );
+    }
+
+    const selectedOptions = Array(NUM_QUESTIONS).fill(-1);
+    console.log('pickedQuestions: ', typeof pickedQuestions);
+    const newExam = new Exam({
+      username,
+      questions: pickedQuestions.map((question) => question._id),
+      selectedOptions,
+      subject: 'Physics',
+      probability: user.probability,
     });
-    return;
-  }
-
-  pickedQuestions = [];
-  for (let i = 0; i < TOPICS.length; i++) {
-    const questions = await Physics.find({ topic: TOPICS[i] });
-    
-    // for(let j=0;j<LEVELS.length;j++){
-
-    // }
-    let prob1 = Math.round(user.probability[i][0] * 10)
-    pickedQuestions =
-      pickedQuestions +
-      questions
-        .filter((q) => q.Level == 'Easy')
-        .sort(() => Math.random() - 0.5)
-        .slice(0, prob1);
-
-    let prob2 = Math.round(user.probability[i][1] * 10)
-    pickedQuestions =
-      pickedQuestions +
-      questions
-        .filter((q) => q.Level == 'Medium')
-        .sort(() => Math.random() - 0.5)
-        .slice(0, prob2);
-
-    let prob3 = 10-prob1 - prob2
-    pickedQuestions =
-      pickedQuestions +
-      questions
-        .filter((q) => q.Level == 'Hard')
-        .sort(() => Math.random() - 0.5)
-        .slice(0, prob3);
-  }
-
-  const selectedOptions = Array(NUM_QUESTIONS).fill(-1);
-  const newExam = new Exam({
-    username,
-    questions: pickedQuestions.map((question) => question._id),
-    selectedOptions,
-    subject: 'Physics',
-  });
-  newExam
-    .save()
-    .then(async () => {
-      Exam.findOne({}, '_id')
-        .sort({ createdAt: -1 })
-        .then(async (exam) => {
-          const user = await User.findOneAndUpdate(
-            { username: username },
-            { currentExam: exam._id },
-            { new: true }
-          );
-          res.status(200).json({
-            status: 200,
-            statusText: 'Exam added successfully',
-            examId: exam._id,
+    newExam
+      .save()
+      .then(async () => {
+        Exam.findOne({}, '_id')
+          .sort({ createdAt: -1 })
+          .then(async (exam) => {
+            const user = await User.findOneAndUpdate(
+              { username: username },
+              { currentExam: exam._id },
+              { new: true }
+            );
+            res.status(200).json({
+              status: 200,
+              statusText: 'Exam added successfully',
+              examId: exam._id,
+            });
           });
-        });
-    })
-    .catch((err) => {
-      res.status(500).json({ msg: 'Error in adding Exam', err: err });
-    });
+      })
+      .catch((err) => {
+        res.status(500).json({ msg: 'Error in adding Exam', err: err });
+      });
+  } catch {
+    res.status(500).json({ msg: 'Error in adding Exam', err: err });
+  }
 });
 
 //url:/api/createExam
 app.post('/api/selectOption', async (req, res) => {
-  const { examId, questionNo, selectedOption } = req.body;
+  try {
+    const { examId, questionNo, selectedOption } = req.body;
 
-  const exam = await Exam.findById(examId);
+    const exam = await Exam.findById(examId);
 
-  exam.selectedOptions[questionNo] = selectedOption;
-  exam.save();
+    exam.selectedOptions[questionNo] = selectedOption;
+    exam.save();
 
-  return res.status(200).json({
-    status: 200,
-    statusText: 'SUCCESS',
-  });
+    return res.status(200).json({
+      status: 200,
+      statusText: 'SUCCESS',
+    });
+  } catch {
+    return res.status(500).json({
+      status: 500,
+      statusText: 'ERROR',
+    });
+  }
 });
 
 //url:"/api/submitExam"
 app.post('/api/submitExam', async (req, res) => {
   const { examId } = req.body;
 
-  var topics = {};
   try {
     const exam = await Exam.findById(examId);
+    var topics = {};
+
     for (let i = 0; i < exam.questions.length; i++) {
       const question = await Physics.findById(exam.questions[i]);
       val = question.answer == exam.selectedOptions[i] ? 1 : 0;
@@ -226,68 +261,41 @@ app.post('/api/submitExam', async (req, res) => {
       topics[question.topic] = currTopic;
     }
 
-    const response = await axios.get(`${questionModelHREF}/post`, {
-      params: {
-        probability: exam.probability,
-        topic: topics,
+    console.log('exam::', exam);
+
+    const response = await axios.post(`${questionModelHREF}/post`, {
+      data: {
+        weights: exam.probability,
+        topics: topics,
       },
     });
 
-    const user = await User.findOneAndUpdate(
-      { username: exam.username },
-      { currExam: '', probability: response.data.probability },
-      { new: true }
-    );
+    await User.find({ username: exam.username }).then((user) => {
+      user[0].probability = response.data.updated_weights;
+      user[0].currentExam = '';
+      user[0].save();
+    });
+
+    // const user = await User.findOneAndUpdate(
+    //   { username: exam.username },
+    //   { currExam: '', probability: response.data.updated_weights }
+    // );
 
     // Log the response from the server
     console.log('Response from server:', response.data);
-    res.send('Submitted successfully');
+    res.status(200).json({
+      status: 200,
+      statusText: 'Success',
+    });
   } catch (error) {
     console.error('Error sending POST request:', error);
     res.status(500).send('Internal server error');
   }
 });
 
-app.get('/api/isUserInExam', async (req, res) => {
-  const { username } = req.query;
-  const exam = await Exam.findOne({ username: username });
-  if (exam) {
-    return res.status(200).json({
-      status: 200,
-      statusText: 'User is in exam',
-      examId: exam._id,
-    });
-  } else {
-    return res.status(404).json({
-      status: 404,
-      statusText: 'User is not in exam',
-    });
-  }
-});
-
-app.get('/api/isUserInExam', async (req, res) => {
-  const { username } = req.query;
-  const exam = await Exam.findOne({ username: username });
-  if (exam) {
-    return res.status(200).json({
-      status: 200,
-      statusText: 'User is in exam',
-      examId: exam._id,
-    });
-  } else {
-    return res.status(404).json({
-      status: 404,
-      statusText: 'User is not in exam',
-    });
-  }
-});
-
 // app.get('/api/isUserInExam', async (req, res) => {
 //   const { username } = req.query;
-//   const user = await User.findOne({
-//     username: username,
-//   });
-//   const exam = await Exam.findById(user.currentExam);
+//   const exam = await Exam.findOne({ username: username });
 //   if (exam) {
 //     return res.status(200).json({
 //       status: 200,
@@ -302,23 +310,54 @@ app.get('/api/isUserInExam', async (req, res) => {
 //   }
 // });
 
-app.post('/api/insertQuestion', async (req, res) => {
-  const { question, options, answer, reason, topic } = req.body;
-  const newQuestion = new Physics({
-    question,
-    options,
-    answer,
-    reason,
-    topic,
-  });
-  newQuestion
-    .save()
-    .then(() => {
-      res.status(200).send('Question added successfully');
-    })
-    .catch((err) => {
-      res.status(500).json({ msg: 'Error in adding question', err: err });
+app.get('/api/isUserInExam', async (req, res) => {
+  const { username } = req.query;
+  try {
+    const user = await User.findOne({
+      username: username,
     });
+    const exam = await Exam.findById(user.currentExam);
+    if (exam) {
+      return res.status(200).json({
+        status: 200,
+        statusText: 'User is in exam',
+        examId: exam._id,
+      });
+    } else {
+      return res.status(404).json({
+        status: 404,
+        statusText: 'User is not in exam',
+      });
+    }
+  } catch {
+    return res.status(404).json({
+      status: 404,
+      statusText: 'User is not in exam',
+    });
+  }
+});
+
+app.post('/api/insertQuestion', async (req, res) => {
+  try {
+    const { question, options, answer, reason, topic } = req.body;
+    const newQuestion = new Physics({
+      question,
+      options,
+      answer,
+      reason,
+      topic,
+    });
+    newQuestion
+      .save()
+      .then(() => {
+        res.status(200).send('Question added successfully');
+      })
+      .catch((err) => {
+        res.status(500).json({ msg: 'Error in adding question', err: err });
+      });
+  } catch {
+    res.status(500).json({ msg: 'Error in adding question', err: err });
+  }
 });
 
 app.post('/api/login', async (req, res) => {

@@ -1,2365 +1,2346 @@
 [
-    {
-        "question": "A parallel plate capacitor of capacitance 2 F is charged to a potential V. The energy stored in the capacitor is E1. The capacitor is now connected to another uncharged identical capacitor in parallel combination. The energy stored in the combination is E2. The ratio E2/E1 is:",
-        "options": {
-            "0": "1:2",
-            "1": "1:2",
-            "2": "1:4",
-            "3": "2:3"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "A capacitor of capacitance C is charged to a potential V. The flux of the electric field through a closed surface enclosing the positive plate of the capacitor is:",
-        "options": {
-            "0": "\\(\\frac{CV}{2\\varepsilon_0}\\)",
-            "1": "\\(\\frac{2CV}{\\varepsilon_0}\\)",
-            "2": "\\(\\frac{CV}{\\varepsilon_0}\\)",
-            "3": "Zero"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The current sensitivity of moving coil galvanometer is increased by 25%. This increase is achieved only by changing in the number of turns of coils and area of cross section of the wire while keeping the resistance of galvanometer coil constant. The percentage change in the voltage sensitivity will be:",
-        "options": {
-            "0": "+25%",
-            "1": "-50%",
-            "2": "Zero",
-            "3": "-25%"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two identical heater filaments are connected first in parallel and then in series. At the same applied voltage, the ratio of heat produced in the same time for parallel to series will be:",
-        "options": {
-            "0": "4:1",
-            "1": "2:1",
-            "2": "1:2",
-            "3": "1:4"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The energy of an electromagnetic wave contained in a small volume oscillates with\n>(1) zero frequency\n(2) half the frequency of the wave\n(3) double the frequency of the wave\n(4) the frequency of the wave",
-        "options": {
-            "0": "0",
-            "1": "f/2",
-            "2": "2f",
-            "3": "f"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "An electron is allowed to move with constant velocity along the axis of current carrying straight solenoid.",
-        "options": {
-            "0": "A. The electron will experience magnetic force along the axis of the solenoid.",
-            "1": "B. The electron will not experience magnetic force.",
-            "2": "C. The electron will continue to move along the axis of the solenoid.",
-            "3": "D. The electron will be accelerated along the axis of the solenoid.",
-            "E": "E. The electron will follow parabolic path inside the solenoid."
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements: Statement I : The equivalent resistance of resistors in a series combination is smaller than least resistance used in the combination. Statement II : The resistivity of the material is independent of temperature. In the light of the above statements, choose the correct answer from the options given below :",
-        "options": {
-            "0": "Statement I is false but Statement II is true",
-            "1": "Both Statement I and Statement II are false",
-            "2": "Statement I is true but Statement II is false ",
-            "3": "Both Statement I and Statement II are true "
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "In an n-p-n common emitter (CE) transistor the collector current changes from 5 mA to 16 mA for the change in base current from 100 micro A and 200 \uf06dA, respectively. The current gain of transistor is________. ",
-        "options": {
-            "0": "110",
-            "1": "0.9",
-            "2": "210",
-            "3": "9"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The electric field due to a short electric dipole at a large distance (r) from center of dipole on the equatorial plane varies with distance as",
-        "options": {
-            "0": "r",
-            "1": "1/r",
-            "2": "1/r^3",
-            "3": "1/r^2"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements: Statement I : An AC circuit undergoes electrical resonance if it contains either a capacitor or an inductor. Statement II : An AC circuit containing a pure capacitor or a pure inductor consumes high power due to its non-zero power factor.  In the light of above statements, choose the correct answer from the options given below Options : ",
-        "options": {
-            "0": "Both Statement I and Statement II are false",
-            "1": "Statement I is true but Statement II is false",
-            "2": "Both Statement I and Statement II are true",
-            "3": " Statement I is false but Statement II is true"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statement: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : If an electric dipole of dipole moment 30x10\u20135 Cm is enclosed by a closed surface, the net flux coming out of the surface will be zero. Reason R : Electric dipole consists of two equal and opposite charges.In the light of above, statements, choose the correct answer from the options given below: ",
-        "options": {
-            "0": "Both A and R are true and R is the correct explanation of A",
-            "1": "A is true but R is false",
-            "2": "Both A and R true but R is NOT the correct explanation of A",
-            "3": "A is false but R is true"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements : Statement I : When the frequency of an a.c. source in a series LCR circuit increases, the current in the circuit first increases, attains a maximum value and then decreases. Statement II : In a series LCR circuit, the value of power factor at resonance is one. In the light of given statements, choose the most appropriate answer from the options given below:",
-        "options": {
-            "0": "Statement I is incorrect but Statement II is true. ",
-            "1": "Both Statement I and Statement II are false. ",
-            "2": "Statement I is correct but Statement II is false. ",
-            "3": "Both Statement I and Statement II are true."
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statement : one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : EM waves used for optical communication have longer wavelengths than that of microwave, employed in Radar technology. Reason R : Infrared EM waves are more energetic than microwaves, (used in Radar) In the light of given statements, choose the correct answer from the options given below: ",
-        "options": {
-            "0": " A is false but R is true ",
-            "1": "A is true but R is false ",
-            "2": "Both A and R true but R is NOT the correct explanation of A ",
-            "3": "Both A and R true and r is the correct explanation of A"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The source of time varying magnetic field may be (A) a permanent magnet (B) an electric field changing linearly with time (C) direct current (D) a decelerating charge particle (E) an antenna fed with a digital signal Choose the correct answer from the options given below",
-        "options": {
-            "0": " (D) only",
-            "1": "(C) and (E) only ",
-            "2": "(A) only",
-            "3": " (B) and (D) only "
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "A wire of resistance 160 ohm is melted and drawn in wire of one-fourth of its length. The new resistance of the wire will be",
-        "options": {
-            "0": "10 ohm",
-            "1": "640 ohm",
-            "2": "40 ohm",
-            "3": "16 ohm"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The height of transmitting antenna is 180 m and the height of the receiving antenna is 245 m. The maximum distance between them for satisfactory communication in line of sight will be :",
-        "options": {
-            "0": "48",
-            "1": "56",
-            "2": "96",
-            "3": "104"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two charges each of magnitude 0.01 C and separated by a distance of 0.4 mm constitute an electric dipole. If the dipole is placed in an uniform electric field 'E ' of 10 dyne/C making 300  angle with E, the magnitude of torque acting on dipole is ",
-        "options": {
-            "0": "4x10^-1 Nm",
-            "1": "x10^-1 Nm",
-            "2": "1x10^-8 Nm",
-            "3": "2x10^-10 Nm"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements: Statement I : The diamagnetic property depends on temperature. Statement II : The included magnetic dipole moment in a diamagnetic sample is always opposite to the magnetizing field. In the light of given statement, choose the correct answer from the options given below:",
-        "options": {
-            "0": "Statement I is incorrect but Statement II is true ",
-            "1": "Both Statement I and Statement II are true",
-            "2": "Both Statement I and Statement II are false. ",
-            "3": "Statement I is correct but Statement II is false. "
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "A 12 V battery connected to a coil of resistance 6ohm through a switch, drives a constant current in the circuit. The switch is opened in 1 ms. The emf induced across the coil is 20 V. The inductance of the coil is :",
-        "options": {
-            "0": "4 mH",
-            "1": "12 mH",
-            "2": "8 mH",
-            "3": "10 mH"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements: Statement I : The equivalent resistance of resistors in a series combination is lesser than least resistance used in the combination. Statement II : The resistivity of the material is not dependant on temperature. In the light of the above statements, choose the correct answer from the options given below :",
-        "options": {
-            "0": "Statement I is false but Statement II is true",
-            "1": "Both Statement I and Statement II are false",
-            "2": "Statement I is true but Statement II is false ",
-            "3": "Both Statement I and Statement II are true "
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "In an n-p-n common emitter (CE) transistor the collector current changes from 8 mA to 24 mA for the change in base current from 100 micro A and 200 micro A, respectively. The current gain of transistor is________. ",
-        "options": {
-            "0": "110",
-            "1": "0.9",
-            "2": "210",
-            "3": "9"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The electric field due to a short electric dipole at a large distance (r) from center of dipole on the equatorial plane varies with distance as",
-        "options": {
-            "0": "r",
-            "1": "1/r",
-            "2": "1/r^3",
-            "3": "1/r^2"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements: Statement I : An AC circuit undergoes electrical resonance if it contains either a capacitor or an inductor. Statement II : An AC circuit containing a pure capacitor or a pure inductor consumes high power due to its non-zero power factor.  In the light of above statements, choose the correct answer from the options given below Options : ",
-        "options": {
-            "0": "Both Statement I and Statement II are false",
-            "1": "Statement I is true but Statement II is false",
-            "2": "Both Statement I and Statement II are true",
-            "3": " Statement I is false but Statement II is true"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statement: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : If an electric dipole of dipole moment 30x10\u20135 Cm is enclosed by a closed surface, the net flux coming out of the surface will be zero. Reason R : Electric dipole consists of two equal and opposite charges.In the light of above, statements, choose the correct answer from the options given below: ",
-        "options": {
-            "0": "Both A and R are true and R is the correct explanation of A",
-            "1": "A is true but R is false",
-            "2": "Both A and R true but R is NOT the correct explanation of A",
-            "3": "A is false but R is true"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements : Statement I : When the frequency of an a.c. source in a series LCR circuit increases, the current in the circuit first increases, attains a maximum value and then decreases. Statement II : In a series LCR circuit, the value of power factor at resonance is one. In the light of given statements, choose the most appropriate answer from the options given below:",
-        "options": {
-            "0": "Statement I is incorrect but Statement II is true. ",
-            "1": "Both Statement I and Statement II are false. ",
-            "2": "Statement I is correct but Statement II is false. ",
-            "3": "Both Statement I and Statement II are true."
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statement : one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : EM waves used for optical communication have longer wavelengths than that of microwave, employed in Radar technology. Reason R : Infrared EM waves are more energetic than microwaves, (used in Radar) In the light of given statements, choose the correct answer from the options given below: ",
-        "options": {
-            "0": " A is false but R is true ",
-            "1": "A is true but R is false ",
-            "2": "Both A and R true but R is NOT the correct explanation of A ",
-            "3": "Both A and R true and r is the correct explanation of A"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The source of time varying magnetic field may be (A) a permanent magnet (B) an electric field changing linearly with time (C) direct current (D) a decelerating charge particle (E) an antenna fed with a digital signal Choose the correct answer from the options given below",
-        "options": {
-            "0": " (D) only",
-            "1": "(C) and (E) only ",
-            "2": "(A) only",
-            "3": " (B) and (D) only "
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "A wire of resistance 160 ohm is melted and drawn in wire of one-fourth of its length. The new resistance of the wire will be",
-        "options": {
-            "0": "10 ohm",
-            "1": "640 ohm",
-            "2": "40 ohm",
-            "3": "16 ohm"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Easy"
-    },
-    {
-        "question": "The height of transmitting antenna is 180 m and the height of the receiving antenna is 245 m. The maximum distance between them for satisfactory communication in line of sight will be :",
-        "options": {
-            "0": "48",
-            "1": "56",
-            "2": "96",
-            "3": "104"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "Two charges each of magnitude 0.01 C and separated by a distance of 0.4 mm constitute an electric dipole. If the dipole is placed in an uniform electric field 'E ' of 10 dyne/C making 300  angle with E, the magnitude of torque acting on dipole is ",
-        "options": {
-            "0": "4x10^-1 Nm",
-            "1": "x10^-1 Nm",
-            "2": "1x10^-8 Nm",
-            "3": "2x10^-10 Nm"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statements: Statement I : The diamagnetic property depends on temperature. Statement II : The included magnetic dipole moment in a diamagnetic sample is always opposite to the magnetizing field. In the light of given statement, choose the correct answer from the options given below:",
-        "options": {
-            "0": "Statement I is incorrect but Statement II is true ",
-            "1": "Both Statement I and Statement II are true",
-            "2": "Both Statement I and Statement II are false. ",
-            "3": "Statement I is correct but Statement II is false. "
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "A 12 V battery connected to a coil of resistance 6ohm through a switch, drives a constant current in the circuit. The switch is opened in 1 ms. The emf induced across the coil is 20 V. The inductance of the coil is :",
-        "options": {
-            "0": "4 mH",
-            "1": "12 mH",
-            "2": "8 mH",
-            "3": "10 mH"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statements: Statement I : The equivalent resistance of resistors in a series combination is lesser than least resistance used in the combination. Statement II : The resistivity of the material is not dependent on temperature. In the light of the above statements, choose the correct answer from the options given below :",
-        "options": {
-            "0": "Statement I is false but Statement II is true",
-            "1": "Both Statement I and Statement II are false",
-            "2": "Statement I is true but Statement II is false ",
-            "3": "Both Statement I and Statement II are true "
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "In an n-p-n common emitter (CE) transistor the collector current changes from 8 mA to 24 mA for the change in base current from 100 micro A and 200 micro A, respectively. The current gain of transistor is________. ",
-        "options": {
-            "0": "110",
-            "1": "0.9",
-            "2": "210",
-            "3": "9"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "The electric field due to a short electric dipole at a large distance (r) from center of dipole on the equatorial plane varies with distance as",
-        "options": {
-            "0": "r",
-            "1": "1/r",
-            "2": "1/r^3",
-            "3": "1/r^2"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statements: Statement I : An AC circuit undergoes electrical resonance if it contains either a capacitor or an inductor. Statement II : An AC circuit containing a pure capacitor or a pure inductor consumes high power due to its non-zero power factor.  In the light of above statements, choose the correct answer from the options given below Options : ",
-        "options": {
-            "0": "Both Statement I and Statement II are false",
-            "1": "Statement I is true but Statement II is false",
-            "2": "Both Statement I and Statement II are true",
-            "3": "Statement I is false but Statement II is true"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statement: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : If an electric dipole of dipole moment 30x10\u22125 Cm is enclosed by a closed surface, the net flux coming out of the surface will be zero. Reason R : Electric dipole consists of two equal and opposite charges.In the light of above, statements, choose the correct answer from the options given below: ",
-        "options": {
-            "0": "Both A and R are true and R is the correct explanation of A",
-            "1": "A is true but R is false",
-            "2": "Both A and R true but R is NOT the correct explanation of A",
-            "3": "A is false but R is true"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statements : Statement I : When the frequency of an a.c. source in a series LCR circuit increases, the current in the circuit first increases, attains a maximum value and then decreases. Statement II : In a series LCR circuit, the value of power factor at resonance is one. In the light of given statements, choose the most appropriate answer from the options given below:",
-        "options": {
-            "0": "Statement I is incorrect but Statement II is true.",
-            "1": "Both Statement I and Statement II are false.",
-            "2": "Statement I is correct but Statement II is false.",
-            "3": "Both Statement I and Statement II are true."
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statement : one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : EM waves used for optical communication have longer wavelengths than that of microwave, employed in Radar technology. Reason R : Infrared EM waves are more energetic than microwaves, (used in Radar) In the light of given statements, choose the correct answer from the options given below: ",
-        "options": {
-            "0": "A is false but R is true",
-            "1": "A is true but R is false",
-            "2": "Both A and R true but R is NOT the correct explanation of A",
-            "3": "Both A and R true and r is the correct explanation of A"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "The source of time varying magnetic field may be (A) a permanent magnet (B) an electric field changing linearly with time (C) direct current (D) a decelerating charge particle (E) an antenna fed with a digital signal Choose the correct answer from the options given below",
-        "options": {
-            "0": "(D) only",
-            "1": "(C) and (E) only",
-            "2": "(A) only",
-            "3": "(B) and (D) only"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Medium"
-    },
-    {
-        "question": "A wire of resistance 160 ohm is melted and drawn in wire of one-fourth of its length. The new resistance of the wire will be",
-        "options": {
-            "0": "10 ohm",
-            "1": "640 ohm",
-            "2": "40 ohm",
-            "3": "16 ohm"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Hard"
-    },
-    {
-        "question": "The height of transmitting antenna is 180 m and the height of the receiving antenna is 245 m. The maximum distance between them for satisfactory communication in line of sight will be :",
-        "options": {
-            "0": "48",
-            "1": "56",
-            "2": "96",
-            "3": "104"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Hard"
-    },
-    {
-        "question": "Two charges each of magnitude 0.01 C and separated by a distance of 0.4 mm constitute an electric dipole. If the dipole is placed in an uniform electric field 'E ' of 10 dyne/C making 300  angle with E, the magnitude of torque acting on dipole is ",
-        "options": {
-            "0": "4x10^-1 Nm",
-            "1": "x10^-1 Nm",
-            "2": "1x10^-8 Nm",
-            "3": "2x10^-10 Nm"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Hard"
-    },
-    {
-        "question": "Given below are two statements: Statement I : The diamagnetic property depends on temperature. Statement II : The included magnetic dipole moment in a diamagnetic sample is always opposite to the magnetizing field. In the light of given statement, choose the correct answer from the options given below:",
-        "options": {
-            "0": "Statement I is incorrect but Statement II is true ",
-            "1": "Both Statement I and Statement II are true",
-            "2": "Both Statement I and Statement II are false. ",
-            "3": "Statement I is correct but Statement II is false. "
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Hard"
-    },
-    {
-        "question": "A 12 V battery connected to a coil of resistance 6ohm through a switch, drives a constant current in the circuit. The switch is opened in 1 ms. The emf induced across the coil is 20 V. The inductance of the coil is :",
-        "options": {
-            "0": "4 mH",
-            "1": "12 mH",
-            "2": "8 mH",
-            "3": "10 mH"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Electricity and Magnetism",
-        "Level": "Hard"
-    },
-    {
-        "question": "A body of mass 500 g moves along x-axis such that it's velocity varies with displacement x according to the relation v = 10\u221ax m/s the force acting on the body is:",
-        "options": {
-            "0": "166 N",
-            "1": "25 N",
-            "2": "125 N",
-            "3": "5 N"
-        },
-        "answer": "B",
-        "reason": "(dv/dx) = 10/(2\u221ax)\nm = 500 g = 0.5 kg\nF = m(dv/dt) = m(dv/dx) * (dx/dt)\nF = 0.5 * 10/(2\u221ax) * 10\u221ax = 250 dyne = 25 N",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "A circular plate is rotating in horizontal plane, about an axis passing through its center and perpendicular to the plate, with an angular velocity \\(\\omega\\). A person sits at the center having two dumbbells in his hands. When he stretches out his hands, the moment of inertia of the system becomes triple. If \\(E\\) be the initial Kinetic energy of the system, then final Kinetic energy will be \\(\\frac{E}{x}\\). The value of \\(x\\) is:",
-        "options": {
-            "0": "(A) 1",
-            "1": "(B) 2",
-            "2": "(C) 3",
-            "3": "(D) 4"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A coin placed on a rotating table just slips when it is placed at a distance of 1 cm from the center. If the angular velocity of the table in halved, it will just slip when placed at a distance of _____ from the centre:",
-        "options": {
-            "0": "2 cm",
-            "1": "1 cm",
-            "2": "8 cm",
-            "3": "4 cm"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Assuming the earth to be a sphere of uniform mass density, the weight of a body at a depth \\(d = \\frac{R}{2}\\) from the surface of earth, if its weight on the surface of earth is 200 N, will be:\n>(1) 400 N \n(2) 500 N\n(3) 300 N\n(4) 100 N",
-        "options": {
-            "0": "400 N",
-            "1": "500 N",
-            "2": "300 N",
-            "3": "100 N"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A projectile is projected at 30\u00b0 from horizontal with initial velocity 40 m s-1. The velocity of the projectile at t = 2 s from the start will be:\n(Given g = 10 m s-2)\n1. 20\u221a3 m s-1\n2. 40\u221a3 m s-1\n3. 20 m s-1\n4. Zero",
-        "options": {
-            "0": "1. 20\u221a3 m s-1",
-            "1": "2. 40\u221a3 m s-1",
-            "2": "3. 20 m s-1",
-            "3": "4. Zero"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "The radii of two planets 'A' and 'B' are 'R' and '4R' and their densities are \u03c1 and \u03c1/3 respectively. The ratio of acceleration due to gravity at their surfaces (gA : gB) will be:",
-        "options": {
-            "0": "1 : 16",
-            "1": "3 : 16",
-            "2": "3 : 4",
-            "3": "4 : 3"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "If V is the gravitational potential due to sphere of uniform density on it's surface, then it's value at the center of sphere will be:",
-        "options": {
-            "0": "$\\frac{3V}{2}$",
-            "1": "V",
-            "2": "$\\frac{4V}{3}$",
-            "3": "$\\frac{V}{2}$"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A spaceship of mass \\(2\\times10^4\\) kg is launched into a circular orbit close to be the earth surface. The additional velocity to be imparted to the spaceship in the orbit to overcome the gravitational pull will be \\((\\text{if g}=10\\text{ m/s}^2\\text{ and radius of earth}=6400\\text{ km})\\)",
-        "options": {
-            "0": ">(1) \\(11.2(\\sqrt{2}-1)\\text{ km/s}\\)",
-            "1": "\\(7.9(\\sqrt{2}-1)\\text{ km/s}\\)",
-            "2": "\\(8(\\sqrt{2}-1)\\text{ km/s}\\)",
-            "3": "\\(7.4(\\sqrt{2}-1)\\text{ km/s}\\)",
-            "E": "",
-            "F": "Official Ans. by NTA (3)"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A projectile is projected at 30\u00b0 from horizontal with initial velocity 40 m s-1. The velocity of the projectile at t = 2 s from the start will be:\n(Given g = 10 m s-2)",
-        "options": {
-            "0": "20\u221a3 m s-1",
-            "1": "40\u221a3 m s-1",
-            "2": "20 m s-1",
-            "3": "Zero",
-            "E": "Official Ans. by NTA (1)"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two planets A and B of radii R and 1.5 R have densities d and d/2 respectively. The ratio of acceleration due to gravity at the surface of B to A",
-        "options": {
-            "0": "2:3",
-            "1": "2:1",
-            "2": "3:4",
-            "3": "4:3"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A body is released from a height equal to the radius (R) of the earth. The velocity of the body when it strikes the surface of the earth will be : (Given g = acceleration due to gravity on the earth.)",
-        "options": {
-            "0": "sqrt(gR)",
-            "1": "sqrt(4gR)",
-            "2": "sqrt(2gR)",
-            "3": "sqrt(gR/2)"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A passenger sitting in a train A moving at 90 km/h observes another train B moving in the opposite direction for 8 s. If the velocity of the train B is 54 km/h, then length of train B is :",
-        "options": {
-            "0": "80 m",
-            "1": "200 m",
-            "2": "120 m",
-            "3": "320 m"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two bodies are having kinetic energies in the ratio 16 : 9. If they have same linear momentum, the ratio of their masses respectively is : ",
-        "options": {
-            "0": "4:3",
-            "1": "3:4",
-            "2": "16:9",
-            "3": "9:16"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A bullet 10 g leaves the barrel of gun with a velocity of 600 m/s. If the barrel of gun is 50 cm long and mass of gun is 3 kg, then value of impulse supplied to the gun will be :",
-        "options": {
-            "0": "12 Ns",
-            "1": "6 Ns",
-            "2": "36 Ns",
-            "3": "3 Ns"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "The distance travelled by an object in time t is given by s = (2.5)t^2. The instantaneous speed of the object at t = 5 s will be",
-        "options": {
-            "0": "12.5 ms",
-            "1": "62.5 ms",
-            "2": "5 ms",
-            "3": "25 ms"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two trains \u2018A\u2019 and \u2018B\u2019 of length \u2018l\u2019 and \u20184l\u2019 are travelling into a tunnel of length \u2018L\u2019 in parallel tracks from opposite directions with velocities 108 km/h and 72 km/h, respectively. If train \u2018A\u2019 takes 35s less time than train \u2018B\u2019 to cross the tunnel then, length \u2018L\u2019 of tunnel is : (Given L = 60 l) ",
-        "options": {
-            "0": "1200 m",
-            "1": "2700 m",
-            "2": "1800 m",
-            "3": "900 m"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A vehicle of mass 200 kg is moving along a levelled curved road of radius 70 m with angular velocity of 0.2 rad/s. The centripetal force acting on the vehicle is :",
-        "options": {
-            "0": "560 N",
-            "1": "2800 N",
-            "2": "14 N",
-            "3": "2240 N"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "The ratio of escape velocity of a planet to the escape velocity of earth will be: Given : Mass of the planet is 16 times mass of earth and radius of the planet is 4 times the radius of earth. ",
-        "options": {
-            "0": "4:1",
-            "1": "2;1",
-            "2": "1:sqrt(2)",
-            "3": "1:4"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "The position of a particle related to time is given by x = (5t2 \u2013 4t + 5)m. The magnitude of velocity of the particle at t = 2s will be",
-        "options": {
-            "0": "10 ms",
-            "1": "14 ms",
-            "2": "16 ms",
-            "3": "6 ms"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
-        "options": {
-            "0": "Potential energy",
-            "1": "Total energy",
-            "2": "Kinetic energy",
-            "3": "Speed"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
-        "options": {
-            "0": "Statement I is correct but Statement II is incorrect ",
-            "1": "Statement I is incorrect but Statement II is correct",
-            "2": "Both Statement I is correct but Statement II are incorrect ",
-            "3": "Both Statement I is correct but Statement II are correct"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two identical particles each of mass \u2018m\u2019 go round a circle of radius a under the action of their mutual gravitational attraction. The angular speed of each particle will be : ",
-        "options": {
-            "0": "sqrt(Gm/2a^3)",
-            "1": "sqrt(Gm/8a^3)",
-            "2": "sqrt(Gm/4a^3)",
-            "3": "sqrt(Gm/a^3)"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two planets A and B of radii R and 2.5 R have densities d and d/2 respectively. The ratio of acceleration due to gravity at the surface of B to A",
-        "options": {
-            "0": "2:3",
-            "1": "2:1",
-            "2": "3:4",
-            "3": "4:3"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A body is released from a height equal to the radius (R) of the earth. The velocity of the body when it strikes the surface of the earth will be : (Given g = acceleration due to gravity on the earth.)",
-        "options": {
-            "0": "sqrt(gR)",
-            "1": "sqrt(6gR)",
-            "2": "sqrt(3gR)",
-            "3": "sqrt(gR/4)"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A passenger sitting in a train A moving at 90 km/h observes another train B moving in the opposite direction for 8 s. If the velocity of the train B is 54 km/h, then length of train B is :",
-        "options": {
-            "0": "80 m",
-            "1": "200 m",
-            "2": "120 m",
-            "3": "320 m"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two bodies are having kinetic energies in the ratio 16 : 9. If they have same linear momentum, the ratio of their masses respectively is : ",
-        "options": {
-            "0": "4:3",
-            "1": "3:4",
-            "2": "16:9",
-            "3": "9:16"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A bullet 10 g leaves the barrel of gun with a velocity of 600 m/s. If the barrel of gun is 50 cm long and mass of gun is 3 kg, then value of impulse supplied to the gun will be :",
-        "options": {
-            "0": "12 Ns",
-            "1": "6 Ns",
-            "2": "36 Ns",
-            "3": "3 Ns"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "The distance travelled by an object in time t is given by s = (2.5)t^2. The instantaneous speed of the object at t = 5 s will be",
-        "options": {
-            "0": "12.5 ms",
-            "1": "62.5 ms",
-            "2": "5 ms",
-            "3": "25 ms"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two trains \u2018A\u2019 and \u2018B\u2019 of length \u2018l\u2019 and \u20184l\u2019 are travelling into a tunnel of length \u2018L\u2019 in parallel tracks from opposite directions with velocities 108 km/h and 72 km/h, respectively. If train \u2018A\u2019 takes 35s less time than train \u2018B\u2019 to cross the tunnel then, length \u2018L\u2019 of tunnel is : (Given L = 60 l) ",
-        "options": {
-            "0": "1200 m",
-            "1": "2700 m",
-            "2": "1800 m",
-            "3": "900 m"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "A vehicle of mass 200 kg is moving along a levelled curved road of radius 70 m with angular velocity of 0.2 rad/s. The centripetal force acting on the vehicle is :",
-        "options": {
-            "0": "560 N",
-            "1": "2800 N",
-            "2": "14 N",
-            "3": "2240 N"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "The ratio of escape velocity of a planet to the escape velocity of earth will be: Given : Mass of the planet is 16 times mass of earth and radius of the planet is 4 times the radius of earth. ",
-        "options": {
-            "0": "4:1",
-            "1": "2;1",
-            "2": "1:sqrt(2)",
-            "3": "1:4"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "The position of a particle related to time is given by x = (5t2 \u2013 4t + 5)m. The magnitude of velocity of the particle at t = 2s will be",
-        "options": {
-            "0": "10 ms",
-            "1": "14 ms",
-            "2": "16 ms",
-            "3": "6 ms"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
-        "options": {
-            "0": "Potential energy",
-            "1": "Total energy",
-            "2": "Kinetic energy",
-            "3": "Speed"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
-        "options": {
-            "0": "Statement I is correct but Statement II is incorrect ",
-            "1": "Statement I is incorrect but Statement II is correct",
-            "2": "Both Statement I is correct but Statement II are incorrect ",
-            "3": "Both Statement I is correct but Statement II are correct"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "Two identical particles each of mass \u2018m\u2019 go round a circle of radius a under the action of their mutual gravitational attraction. The angular speed of each particle will be : ",
-        "options": {
-            "0": "sqrt(Gm/2a^3)",
-            "1": "sqrt(Gm/8a^3)",
-            "2": "sqrt(Gm/4a^3)",
-            "3": "sqrt(Gm/a^3)"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "Two planets A and B of radii R and 2.5 R have densities d and d/2 respectively. The ratio of acceleration due to gravity at the surface of B to A",
-        "options": {
-            "0": "2:3",
-            "1": "2:1",
-            "2": "3:4",
-            "3": "4:3"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "A body is released from a height equal to the radius (R) of the earth. The velocity of the body when it strikes the surface of the earth will be : (Given g = acceleration due to gravity on the earth.)",
-        "options": {
-            "0": "sqrt(gR)",
-            "1": "sqrt(6gR)",
-            "2": "sqrt(3gR)",
-            "3": "sqrt(gR/4)"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "A passenger sitting in a train A moving at 90 km/h observes another train B moving in the opposite direction for 8 s. If the velocity of the train B is 54 km/h, then length of train B is :",
-        "options": {
-            "0": "80 m",
-            "1": "200 m",
-            "2": "120 m",
-            "3": "320 m"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "Two bodies are having kinetic energies in the ratio 16 : 9. If they have same linear momentum, the ratio of their masses respectively is : ",
-        "options": {
-            "0": "4:3",
-            "1": "3:4",
-            "2": "16:9",
-            "3": "9:16"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "A bullet 10 g leaves the barrel of gun with a velocity of 600 m/s. If the barrel of gun is 50 cm long and mass of gun is 3 kg, then value of impulse supplied to the gun will be :",
-        "options": {
-            "0": "12 Ns",
-            "1": "6 Ns",
-            "2": "36 Ns",
-            "3": "3 Ns"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "The distance travelled by an object in time t is given by s = (2.5)t^2. The instantaneous speed of the object at t = 5 s will be",
-        "options": {
-            "0": "12.5 ms",
-            "1": "62.5 ms",
-            "2": "5 ms",
-            "3": "25 ms"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "Two trains \u2018A\u2019 and \u2018B\u2019 of length \u2018l\u2019 and \u20184l\u2019 are travelling into a tunnel of length \u2018L\u2019 in parallel tracks from opposite directions with velocities 108 km/h and 72 km/h, respectively. If train \u2018A\u2019 takes 35s less time than train \u2018B\u2019 to cross the tunnel then, length \u2018L\u2019 of tunnel is : (Given L = 60 l) ",
-        "options": {
-            "0": "1200 m",
-            "1": "2700 m",
-            "2": "1800 m",
-            "3": "900 m"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "A vehicle of mass 200 kg is moving along a levelled curved road of radius 70 m with angular velocity of 0.2 rad/s. The centripetal force acting on the vehicle is :",
-        "options": {
-            "0": "560 N",
-            "1": "2800 N",
-            "2": "14 N",
-            "3": "2240 N"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "The ratio of escape velocity of a planet to the escape velocity of earth will be: Given : Mass of the planet is 16 times mass of earth and radius of the planet is 4 times the radius of earth. ",
-        "options": {
-            "0": "4:1",
-            "1": "2;1",
-            "2": "1:sqrt(2)",
-            "3": "1:4"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "The position of a particle related to time is given by x = (5t2 \u2013 4t + 5)m. The magnitude of velocity of the particle at t = 2s will be",
-        "options": {
-            "0": "10 ms",
-            "1": "14 ms",
-            "2": "16 ms",
-            "3": "6 ms"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
-        "options": {
-            "0": "Potential energy",
-            "1": "Total energy",
-            "2": "Kinetic energy",
-            "3": "Speed"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
-        "options": {
-            "0": "Statement I is correct but Statement II is incorrect ",
-            "1": "Statement I is incorrect but Statement II is correct",
-            "2": "Both Statement I is correct but Statement II are incorrect ",
-            "3": "Both Statement I is correct but Statement II are correct"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Hard"
-    },
-    {
-        "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
-        "options": {
-            "0": "Potential energy",
-            "1": "Total energy",
-            "2": "Kinetic energy",
-            "3": "Speed"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Hard"
-    },
-    {
-        "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
-        "options": {
-            "0": "Statement I is correct but Statement II is incorrect ",
-            "1": "Statement I is incorrect but Statement II is correct",
-            "2": "Both Statement I is correct but Statement II are incorrect ",
-            "3": "Both Statement I is correct but Statement II are correct"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Hard"
-    },
-    {
-        "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
-        "options": {
-            "0": "Potential energy",
-            "1": "Total energy",
-            "2": "Kinetic energy",
-            "3": "Speed"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Hard"
-    },
-    {
-        "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
-        "options": {
-            "0": "Statement I is correct but Statement II is incorrect ",
-            "1": "Statement I is incorrect but Statement II is correct",
-            "2": "Both Statement I is correct but Statement II are incorrect ",
-            "3": "Both Statement I is correct but Statement II are correct"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Hard"
-    },
-    {
-        "question": "Two identical particles each of mass \u2018m\u2019 go round a circle of radius a under the action of their mutual gravitational attraction. The angular speed of each particle will be : ",
-        "options": {
-            "0": "sqrt(Gm/2a^3)",
-            "1": "sqrt(Gm/8a^3)",
-            "2": "sqrt(Gm/4a^3)",
-            "3": "sqrt(Gm/a^3)"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Mechanics and Motion",
-        "Level": "Hard"
-    },
-    {
-        "question": "The angular momentum for the electron in Bohr's orbit is L. If the electron is assumed to revolve in second orbit of hydrogen atom, then the change in angular momentum will be:",
-        "options": {
-            "0": "\\(L_2-L_1\\)",
-            "1": "Zero",
-            "2": "L",
-            "3": "2L"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "On a temperature scale 'X'. The boiling point of water is 65\\(^o\\)X and the freezing point is -15\\(^o\\)X. Assume that the X scale is linear. The equivalent temperature corresponding to -95\\(^o\\)X on the Fahrenheit scale would be:",
-        "options": {
-            "0": "-63\\(^o\\)F",
-            "1": "-112\\(^o\\)F",
-            "2": "-48\\(^o\\)F",
-            "3": "-148\\(^o\\)F"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The thermodynamic process, in which internal energy of the system remains constant is",
-        "options": {
-            "0": "Isochoric",
-            "1": "Isothermal",
-            "2": "Adiabatic",
-            "3": "Isobaric",
-            "E": "Official Ans. by NTA: (2)"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A cylindrical glass tube open at both ends has a length of 60 cm and a radius of 1.5 cm. It is placed vertically with its lower end just touching the surface of water in a trough. (Density of water = 10\u2009kg/m\u00b3, g = 10 m/s\u00b2, Atmospheric pressure = 1.013\u200a x 10\u200a5 Pa)",
-        "options": {
-            "0": "28.5",
-            "1": "32.5",
-            "2": "29.5",
-            "3": "31.5"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The de Broglie wavelength of a molecule in a gas at room temperature (300 K) is \\(\\lambda_1\\). If the temperature of the gas is increased to 600 K, then the de Broglie wavelength of the same gas molecule becomes:",
-        "options": {
-            "0": "\\(\\frac{1}{\\sqrt{2}}\\lambda_1\\)",
-            "1": "\\(2\\lambda_1\\)",
-            "2": "\\(\\frac{1}{2}\\lambda_1\\)",
-            "3": "\\(\\sqrt{2}\\lambda_1\\)"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The energy of He+ ion in its first excited state is. (The ground state energy for the Hydrogen atom is -13.6 eV)",
-        "options": {
-            "0": "-3.4 eV",
-            "1": "-54.4 eV",
-            "2": "-13.6 eV",
-            "3": "-27.2 eV"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Two radioactive elements A and B initially have the same number of atoms. The half-life of A is the same as the average life of B. If \\(\\lambda_A\\) and \\(\\lambda_B\\) are decay constants of A and B respectively, then choose the correct relation from the given options.\n1. \\(\\lambda_A = \\lambda_B\\)\n2. \\(\\lambda_A = 2\\lambda_B\\)\n3. \\(\\lambda_A = \\lambda_B \\ln 2\\)\n4. \\(\\lambda_A \\ln 2 = \\lambda_B\\)",
-        "options": {
-            "0": "1. \\(\\lambda_A = \\lambda_B\\)",
-            "1": "2. \\(\\lambda_A = 2\\lambda_B\\)",
-            "2": "3. \\(\\lambda_A = \\lambda_B \\ln 2\\)",
-            "3": "4. \\(\\lambda_A \\ln 2 = \\lambda_B\\)"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A flask contains Hydrogen and Argon in the ratio 2:1 by mass. The temperature of the mixture is 30\u00b0C. The ratio of average kinetic energy per molecule of the two gases (K argon/K hydrogen) is: (Given: Atomic Weight of Ar = 39.9",
-        "options": {
-            "0": "1",
-            "1": "2",
-            "2": "39.9/2",
-            "3": "39.9"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A proton and an Alpha-particle are accelerated from rest by 2V and 4V potentials, respectively. The ratio of their de-Broglie wavelength is: ",
-        "options": {
-            "0": "4:1",
-            "1": "2:1",
-            "2": "8:1",
-            "3": "16:1"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "If the r.m.s. speed of chlorine molecule is 490 m/s at 27 C, the r.m.s. speed of argon molecules at the same temperature will be (Atomic mass of argon = 39.9u, molecular mass of chlorine = 70.9u)",
-        "options": {
-            "0": "751.7",
-            "1": "451.7",
-            "2": "651.7",
-            "3": "551.7"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Under isothermal condition, the pressure of a gas is given by P = aV^-3, where a is a constant and V is the volume of the gas. The bulk modulus at constant temperature is equal to ",
-        "options": {
-            "0": "P/2",
-            "1": "3P",
-            "2": "2P",
-            "3": "P"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A 12.5 eV electron beam is used to bombard gaseous hydrogen at room temperature. The number of spectral lines emitted will be: ",
-        "options": {
-            "0": "2",
-            "1": "1",
-            "2": "3",
-            "3": "4"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The half-life of a radioactive nucleus is 5 years, The fraction of the original sample that would decay in 15 years is :",
-        "options": {
-            "0": "1/8",
-            "1": "1/4",
-            "2": "7/8",
-            "3": "3/4"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The mean free path of molecules of a certain gas at STP is 1500d, where d is the diameter of the gas molecules. While maintaining the standard pressure, the mean free path of the molecules at 373K is approximately : ",
-        "options": {
-            "0": "1098d",
-            "1": "2049d",
-            "2": "750d",
-            "3": "1500d"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "An engine operating between the boiling and freezing points of water will have 1. efficiency more than 27% 2. efficiency less than the efficiency a Carnot engine operating between the same two temperatures. 3. efficiency equal to 27% 4. efficiency less than 27% ",
-        "options": {
-            "0": " 2, 3 and 4 only",
-            "1": " 2 and 3 only",
-            "2": "2 and 4 only ",
-            "3": "1 and 2 only "
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
-        "options": {
-            "0": "Both A and R are true but R is NOT the correct",
-            "1": "explanation of AA is true but R is false",
-            "2": "A is false but R is true",
-            "3": "Both A and R are true and R is the correct explanation of A"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A flask contains Hydrogen and Helium in the ratio 5:1 by mass. The temperature of the mixture is 42CC. The ratio of average kinetic energy per molecule of the two gases (K argon/K hydrogen) is: (Given: Atomic Weight of He = 4.0032",
-        "options": {
-            "0": "3",
-            "1": "2",
-            "2": "4.0032/2",
-            "3": "39.9"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A proton and an Alpha-particle are accelerated from rest by 4V and 6V potentials, respectively. The ratio of their de-Broglie wavelength is: ",
-        "options": {
-            "0": "4:1",
-            "1": "2:1",
-            "2": "8:1",
-            "3": "16:1"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "If the r.m.s. speed of chlorine molecule is 520 m/s at 29 C, the r.m.s. speed of argon molecules at the same temperature will be (Atomic mass of argon = 39.9u, molecular mass of chlorine = 70.9u)",
-        "options": {
-            "0": "751.7",
-            "1": "451.7",
-            "2": "701.7",
-            "3": "551.7"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Under isothermal condition, the pressure of a gas is given by P = aV^-3, where a is a constant and V is the volume of the gas. The bulk modulus at constant temperature is equal to ",
-        "options": {
-            "0": "P/2",
-            "1": "3P",
-            "2": "2P",
-            "3": "P"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A 12.5 eV electron beam is used to bombard gaseous hydrogen at room temperature. The number of spectral lines emitted will be: ",
-        "options": {
-            "0": "2",
-            "1": "1",
-            "2": "3",
-            "3": "4"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The half-life of a radioactive nucleus is 5 years, The fraction of the original sample that would decay in 15 years is :",
-        "options": {
-            "0": "1/8",
-            "1": "1/4",
-            "2": "7/8",
-            "3": "3/4"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The mean free path of molecules of a certain gas at STP is 1500d, where d is the diameter of the gas molecules. While maintaining the standard pressure, the mean free path of the molecules at 373K is approximately : ",
-        "options": {
-            "0": "1098d",
-            "1": "2049d",
-            "2": "750d",
-            "3": "1500d"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "An engine operating between the boiling and freezing points of water will have 1. efficiency more than 27% 2. efficiency less than the efficiency a Carnot engine operating between the same two temperatures. 3. efficiency equal to 27% 4. efficiency less than 27% ",
-        "options": {
-            "0": " 2, 3 and 4 only",
-            "1": " 2 and 3 only",
-            "2": "2 and 4 only ",
-            "3": "1 and 2 only "
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
-        "options": {
-            "0": "Both A and R are true but R is NOT the correct",
-            "1": "explanation of AA is true but R is false",
-            "2": "A is false but R is true",
-            "3": "Both A and R are true and R is the correct explanation of A"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A flask contains Hydrogen and Helium in the ratio 5:1 by mass. The temperature of the mixture is 42\u00b0C. The ratio of average kinetic energy per molecule of the two gases (K argon/K hydrogen) is: (Given: Atomic Weight of He = 4.0032)",
-        "options": {
-            "0": "3",
-            "1": "2",
-            "2": "4.0032/2",
-            "3": "39.9"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A proton and an Alpha-particle are accelerated from rest by 4V and 6V potentials, respectively. The ratio of their de-Broglie wavelength is: ",
-        "options": {
-            "0": "4:1",
-            "1": "2:1",
-            "2": "8:1",
-            "3": "16:1"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "If the r.m.s. speed of chlorine molecule is 520 m/s at 29 C, the r.m.s. speed of argon molecules at the same temperature will be (Atomic mass of argon = 39.9u, molecular mass of chlorine = 70.9u)",
-        "options": {
-            "0": "751.7",
-            "1": "451.7",
-            "2": "701.7",
-            "3": "551.7"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "Under isothermal condition, the pressure of a gas is given by P = aV^-3, where a is a constant and V is the volume of the gas. The bulk modulus at constant temperature is equal to ",
-        "options": {
-            "0": "P/2",
-            "1": "3P",
-            "2": "2P",
-            "3": "P"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A 12.5 eV electron beam is used to bombard gaseous hydrogen at room temperature. The number of spectral lines emitted will be: ",
-        "options": {
-            "0": "2",
-            "1": "1",
-            "2": "3",
-            "3": "4"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "The half-life of a radioactive nucleus is 5 years, The fraction of the original sample that would decay in 15 years is :",
-        "options": {
-            "0": "1/8",
-            "1": "1/4",
-            "2": "7/8",
-            "3": "3/4"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "The mean free path of molecules of a certain gas at STP is 1500d, where d is the diameter of the gas molecules. While maintaining the standard pressure, the mean free path of the molecules at 373K is approximately : ",
-        "options": {
-            "0": "1098d",
-            "1": "2049d",
-            "2": "750d",
-            "3": "1500d"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Medium"
-    },
-    {
-        "question": "An engine operating between the boiling and freezing points of water will have 1. efficiency more than 27% 2. efficiency less than the efficiency a Carnot engine operating between the same two temperatures. 3. efficiency equal to 27% 4. efficiency less than 27% ",
-        "options": {
-            "0": " 2, 3 and 4 only",
-            "1": " 2 and 3 only",
-            "2": "2 and 4 only ",
-            "3": "1 and 2 only "
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Hard"
-    },
-    {
-        "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
-        "options": {
-            "0": "Both A and R are true but R is NOT the correct",
-            "1": "explanation of AA is true but R is false",
-            "2": "A is false but R is true",
-            "3": "Both A and R are true and R is the correct explanation of A"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Hard"
-    },
-    {
-        "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
-        "options": {
-            "0": "Both A and R are true but R is NOT the correct",
-            "1": "explanation of AA is true but R is false",
-            "2": "A is false but R is true",
-            "3": "Both A and R are true and R is the correct explanation of A"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Hard"
-    },
-    {
-        "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
-        "options": {
-            "0": "Both A and R are true but R is NOT the correct",
-            "1": "explanation of AA is true but R is false",
-            "2": "A is false but R is true",
-            "3": "Both A and R are true and R is the correct explanation of A"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Thermodynamics and Quantum Mechanics",
-        "Level": "Hard"
-    },
-    {
-        "question": "An average force of 125 N is applied on a machine gun firing bullets each of mass 10 g at the speed of 250 m/s to keep it in position. The number of bullets fired per second by the machine gun is:",
-        "options": {
-            "0": "5",
-            "1": "50",
-            "2": "100",
-            "3": "25"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A transmitting antenna is kept on the surface of the earth. The minimum height of receiving antenna required to receive the signal in line of sight at 4 km distance from it is \\(x\\times 10^2\\) m. The value of x is (\\(Let\\), radius of earth \\(R=6400\\text{ km}\\)).",
-        "options": {
-            "0": "125",
-            "1": "1.25",
-            "2": "12.5",
-            "3": "1250"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "If \\(f(x) = \\frac{(\\tan^{-1}x)+log_{e}(123)}{xlog_{e}(1234)-(\\tan^{-1}x)^{\\circ}}\\), x>0, then the least value of \\(f(x) + f(\\frac{4}{x})\\) is",
-        "options": {
-            "0": "8",
-            "1": "4",
-            "2": "2",
-            "3": "0"
-        },
-        "answer": "4",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A particle executes S.H.M. of amplitude A along x-axis. At t = 0, the position of the particle is \\(x = \\frac{A}{2}\\) and it moves along positive x-axis the displacement of particle in time t is \\(x = A\\sin(\\omega t + \\delta)\\), then the value of \\(\\delta\\) will be:",
-        "options": {
-            "0": "\\(\\frac{\\pi}{6}\\)",
-            "1": "\\(\\frac{\\pi}{3}\\)",
-            "2": "\\(\\frac{4}{3}\\)",
-            "3": "\\(\\frac{\\pi}{2}\\)",
-            "E": "Official Answer: 1"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Let C be the point -2i-3. What is the value of |C|?",
-        "options": {
-            "0": "(A) 5",
-            "1": "(B) 13",
-            "2": "(C) 2",
-            "3": "(D) \u221a13"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A physical quantity P is given as $$P = \\frac{a^2b^3}{c\\sqrt{d}}$$ The percentage error in the measurement of a, b, c and d are 1%, 2%, 3% and 4% respectively. The percentage error in the measurement of quantity P will be:",
-        "options": {
-            "0": "13%",
-            "1": "14%",
-            "2": "12%",
-            "3": "16%"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A carrier wave of amplitude 15 V is modulated by a sinusoidal baseband signal of amplitude 3 V. The ratio of maximum amplitude to minimum amplitude in an amplitude modulated wave is:",
-        "options": {
-        0  "1": "1) 2, 2) 3/2, 3) 5, 4) 1"
-        12
-        2answer": "B",
-        3reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "If force (F), velocity (V) and time (T) are considered as fundamental physical quantity, then dimensional formula of density will be:",
-        "options": {
-            "0": "FV\\(^2\\)T\\(^2\\)",
-            "1": "FV\\(^4\\)T\\(^2\\)",
-            "2": "FV\\(^4\\)T\\(^-6\\)",
-            "3": "F\\(^2\\)V\\(^2\\)T\\(^6\\)"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A car P travelling at 20 m s-1 sounds its horn at a frequency of 400 Hz. Another car Q is travelling behind the first car in the same direction with a velocity 40 m s-1. The frequency heard by the passenger of the car Q is approximately [Take, velocity of sound = 360 m s-1]",
-        "options": {
-            "0": "514 Hz",
-            "1": "421 Hz",
-            "2": "485 Hz",
-            "3": "471 Hz"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Given below are two statements:\nStatement I: Astronomical unit (AU), Parsec (Pc) and Light year (ly) are units for measuring astronomical distances.\nStatement II: AU < Parsec (Pc) < ly\nIn the light of the above statements, choose the most appropriate answer from the options given below:\n(1) Both Statements I and Statements II are correct.\n(2) Statement I is correct but Statements II is incorrect.\n(3) Both Statements I and Statements II are incorrect.\n(4) Statement I is incorrect but statements II is correct.",
-        "options": {
-            "0": "Both Statements I and Statements II are correct.",
-            "1": "Statement I is correct but Statements II is incorrect.",
-            "2": "Both Statements I and Statements II are incorrect.",
-            "3": "Statement I is incorrect but statements II is correct."
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Which of the following is correct about Polonium ?",
-        "options": {
-            "0": "It is a gas and a radioactive element",
-            "1": "It is an essential element for plants and a non-radioactive",
-            "2": "It is a lithophile element",
-            "3": "It is a siderophile element"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The electric field in an electromagnetic wave is given as \\(E = 20\\sin\\omega t\\hat{j}NC^{-1}\\) where \\(\\omega\\) and \\(c\\) are angular frequency and velocity of electromagnetic wave respectively. The energy contained in a volume of \\(5\\times10^{-4}m^3\\) will be (\\(Given\\ \\varepsilon_0=8.85\\times10^{-12}C^2/Nm^2\\))",
-        "options": {
-            "0": "1. \\(28.5\\times10^{-13}J\\)",
-            "1": "2. \\(17.7\\times10^{-13}J\\)",
-            "2": "3. \\(8.85\\times10^{-13}J\\)",
-            "3": "4. \\(88.5\\times10^{-13}J\\)"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "Let O be the origin and the position vectors of the point P be \u22122 i^ + 3 j^ + k^. If the position vectors of the points A, B and C are \u22122 i^ + j^ + 3 k^, 2 i^ + 4 j^ \u2212 2 k^ and \u22124 i^ + 2 j^ \u2212 k^ respectively then the projection of the vector OP on a vector perpendicular to the vectors AB and AC is",
-        "options": {
-            "0": "3",
-            "1": "8/3",
-            "2": "10/3",
-            "3": "7/3"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A plane electromagnetic wave of frequency 20 MHz propagates in free space along x-direction. At a particular space and time, \\(E = 6.6j\\) V/m. What is \\(B\\) at this point?",
-        "options": {
-            "0": "\\(-2.2\\times 10^{-8}\\hat{i}T\\)",
-            "1": "\\(2.2\\times 10^{-8}\\hat{k}T\\)",
-            "2": "\\(-2.2\\times 10^{-8}\\hat{k}T\\)",
-            "3": "\\(2.2\\times 10^{-8}\\hat{i}T\\)"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "When vector \\(\\overrightarrow A = 2\\hat{i} + 3\\hat{j} + 2\\hat{k}\\) is subtracted from vector \\(\\overrightarrow B\\), it gives a vector equal to \\(2\\hat{j}\\). Then the magnitude of vector \\(\\overrightarrow B\\) will be:",
-        "options": {
-            "0": "\\(\\sqrt{13}\\)",
-            "1": "3",
-            "2": "\\(\\sqrt{6}\\)",
-            "3": "\\(\\sqrt{5}\\)",
-            "E": "",
-            "F": "Official Answer by NTA (BONUS): 3"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "In a Young's double slits experiment, the ratio of amplitude of light coming from slits is 2:1. The ratio of the maximum to minimum intensity in the interference pattern is : ",
-        "options": {
-            "0": "9:4",
-            "1": "9:1",
-            "2": "2:1",
-            "3": "25:9"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A particle executes SHM of amplitude A. The distance from the mean position when its's kinetic energy becomes equal to its potential energy is :",
-        "options": {
-            "0": "Sqrt(2A)",
-            "1": "2A",
-            "2": "1/Sqrt(2) x A",
-            "3": "1/2 x A"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A body cools from 80 C to 60 C in 5 minutes. The temperature of the surrounding is 20 C. The time it takes to cool from 60 C to 40 C is: ",
-        "options": {
-            "0": "500 s",
-            "1": "25/3 s",
-            "2": "450 s",
-            "3": "420 s"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "An ice cube has a bubble inside. When viewed from one side the apparent distance of the bubble is 12 cm. when viewed from the opposite side, the apparent distance of the bubble is observed as 4 cm. If the side of the ice cube is 24 cm, the refractive index of the ice cube is",
-        "options": {
-            "0": "4/3",
-            "1": "3/2",
-            "2": "2/3",
-            "3": "6/5"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A wire of length \u2018L\u2019 and radius \u2018r\u2019 is clamped rigidly at one end. When the other end of the wire is pulled by a force f, its length increases by \u2018\uf06c\u2019. Another wire of same material of length \u20182L\u2019 and radius \u20182r\u2019 is pulled by a force \u20182f\u2019. Then the increase in its length will be ",
-        "options": {
-            "0": "2 l",
-            "1": "l",
-            "2": "4 l",
-            "3": "l/2"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "The amplitude of 15 sin (1000 pi t) is modulated by 10 sin (4 pi t) signal. The amplitude modulated signal contains frequencies of 1. 500 Hz. 2. 2 Hz 3. 250 Hz 4. 498 Hz 5. 502 Hz",
-        "options": {
-            "0": "(1) and (3) only",
-            "1": "(1) and (4) only",
-            "2": " (1) and (2) only",
-            "3": " (1), (4) and (5) only"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "In an electromagnetic wave, at an instant and at a particular position, the electric field is along the negative z-axis and magnetic field is along the positive x-axis. Then the direction of propagation of electromagnetic wave is : ",
-        "options": {
-            "0": " at 45\u00ba angle from positive y-axis ",
-            "1": " negative y-axis",
-            "2": " positive z-axis",
-            "3": "positive y-axis "
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A single slit of width a is illuminated by a monochromatic light of wavelength 600 nm. The value of \u2018a\u2019 for which first minimum appears at theta = 30\u00b0 on the screen will be : ",
-        "options": {
-            "0": "0.6 micro m",
-            "1": "1.2 micro m",
-            "2": "1.2 micro m",
-            "3": "3 micro m"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "In a linear simple harmonic motion (SHM) (A) Restoring force is directly proportional to the",
-        "options": {
-            "0": "displacement. (B) The acceleration and displacement are opposite in direction. (C) The velocity is maximum at mean position. (D) The acceleration is minimum at extreme points. Choose the correct answer from the options given below :(A), (B) and (C) only",
-            "1": "(C) and (D) only",
-            "2": "(A), (B) and (D) only",
-            "3": "(A), (C) and (D) only"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "level": "Medium",
-        "Level": "Easy"
-    },
-    {
-        "question": "A body of mass 5 +/- 0.5 kg is moving with a velocity of 20 +/- 0.4 m/s. Its kinetic energy will be",
-        "options": {
-            "0": "1000 +/- 140 J",
-            "1": "1000 +/- 0.14 J",
-            "2": "500 +/- 0.14 J",
-            "3": "500 +/- 140 J"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A vector in x-y plane makes an angle of 30\u00b0 with y-axis The magnitude of y-component of vector is 2xsqrt(3). The magnitude of x-component of the vector will be : ",
-        "options": {
-            "0": "1/sqrt(3)",
-            "1": "6",
-            "2": "sqrt(3)",
-            "3": "2"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "In a Young's double slits experiment, the ratio of amplitude of light coming from slits is 7:1. The ratio of the maximum to minimum intensity in the interference pattern is : ",
-        "options": {
-            "0": "7:4",
-            "1": "9:2",
-            "2": "4:3",
-            "3": "24:9"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A particle executes SHM of amplitude A. The distance from the mean position when its's kinetic energy becomes equal to its potential energy is :",
-        "options": {
-            "0": "Sqrt(4A)",
-            "1": "3A",
-            "2": "1/Sqrt(2) x A",
-            "3": "1/4 x A"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "A body cools from 80 C to 60 C in 5 minutes. The temperature of the surrounding is 20 C. The time it takes to cool from 60 C to 40 C is: ",
-        "options": {
-            "0": "500 s",
-            "1": "25/3 s",
-            "2": "450 s",
-            "3": "420 s"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Easy"
-    },
-    {
-        "question": "An ice cube has a bubble inside. When viewed from one side the apparent distance of the bubble is 12 cm. when viewed from the opposite side, the apparent distance of the bubble is observed as 4 cm. If the side of the ice cube is 24 cm, the refractive index of the ice cube is",
-        "options": {
-            "0": "4/3",
-            "1": "3/2",
-            "2": "2/3",
-            "3": "6/5"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "level": "Hard",
-        "Level": "Medium"
-    },
-    {
-        "question": "A wire of length \u2018L\u2019 and radius \u2018r\u2019 is clamped rigidly at one end. When the other end of the wire is pulled by a force f, its length increases by \u2018\uf06c\u2019. Another wire of same material of length \u20182L\u2019 and radius \u20182r\u2019 is pulled by a force \u20182f\u2019. Then the increase in its length will be ",
-        "options": {
-            "0": "2 l",
-            "1": "l",
-            "2": "4 l",
-            "3": "l/2"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "The amplitude of 15 sin (1000 pi t) is modulated by 10 sin (4 pi t) signal. The amplitude modulated signal contains frequencies of 1. 500 Hz. 2. 2 Hz 3. 250 Hz 4. 498 Hz 5. 502 Hz",
-        "options": {
-            "0": "(1) and (3) only",
-            "1": "(1) and (4) only",
-            "2": " (1) and (2) only",
-            "3": " (1), (4) and (5) only"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "In an electromagnetic wave, at an instant and at a particular position, the electric field is along the negative z-axis and magnetic field is along the positive x-axis. Then the direction of propagation of electromagnetic wave is : ",
-        "options": {
-            "0": " at 45\u00ba angle from positive y-axis ",
-            "1": " negative y-axis",
-            "2": " positive z-axis",
-            "3": "positive y-axis "
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A single slit of width a is illuminated by a monochromatic light of wavelength 600 nm. The value of \u2018a\u2019 for which first minimum appears at theta = 30\u00b0 on the screen will be : ",
-        "options": {
-            "0": "0.6 micro m",
-            "1": "1.2 micro m",
-            "2": "1.2 micro m",
-            "3": "3 micro m"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "In a linear simple harmonic motion (SHM) (A) Restoring force is directly proportional to the",
-        "options": {
-            "0": "displacement. (B) The acceleration and displacement are opposite in direction. (C) The velocity is maximum at mean position. (D) The acceleration is minimum at extreme points. Choose the correct answer from the options given below :(A), (B) and (C) only",
-            "1": "(C) and (D) only",
-            "2": "(A), (B) and (D) only",
-            "3": "(A), (C) and (D) only"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "level": "Medium",
-        "Level": "Medium"
-    },
-    {
-        "question": "A body of mass 5 +/- 0.5 kg is moving with a velocity of 20 +/- 0.4 m/s. Its kinetic energy will be",
-        "options": {
-            "0": "1000 +/- 140 J",
-            "1": "1000 +/- 0.14 J",
-            "2": "500 +/- 0.14 J",
-            "3": "500 +/- 140 J"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A vector in x-y plane makes an angle of 30\u00b0 with y-axis The magnitude of y-component of vector is 2xsqrt(3). The magnitude of x-component of the vector will be : ",
-        "options": {
-            "0": "1/sqrt(3)",
-            "1": "6",
-            "2": "sqrt(3)",
-            "3": "2"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "In a Young's double slits experiment, the ratio of amplitude of light coming from slits is 7:1. The ratio of the maximum to minimum intensity in the interference pattern is : ",
-        "options": {
-            "0": "7:4",
-            "1": "9:2",
-            "2": "4:3",
-            "3": "24:9"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A particle executes SHM of amplitude A. The distance from the mean position when its kinetic energy becomes equal to its potential energy is :",
-        "options": {
-            "0": "Sqrt(4A)",
-            "1": "3A",
-            "2": "1/Sqrt(2) x A",
-            "3": "1/4 x A"
-        },
-        "answer": "C",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "A body cools from 80 C to 60 C in 5 minutes. The temperature of the surrounding is 20 C. The time it takes to cool from 60 C to 40 C is: ",
-        "options": {
-            "0": "500 s",
-            "1": "25/3 s",
-            "2": "450 s",
-            "3": "420 s"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "An ice cube has a bubble inside. When viewed from one side the apparent distance of the bubble is 12 cm. when viewed from the opposite side, the apparent distance of the bubble is observed as 4 cm. If the side of the ice cube is 24 cm, the refractive index of the ice cube is",
-        "options": {
-            "0": "4/3",
-            "1": "3/2",
-            "2": "2/3",
-            "3": "6/5"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "level": "Hard",
-        "Level": "Medium"
-    },
-    {
-        "question": "A wire of length \u2018L\u2019 and radius \u2018r\u2019 is clamped rigidly at one end. When the other end of the wire is pulled by a force f, its length increases by \u2018\u2113\u2019. Another wire of same material of length \u20182L\u2019 and radius \u20182r\u2019 is pulled by a force \u20182f\u2019. Then the increase in its length will be ",
-        "options": {
-            "0": "2 l",
-            "1": "l",
-            "2": "4 l",
-            "3": "l/2"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Medium"
-    },
-    {
-        "question": "The amplitude of 15 sin (1000 pi t) is modulated by 10 sin (4 pi t) signal. The amplitude modulated signal contains frequencies of 1. 500 Hz. 2. 2 Hz 3. 250 Hz 4. 498 Hz 5. 502 Hz",
-        "options": {
-            "0": "(1) and (3) only",
-            "1": "(1) and (4) only",
-            "2": "(1) and (2) only",
-            "3": "(1), (4) and (5) only"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Hard"
-    },
-    {
-        "question": "In an electromagnetic wave, at an instant and at a particular position, the electric field is along the negative z-axis and magnetic field is along the positive x-axis. Then the direction of propagation of electromagnetic wave is : ",
-        "options": {
-            "0": " at 45\u00ba angle from positive y-axis ",
-            "1": " negative y-axis",
-            "2": " positive z-axis",
-            "3": "positive y-axis "
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Hard"
-    },
-    {
-        "question": "A single slit of width a is illuminated by a monochromatic light of wavelength 600 nm. The value of \u2018a\u2019 for which first minimum appears at theta = 30\u00b0 on the screen will be : ",
-        "options": {
-            "0": "0.6 micro m",
-            "1": "1.2 micro m",
-            "2": "1.2 micro m",
-            "3": "3 micro m"
-        },
-        "answer": "B",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Hard"
-    },
-    {
-        "question": "In a linear simple harmonic motion (SHM) (A) Restoring force is directly proportional to the",
-        "options": {
-            "0": "displacement. (B) The acceleration and displacement are opposite in direction. (C) The velocity is maximum at mean position. (D) The acceleration is minimum at extreme points. Choose the correct answer from the options given below :(A), (B) and (C) only",
-            "1": "(C) and (D) only",
-            "2": "(A), (B) and (D) only",
-            "3": "(A), (C) and (D) only"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "level": "Medium",
-        "Level": "Hard"
-    },
-    {
-        "question": "A body of mass 5 +/- 0.5 kg is moving with a velocity of 20 +/- 0.4 m/s. Its kinetic energy will be",
-        "options": {
-            "0": "1000 +/- 140 J",
-            "1": "1000 +/- 0.14 J",
-            "2": "500 +/- 0.14 J",
-            "3": "500 +/- 140 J"
-        },
-        "answer": "A",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Hard"
-    },
-    {
-        "question": "A vector in x-y plane makes an angle of 30\u00b0 with y-axis The magnitude of y-component of vector is 2xsqrt(3). The magnitude of x-component of the vector will be : ",
-        "options": {
-            "0": "1/sqrt(3)",
-            "1": "6",
-            "2": "sqrt(3)",
-            "3": "2"
-        },
-        "answer": "D",
-        "reason": "",
-        "topic": "Waves and Optics",
-        "Level": "Hard"
-    }
+  {
+    "question": "A parallel plate capacitor of capacitance 2 F is charged to a potential V. The energy stored in the capacitor is E1. The capacitor is now connected to another uncharged identical capacitor in parallel combination. The energy stored in the combination is E2. The ratio E2/E1 is:",
+    "options": {
+      "0": "1:2",
+      "1": "1:2",
+      "2": "1:4",
+      "3": "2:3"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "A capacitor of capacitance C is charged to a potential V. The flux of the electric field through a closed surface enclosing the positive plate of the capacitor is:",
+    "options": {
+      "0": "\\(\\frac{CV}{2\\varepsilon_0}\\)",
+      "1": "\\(\\frac{2CV}{\\varepsilon_0}\\)",
+      "2": "\\(\\frac{CV}{\\varepsilon_0}\\)",
+      "3": "Zero"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The current sensitivity of moving coil galvanometer is increased by 25%. This increase is achieved only by changing in the number of turns of coils and area of cross section of the wire while keeping the resistance of galvanometer coil constant. The percentage change in the voltage sensitivity will be:",
+    "options": {
+      "0": "+25%",
+      "1": "-50%",
+      "2": "Zero",
+      "3": "-25%"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two identical heater filaments are connected first in parallel and then in series. At the same applied voltage, the ratio of heat produced in the same time for parallel to series will be:",
+    "options": {
+      "0": "4:1",
+      "1": "2:1",
+      "2": "1:2",
+      "3": "1:4"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The energy of an electromagnetic wave contained in a small volume oscillates with\n>(1) zero frequency\n(2) half the frequency of the wave\n(3) double the frequency of the wave\n(4) the frequency of the wave",
+    "options": {
+      "0": "0",
+      "1": "f/2",
+      "2": "2f",
+      "3": "f"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "An electron is allowed to move with constant velocity along the axis of current carrying straight solenoid.",
+    "options": {
+      "0": "A. The electron will experience magnetic force along the axis of the solenoid.",
+      "1": "B. The electron will not experience magnetic force.",
+      "2": "C. The electron will continue to move along the axis of the solenoid.",
+      "3": "D. The electron will be accelerated along the axis of the solenoid."
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements: Statement I : The equivalent resistance of resistors in a series combination is smaller than least resistance used in the combination. Statement II : The resistivity of the material is independent of temperature. In the light of the above statements, choose the correct answer from the options given below :",
+    "options": {
+      "0": "Statement I is false but Statement II is true",
+      "1": "Both Statement I and Statement II are false",
+      "2": "Statement I is true but Statement II is false ",
+      "3": "Both Statement I and Statement II are true "
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "In an n-p-n common emitter (CE) transistor the collector current changes from 5 mA to 16 mA for the change in base current from 100 micro A and 200 \uf06dA, respectively. The current gain of transistor is________. ",
+    "options": {
+      "0": "110",
+      "1": "0.9",
+      "2": "210",
+      "3": "9"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The electric field due to a short electric dipole at a large distance (r) from center of dipole on the equatorial plane varies with distance as",
+    "options": {
+      "0": "r",
+      "1": "1/r",
+      "2": "1/r^3",
+      "3": "1/r^2"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements: Statement I : An AC circuit undergoes electrical resonance if it contains either a capacitor or an inductor. Statement II : An AC circuit containing a pure capacitor or a pure inductor consumes high power due to its non-zero power factor.  In the light of above statements, choose the correct answer from the options given below Options : ",
+    "options": {
+      "0": "Both Statement I and Statement II are false",
+      "1": "Statement I is true but Statement II is false",
+      "2": "Both Statement I and Statement II are true",
+      "3": " Statement I is false but Statement II is true"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statement: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : If an electric dipole of dipole moment 30x10\u20135 Cm is enclosed by a closed surface, the net flux coming out of the surface will be zero. Reason R : Electric dipole consists of two equal and opposite charges.In the light of above, statements, choose the correct answer from the options given below: ",
+    "options": {
+      "0": "Both A and R are true and R is the correct explanation of A",
+      "1": "A is true but R is false",
+      "2": "Both A and R true but R is NOT the correct explanation of A",
+      "3": "A is false but R is true"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements : Statement I : When the frequency of an a.c. source in a series LCR circuit increases, the current in the circuit first increases, attains a maximum value and then decreases. Statement II : In a series LCR circuit, the value of power factor at resonance is one. In the light of given statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "0": "Statement I is incorrect but Statement II is true. ",
+      "1": "Both Statement I and Statement II are false. ",
+      "2": "Statement I is correct but Statement II is false. ",
+      "3": "Both Statement I and Statement II are true."
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statement : one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : EM waves used for optical communication have longer wavelengths than that of microwave, employed in Radar technology. Reason R : Infrared EM waves are more energetic than microwaves, (used in Radar) In the light of given statements, choose the correct answer from the options given below: ",
+    "options": {
+      "0": " A is false but R is true ",
+      "1": "A is true but R is false ",
+      "2": "Both A and R true but R is NOT the correct explanation of A ",
+      "3": "Both A and R true and r is the correct explanation of A"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The source of time varying magnetic field may be (A) a permanent magnet (B) an electric field changing linearly with time (C) direct current (D) a decelerating charge particle (E) an antenna fed with a digital signal Choose the correct answer from the options given below",
+    "options": {
+      "0": " (D) only",
+      "1": "(C) and (E) only ",
+      "2": "(A) only",
+      "3": " (B) and (D) only "
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "A wire of resistance 160 ohm is melted and drawn in wire of one-fourth of its length. The new resistance of the wire will be",
+    "options": {
+      "0": "10 ohm",
+      "1": "640 ohm",
+      "2": "40 ohm",
+      "3": "16 ohm"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The height of transmitting antenna is 180 m and the height of the receiving antenna is 245 m. The maximum distance between them for satisfactory communication in line of sight will be :",
+    "options": {
+      "0": "48",
+      "1": "56",
+      "2": "96",
+      "3": "104"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two charges each of magnitude 0.01 C and separated by a distance of 0.4 mm constitute an electric dipole. If the dipole is placed in an uniform electric field 'E ' of 10 dyne/C making 300  angle with E, the magnitude of torque acting on dipole is ",
+    "options": {
+      "0": "4x10^-1 Nm",
+      "1": "x10^-1 Nm",
+      "2": "1x10^-8 Nm",
+      "3": "2x10^-10 Nm"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements: Statement I : The diamagnetic property depends on temperature. Statement II : The included magnetic dipole moment in a diamagnetic sample is always opposite to the magnetizing field. In the light of given statement, choose the correct answer from the options given below:",
+    "options": {
+      "0": "Statement I is incorrect but Statement II is true ",
+      "1": "Both Statement I and Statement II are true",
+      "2": "Both Statement I and Statement II are false. ",
+      "3": "Statement I is correct but Statement II is false. "
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "A 12 V battery connected to a coil of resistance 6ohm through a switch, drives a constant current in the circuit. The switch is opened in 1 ms. The emf induced across the coil is 20 V. The inductance of the coil is :",
+    "options": {
+      "0": "4 mH",
+      "1": "12 mH",
+      "2": "8 mH",
+      "3": "10 mH"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements: Statement I : The equivalent resistance of resistors in a series combination is lesser than least resistance used in the combination. Statement II : The resistivity of the material is not dependant on temperature. In the light of the above statements, choose the correct answer from the options given below :",
+    "options": {
+      "0": "Statement I is false but Statement II is true",
+      "1": "Both Statement I and Statement II are false",
+      "2": "Statement I is true but Statement II is false ",
+      "3": "Both Statement I and Statement II are true "
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "In an n-p-n common emitter (CE) transistor the collector current changes from 8 mA to 24 mA for the change in base current from 100 micro A and 200 micro A, respectively. The current gain of transistor is________. ",
+    "options": {
+      "0": "110",
+      "1": "0.9",
+      "2": "210",
+      "3": "9"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The electric field due to a short electric dipole at a large distance (r) from center of dipole on the equatorial plane varies with distance as",
+    "options": {
+      "0": "r",
+      "1": "1/r",
+      "2": "1/r^3",
+      "3": "1/r^2"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements: Statement I : An AC circuit undergoes electrical resonance if it contains either a capacitor or an inductor. Statement II : An AC circuit containing a pure capacitor or a pure inductor consumes high power due to its non-zero power factor.  In the light of above statements, choose the correct answer from the options given below Options : ",
+    "options": {
+      "0": "Both Statement I and Statement II are false",
+      "1": "Statement I is true but Statement II is false",
+      "2": "Both Statement I and Statement II are true",
+      "3": " Statement I is false but Statement II is true"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statement: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : If an electric dipole of dipole moment 30x10\u20135 Cm is enclosed by a closed surface, the net flux coming out of the surface will be zero. Reason R : Electric dipole consists of two equal and opposite charges.In the light of above, statements, choose the correct answer from the options given below: ",
+    "options": {
+      "0": "Both A and R are true and R is the correct explanation of A",
+      "1": "A is true but R is false",
+      "2": "Both A and R true but R is NOT the correct explanation of A",
+      "3": "A is false but R is true"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements : Statement I : When the frequency of an a.c. source in a series LCR circuit increases, the current in the circuit first increases, attains a maximum value and then decreases. Statement II : In a series LCR circuit, the value of power factor at resonance is one. In the light of given statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "0": "Statement I is incorrect but Statement II is true. ",
+      "1": "Both Statement I and Statement II are false. ",
+      "2": "Statement I is correct but Statement II is false. ",
+      "3": "Both Statement I and Statement II are true."
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statement : one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : EM waves used for optical communication have longer wavelengths than that of microwave, employed in Radar technology. Reason R : Infrared EM waves are more energetic than microwaves, (used in Radar) In the light of given statements, choose the correct answer from the options given below: ",
+    "options": {
+      "0": " A is false but R is true ",
+      "1": "A is true but R is false ",
+      "2": "Both A and R true but R is NOT the correct explanation of A ",
+      "3": "Both A and R true and r is the correct explanation of A"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The source of time varying magnetic field may be (A) a permanent magnet (B) an electric field changing linearly with time (C) direct current (D) a decelerating charge particle (E) an antenna fed with a digital signal Choose the correct answer from the options given below",
+    "options": {
+      "0": " (D) only",
+      "1": "(C) and (E) only ",
+      "2": "(A) only",
+      "3": " (B) and (D) only "
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "A wire of resistance 160 ohm is melted and drawn in wire of one-fourth of its length. The new resistance of the wire will be",
+    "options": {
+      "0": "10 ohm",
+      "1": "640 ohm",
+      "2": "40 ohm",
+      "3": "16 ohm"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Easy"
+  },
+  {
+    "question": "The height of transmitting antenna is 180 m and the height of the receiving antenna is 245 m. The maximum distance between them for satisfactory communication in line of sight will be :",
+    "options": {
+      "0": "48",
+      "1": "56",
+      "2": "96",
+      "3": "104"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "Two charges each of magnitude 0.01 C and separated by a distance of 0.4 mm constitute an electric dipole. If the dipole is placed in an uniform electric field 'E ' of 10 dyne/C making 300  angle with E, the magnitude of torque acting on dipole is ",
+    "options": {
+      "0": "4x10^-1 Nm",
+      "1": "x10^-1 Nm",
+      "2": "1x10^-8 Nm",
+      "3": "2x10^-10 Nm"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statements: Statement I : The diamagnetic property depends on temperature. Statement II : The included magnetic dipole moment in a diamagnetic sample is always opposite to the magnetizing field. In the light of given statement, choose the correct answer from the options given below:",
+    "options": {
+      "0": "Statement I is incorrect but Statement II is true ",
+      "1": "Both Statement I and Statement II are true",
+      "2": "Both Statement I and Statement II are false. ",
+      "3": "Statement I is correct but Statement II is false. "
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "A 12 V battery connected to a coil of resistance 6ohm through a switch, drives a constant current in the circuit. The switch is opened in 1 ms. The emf induced across the coil is 20 V. The inductance of the coil is :",
+    "options": {
+      "0": "4 mH",
+      "1": "12 mH",
+      "2": "8 mH",
+      "3": "10 mH"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statements: Statement I : The equivalent resistance of resistors in a series combination is lesser than least resistance used in the combination. Statement II : The resistivity of the material is not dependent on temperature. In the light of the above statements, choose the correct answer from the options given below :",
+    "options": {
+      "0": "Statement I is false but Statement II is true",
+      "1": "Both Statement I and Statement II are false",
+      "2": "Statement I is true but Statement II is false ",
+      "3": "Both Statement I and Statement II are true "
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "In an n-p-n common emitter (CE) transistor the collector current changes from 8 mA to 24 mA for the change in base current from 100 micro A and 200 micro A, respectively. The current gain of transistor is________. ",
+    "options": {
+      "0": "110",
+      "1": "0.9",
+      "2": "210",
+      "3": "9"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "The electric field due to a short electric dipole at a large distance (r) from center of dipole on the equatorial plane varies with distance as",
+    "options": {
+      "0": "r",
+      "1": "1/r",
+      "2": "1/r^3",
+      "3": "1/r^2"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statements: Statement I : An AC circuit undergoes electrical resonance if it contains either a capacitor or an inductor. Statement II : An AC circuit containing a pure capacitor or a pure inductor consumes high power due to its non-zero power factor.  In the light of above statements, choose the correct answer from the options given below Options : ",
+    "options": {
+      "0": "Both Statement I and Statement II are false",
+      "1": "Statement I is true but Statement II is false",
+      "2": "Both Statement I and Statement II are true",
+      "3": "Statement I is false but Statement II is true"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statement: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : If an electric dipole of dipole moment 30x10\u22125 Cm is enclosed by a closed surface, the net flux coming out of the surface will be zero. Reason R : Electric dipole consists of two equal and opposite charges.In the light of above, statements, choose the correct answer from the options given below: ",
+    "options": {
+      "0": "Both A and R are true and R is the correct explanation of A",
+      "1": "A is true but R is false",
+      "2": "Both A and R true but R is NOT the correct explanation of A",
+      "3": "A is false but R is true"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statements : Statement I : When the frequency of an a.c. source in a series LCR circuit increases, the current in the circuit first increases, attains a maximum value and then decreases. Statement II : In a series LCR circuit, the value of power factor at resonance is one. In the light of given statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "0": "Statement I is incorrect but Statement II is true.",
+      "1": "Both Statement I and Statement II are false.",
+      "2": "Statement I is correct but Statement II is false.",
+      "3": "Both Statement I and Statement II are true."
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statement : one is labelled as Assertion A and the other is labelled as Reason R. Assertion A : EM waves used for optical communication have longer wavelengths than that of microwave, employed in Radar technology. Reason R : Infrared EM waves are more energetic than microwaves, (used in Radar) In the light of given statements, choose the correct answer from the options given below: ",
+    "options": {
+      "0": "A is false but R is true",
+      "1": "A is true but R is false",
+      "2": "Both A and R true but R is NOT the correct explanation of A",
+      "3": "Both A and R true and r is the correct explanation of A"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "The source of time varying magnetic field may be (A) a permanent magnet (B) an electric field changing linearly with time (C) direct current (D) a decelerating charge particle (E) an antenna fed with a digital signal Choose the correct answer from the options given below",
+    "options": {
+      "0": "(D) only",
+      "1": "(C) and (E) only",
+      "2": "(A) only",
+      "3": "(B) and (D) only"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Medium"
+  },
+  {
+    "question": "A wire of resistance 160 ohm is melted and drawn in wire of one-fourth of its length. The new resistance of the wire will be",
+    "options": {
+      "0": "10 ohm",
+      "1": "640 ohm",
+      "2": "40 ohm",
+      "3": "16 ohm"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Hard"
+  },
+  {
+    "question": "The height of transmitting antenna is 180 m and the height of the receiving antenna is 245 m. The maximum distance between them for satisfactory communication in line of sight will be :",
+    "options": {
+      "0": "48",
+      "1": "56",
+      "2": "96",
+      "3": "104"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Hard"
+  },
+  {
+    "question": "Two charges each of magnitude 0.01 C and separated by a distance of 0.4 mm constitute an electric dipole. If the dipole is placed in an uniform electric field 'E ' of 10 dyne/C making 300  angle with E, the magnitude of torque acting on dipole is ",
+    "options": {
+      "0": "4x10^-1 Nm",
+      "1": "x10^-1 Nm",
+      "2": "1x10^-8 Nm",
+      "3": "2x10^-10 Nm"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Hard"
+  },
+  {
+    "question": "Given below are two statements: Statement I : The diamagnetic property depends on temperature. Statement II : The included magnetic dipole moment in a diamagnetic sample is always opposite to the magnetizing field. In the light of given statement, choose the correct answer from the options given below:",
+    "options": {
+      "0": "Statement I is incorrect but Statement II is true ",
+      "1": "Both Statement I and Statement II are true",
+      "2": "Both Statement I and Statement II are false. ",
+      "3": "Statement I is correct but Statement II is false. "
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Hard"
+  },
+  {
+    "question": "A 12 V battery connected to a coil of resistance 6ohm through a switch, drives a constant current in the circuit. The switch is opened in 1 ms. The emf induced across the coil is 20 V. The inductance of the coil is :",
+    "options": {
+      "0": "4 mH",
+      "1": "12 mH",
+      "2": "8 mH",
+      "3": "10 mH"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Electricity and Magnetism",
+    "Level": "Hard"
+  },
+  {
+    "question": "A body of mass 500 g moves along x-axis such that it's velocity varies with displacement x according to the relation v = 10\u221ax m/s the force acting on the body is:",
+    "options": {
+      "0": "166 N",
+      "1": "25 N",
+      "2": "125 N",
+      "3": "5 N"
+    },
+    "answer": "1",
+    "reason": "(dv/dx) = 10/(2\u221ax)\nm = 500 g = 0.5 kg\nF = m(dv/dt) = m(dv/dx) * (dx/dt)\nF = 0.5 * 10/(2\u221ax) * 10\u221ax = 250 dyne = 25 N",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "A circular plate is rotating in horizontal plane, about an axis passing through its center and perpendicular to the plate, with an angular velocity \\(\\omega\\). A person sits at the center having two dumbbells in his hands. When he stretches out his hands, the moment of inertia of the system becomes triple. If \\(E\\) be the initial Kinetic energy of the system, then final Kinetic energy will be \\(\\frac{E}{x}\\). The value of \\(x\\) is:",
+    "options": {
+      "0": "(A) 1",
+      "1": "(B) 2",
+      "2": "(C) 3",
+      "3": "(D) 4"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A coin placed on a rotating table just slips when it is placed at a distance of 1 cm from the center. If the angular velocity of the table in halved, it will just slip when placed at a distance of _____ from the centre:",
+    "options": {
+      "0": "2 cm",
+      "1": "1 cm",
+      "2": "8 cm",
+      "3": "4 cm"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Assuming the earth to be a sphere of uniform mass density, the weight of a body at a depth \\(d = \\frac{R}{2}\\) from the surface of earth, if its weight on the surface of earth is 200 N, will be:\n>(1) 400 N \n(2) 500 N\n(3) 300 N\n(4) 100 N",
+    "options": {
+      "0": "400 N",
+      "1": "500 N",
+      "2": "300 N",
+      "3": "100 N"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A projectile is projected at 30\u00b0 from horizontal with initial velocity 40 m s-1. The velocity of the projectile at t = 2 s from the start will be:\n(Given g = 10 m s-2)\n1. 20\u221a3 m s-1\n2. 40\u221a3 m s-1\n3. 20 m s-1\n4. Zero",
+    "options": {
+      "0": "1. 20\u221a3 m s-1",
+      "1": "2. 40\u221a3 m s-1",
+      "2": "3. 20 m s-1",
+      "3": "4. Zero"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "The radii of two planets 'A' and 'B' are 'R' and '4R' and their densities are \u03c1 and \u03c1/3 respectively. The ratio of acceleration due to gravity at their surfaces (gA : gB) will be:",
+    "options": {
+      "0": "1 : 16",
+      "1": "3 : 16",
+      "2": "3 : 4",
+      "3": "4 : 3"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "If V is the gravitational potential due to sphere of uniform density on it's surface, then it's value at the center of sphere will be:",
+    "options": {
+      "0": "$\\frac{3V}{2}$",
+      "1": "V",
+      "2": "$\\frac{4V}{3}$",
+      "3": "$\\frac{V}{2}$"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A spaceship of mass \\(2\\times10^4\\) kg is launched into a circular orbit close to be the earth surface. The additional velocity to be imparted to the spaceship in the orbit to overcome the gravitational pull will be \\((\\text{if g}=10\\text{ m/s}^2\\text{ and radius of earth}=6400\\text{ km})\\)",
+    "options": {
+      "0": ">(1) \\(11.2(\\sqrt{2}-1)\\text{ km/s}\\)",
+      "1": "\\(7.9(\\sqrt{2}-1)\\text{ km/s}\\)",
+      "2": "\\(8(\\sqrt{2}-1)\\text{ km/s}\\)",
+      "3": "\\(7.4(\\sqrt{2}-1)\\text{ km/s}\\)"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A projectile is projected at 30\u00b0 from horizontal with initial velocity 40 m s-1. The velocity of the projectile at t = 2 s from the start will be:\n(Given g = 10 m s-2)",
+    "options": {
+      "0": "20\u221a3 m s-1",
+      "1": "40\u221a3 m s-1",
+      "2": "20 m s-1",
+      "3": "Zero"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two planets A and B of radii R and 1.5 R have densities d and d/2 respectively. The ratio of acceleration due to gravity at the surface of B to A",
+    "options": {
+      "0": "2:3",
+      "1": "2:1",
+      "2": "3:4",
+      "3": "4:3"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A body is released from a height equal to the radius (R) of the earth. The velocity of the body when it strikes the surface of the earth will be : (Given g = acceleration due to gravity on the earth.)",
+    "options": {
+      "0": "sqrt(gR)",
+      "1": "sqrt(4gR)",
+      "2": "sqrt(2gR)",
+      "3": "sqrt(gR/2)"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A passenger sitting in a train A moving at 90 km/h observes another train B moving in the opposite direction for 8 s. If the velocity of the train B is 54 km/h, then length of train B is :",
+    "options": {
+      "0": "80 m",
+      "1": "200 m",
+      "2": "120 m",
+      "3": "320 m"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two bodies are having kinetic energies in the ratio 16 : 9. If they have same linear momentum, the ratio of their masses respectively is : ",
+    "options": {
+      "0": "4:3",
+      "1": "3:4",
+      "2": "16:9",
+      "3": "9:16"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A bullet 10 g leaves the barrel of gun with a velocity of 600 m/s. If the barrel of gun is 50 cm long and mass of gun is 3 kg, then value of impulse supplied to the gun will be :",
+    "options": {
+      "0": "12 Ns",
+      "1": "6 Ns",
+      "2": "36 Ns",
+      "3": "3 Ns"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "The distance travelled by an object in time t is given by s = (2.5)t^2. The instantaneous speed of the object at t = 5 s will be",
+    "options": {
+      "0": "12.5 ms",
+      "1": "62.5 ms",
+      "2": "5 ms",
+      "3": "25 ms"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two trains \u2018A\u2019 and \u2018B\u2019 of length \u2018l\u2019 and \u20184l\u2019 are travelling into a tunnel of length \u2018L\u2019 in parallel tracks from opposite directions with velocities 108 km/h and 72 km/h, respectively. If train \u2018A\u2019 takes 35s less time than train \u2018B\u2019 to cross the tunnel then, length \u2018L\u2019 of tunnel is : (Given L = 60 l) ",
+    "options": {
+      "0": "1200 m",
+      "1": "2700 m",
+      "2": "1800 m",
+      "3": "900 m"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A vehicle of mass 200 kg is moving along a levelled curved road of radius 70 m with angular velocity of 0.2 rad/s. The centripetal force acting on the vehicle is :",
+    "options": {
+      "0": "560 N",
+      "1": "2800 N",
+      "2": "14 N",
+      "3": "2240 N"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "The ratio of escape velocity of a planet to the escape velocity of earth will be: Given : Mass of the planet is 16 times mass of earth and radius of the planet is 4 times the radius of earth. ",
+    "options": {
+      "0": "4:1",
+      "1": "2;1",
+      "2": "1:sqrt(2)",
+      "3": "1:4"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "The position of a particle related to time is given by x = (5t2 \u2013 4t + 5)m. The magnitude of velocity of the particle at t = 2s will be",
+    "options": {
+      "0": "10 ms",
+      "1": "14 ms",
+      "2": "16 ms",
+      "3": "6 ms"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
+    "options": {
+      "0": "Potential energy",
+      "1": "Total energy",
+      "2": "Kinetic energy",
+      "3": "Speed"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
+    "options": {
+      "0": "Statement I is correct but Statement II is incorrect ",
+      "1": "Statement I is incorrect but Statement II is correct",
+      "2": "Both Statement I is correct but Statement II are incorrect ",
+      "3": "Both Statement I is correct but Statement II are correct"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two identical particles each of mass \u2018m\u2019 go round a circle of radius a under the action of their mutual gravitational attraction. The angular speed of each particle will be : ",
+    "options": {
+      "0": "sqrt(Gm/2a^3)",
+      "1": "sqrt(Gm/8a^3)",
+      "2": "sqrt(Gm/4a^3)",
+      "3": "sqrt(Gm/a^3)"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two planets A and B of radii R and 2.5 R have densities d and d/2 respectively. The ratio of acceleration due to gravity at the surface of B to A",
+    "options": {
+      "0": "2:3",
+      "1": "2:1",
+      "2": "3:4",
+      "3": "4:3"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A body is released from a height equal to the radius (R) of the earth. The velocity of the body when it strikes the surface of the earth will be : (Given g = acceleration due to gravity on the earth.)",
+    "options": {
+      "0": "sqrt(gR)",
+      "1": "sqrt(6gR)",
+      "2": "sqrt(3gR)",
+      "3": "sqrt(gR/4)"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A passenger sitting in a train A moving at 90 km/h observes another train B moving in the opposite direction for 8 s. If the velocity of the train B is 54 km/h, then length of train B is :",
+    "options": {
+      "0": "80 m",
+      "1": "200 m",
+      "2": "120 m",
+      "3": "320 m"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two bodies are having kinetic energies in the ratio 16 : 9. If they have same linear momentum, the ratio of their masses respectively is : ",
+    "options": {
+      "0": "4:3",
+      "1": "3:4",
+      "2": "16:9",
+      "3": "9:16"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A bullet 10 g leaves the barrel of gun with a velocity of 600 m/s. If the barrel of gun is 50 cm long and mass of gun is 3 kg, then value of impulse supplied to the gun will be :",
+    "options": {
+      "0": "12 Ns",
+      "1": "6 Ns",
+      "2": "36 Ns",
+      "3": "3 Ns"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "The distance travelled by an object in time t is given by s = (2.5)t^2. The instantaneous speed of the object at t = 5 s will be",
+    "options": {
+      "0": "12.5 ms",
+      "1": "62.5 ms",
+      "2": "5 ms",
+      "3": "25 ms"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two trains \u2018A\u2019 and \u2018B\u2019 of length \u2018l\u2019 and \u20184l\u2019 are travelling into a tunnel of length \u2018L\u2019 in parallel tracks from opposite directions with velocities 108 km/h and 72 km/h, respectively. If train \u2018A\u2019 takes 35s less time than train \u2018B\u2019 to cross the tunnel then, length \u2018L\u2019 of tunnel is : (Given L = 60 l) ",
+    "options": {
+      "0": "1200 m",
+      "1": "2700 m",
+      "2": "1800 m",
+      "3": "900 m"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "A vehicle of mass 200 kg is moving along a levelled curved road of radius 70 m with angular velocity of 0.2 rad/s. The centripetal force acting on the vehicle is :",
+    "options": {
+      "0": "560 N",
+      "1": "2800 N",
+      "2": "14 N",
+      "3": "2240 N"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "The ratio of escape velocity of a planet to the escape velocity of earth will be: Given : Mass of the planet is 16 times mass of earth and radius of the planet is 4 times the radius of earth. ",
+    "options": {
+      "0": "4:1",
+      "1": "2;1",
+      "2": "1:sqrt(2)",
+      "3": "1:4"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "The position of a particle related to time is given by x = (5t2 \u2013 4t + 5)m. The magnitude of velocity of the particle at t = 2s will be",
+    "options": {
+      "0": "10 ms",
+      "1": "14 ms",
+      "2": "16 ms",
+      "3": "6 ms"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
+    "options": {
+      "0": "Potential energy",
+      "1": "Total energy",
+      "2": "Kinetic energy",
+      "3": "Speed"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
+    "options": {
+      "0": "Statement I is correct but Statement II is incorrect ",
+      "1": "Statement I is incorrect but Statement II is correct",
+      "2": "Both Statement I is correct but Statement II are incorrect ",
+      "3": "Both Statement I is correct but Statement II are correct"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "Two identical particles each of mass \u2018m\u2019 go round a circle of radius a under the action of their mutual gravitational attraction. The angular speed of each particle will be : ",
+    "options": {
+      "0": "sqrt(Gm/2a^3)",
+      "1": "sqrt(Gm/8a^3)",
+      "2": "sqrt(Gm/4a^3)",
+      "3": "sqrt(Gm/a^3)"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "Two planets A and B of radii R and 2.5 R have densities d and d/2 respectively. The ratio of acceleration due to gravity at the surface of B to A",
+    "options": {
+      "0": "2:3",
+      "1": "2:1",
+      "2": "3:4",
+      "3": "4:3"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "A body is released from a height equal to the radius (R) of the earth. The velocity of the body when it strikes the surface of the earth will be : (Given g = acceleration due to gravity on the earth.)",
+    "options": {
+      "0": "sqrt(gR)",
+      "1": "sqrt(6gR)",
+      "2": "sqrt(3gR)",
+      "3": "sqrt(gR/4)"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "A passenger sitting in a train A moving at 90 km/h observes another train B moving in the opposite direction for 8 s. If the velocity of the train B is 54 km/h, then length of train B is :",
+    "options": {
+      "0": "80 m",
+      "1": "200 m",
+      "2": "120 m",
+      "3": "320 m"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "Two bodies are having kinetic energies in the ratio 16 : 9. If they have same linear momentum, the ratio of their masses respectively is : ",
+    "options": {
+      "0": "4:3",
+      "1": "3:4",
+      "2": "16:9",
+      "3": "9:16"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "A bullet 10 g leaves the barrel of gun with a velocity of 600 m/s. If the barrel of gun is 50 cm long and mass of gun is 3 kg, then value of impulse supplied to the gun will be :",
+    "options": {
+      "0": "12 Ns",
+      "1": "6 Ns",
+      "2": "36 Ns",
+      "3": "3 Ns"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "The distance travelled by an object in time t is given by s = (2.5)t^2. The instantaneous speed of the object at t = 5 s will be",
+    "options": {
+      "0": "12.5 ms",
+      "1": "62.5 ms",
+      "2": "5 ms",
+      "3": "25 ms"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "Two trains \u2018A\u2019 and \u2018B\u2019 of length \u2018l\u2019 and \u20184l\u2019 are travelling into a tunnel of length \u2018L\u2019 in parallel tracks from opposite directions with velocities 108 km/h and 72 km/h, respectively. If train \u2018A\u2019 takes 35s less time than train \u2018B\u2019 to cross the tunnel then, length \u2018L\u2019 of tunnel is : (Given L = 60 l) ",
+    "options": {
+      "0": "1200 m",
+      "1": "2700 m",
+      "2": "1800 m",
+      "3": "900 m"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "A vehicle of mass 200 kg is moving along a levelled curved road of radius 70 m with angular velocity of 0.2 rad/s. The centripetal force acting on the vehicle is :",
+    "options": {
+      "0": "560 N",
+      "1": "2800 N",
+      "2": "14 N",
+      "3": "2240 N"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "The ratio of escape velocity of a planet to the escape velocity of earth will be: Given : Mass of the planet is 16 times mass of earth and radius of the planet is 4 times the radius of earth. ",
+    "options": {
+      "0": "4:1",
+      "1": "2;1",
+      "2": "1:sqrt(2)",
+      "3": "1:4"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "The position of a particle related to time is given by x = (5t2 \u2013 4t + 5)m. The magnitude of velocity of the particle at t = 2s will be",
+    "options": {
+      "0": "10 ms",
+      "1": "14 ms",
+      "2": "16 ms",
+      "3": "6 ms"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
+    "options": {
+      "0": "Potential energy",
+      "1": "Total energy",
+      "2": "Kinetic energy",
+      "3": "Speed"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
+    "options": {
+      "0": "Statement I is correct but Statement II is incorrect ",
+      "1": "Statement I is incorrect but Statement II is correct",
+      "2": "Both Statement I is correct but Statement II are incorrect ",
+      "3": "Both Statement I is correct but Statement II are correct"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Hard"
+  },
+  {
+    "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
+    "options": {
+      "0": "Potential energy",
+      "1": "Total energy",
+      "2": "Kinetic energy",
+      "3": "Speed"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Hard"
+  },
+  {
+    "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
+    "options": {
+      "0": "Statement I is correct but Statement II is incorrect ",
+      "1": "Statement I is incorrect but Statement II is correct",
+      "2": "Both Statement I is correct but Statement II are incorrect ",
+      "3": "Both Statement I is correct but Statement II are correct"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Hard"
+  },
+  {
+    "question": "Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be :",
+    "options": {
+      "0": "Potential energy",
+      "1": "Total energy",
+      "2": "Kinetic energy",
+      "3": "Speed"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Hard"
+  },
+  {
+    "question": "Given below are two statements: Statement I : A truck and a car moving with same kinetic energy are brought to rest by applying brakes which provide equal retarding forces. Both come to rest in equal distance. Statement II : A car moving towards east takes a turn and moves towards north, the speed remains unchanged. The acceleration of the car is zero. In the light of given statements, choose the most appropriate answer from the options given below",
+    "options": {
+      "0": "Statement I is correct but Statement II is incorrect ",
+      "1": "Statement I is incorrect but Statement II is correct",
+      "2": "Both Statement I is correct but Statement II are incorrect ",
+      "3": "Both Statement I is correct but Statement II are correct"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Hard"
+  },
+  {
+    "question": "Two identical particles each of mass \u2018m\u2019 go round a circle of radius a under the action of their mutual gravitational attraction. The angular speed of each particle will be : ",
+    "options": {
+      "0": "sqrt(Gm/2a^3)",
+      "1": "sqrt(Gm/8a^3)",
+      "2": "sqrt(Gm/4a^3)",
+      "3": "sqrt(Gm/a^3)"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Mechanics and Motion",
+    "Level": "Hard"
+  },
+  {
+    "question": "The angular momentum for the electron in Bohr's orbit is L. If the electron is assumed to revolve in second orbit of hydrogen atom, then the change in angular momentum will be:",
+    "options": {
+      "0": "\\(L_2-L_1\\)",
+      "1": "Zero",
+      "2": "L",
+      "3": "2L"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "On a temperature scale 'X'. The boiling point of water is 65\\(^o\\)X and the freezing point is -15\\(^o\\)X. Assume that the X scale is linear. The equivalent temperature corresponding to -95\\(^o\\)X on the Fahrenheit scale would be:",
+    "options": {
+      "0": "-63\\(^o\\)F",
+      "1": "-112\\(^o\\)F",
+      "2": "-48\\(^o\\)F",
+      "3": "-148\\(^o\\)F"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The thermodynamic process, in which internal energy of the system remains constant is",
+    "options": {
+      "0": "Isochoric",
+      "1": "Isothermal",
+      "2": "Adiabatic",
+      "3": "Isobaric"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A cylindrical glass tube open at both ends has a length of 60 cm and a radius of 1.5 cm. It is placed vertically with its lower end just touching the surface of water in a trough. (Density of water = 10\u2009kg/m\u00b3, g = 10 m/s\u00b2, Atmospheric pressure = 1.013\u200a x 10\u200a5 Pa)",
+    "options": {
+      "0": "28.5",
+      "1": "32.5",
+      "2": "29.5",
+      "3": "31.5"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The de Broglie wavelength of a molecule in a gas at room temperature (300 K) is \\(\\lambda_1\\). If the temperature of the gas is increased to 600 K, then the de Broglie wavelength of the same gas molecule becomes:",
+    "options": {
+      "0": "\\(\\frac{1}{\\sqrt{2}}\\lambda_1\\)",
+      "1": "\\(2\\lambda_1\\)",
+      "2": "\\(\\frac{1}{2}\\lambda_1\\)",
+      "3": "\\(\\sqrt{2}\\lambda_1\\)"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The energy of He+ ion in its first excited state is. (The ground state energy for the Hydrogen atom is -13.6 eV)",
+    "options": {
+      "0": "-3.4 eV",
+      "1": "-54.4 eV",
+      "2": "-13.6 eV",
+      "3": "-27.2 eV"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Two radioactive elements A and B initially have the same number of atoms. The half-life of A is the same as the average life of B. If \\(\\lambda_A\\) and \\(\\lambda_B\\) are decay constants of A and B respectively, then choose the correct relation from the given options.\n1. \\(\\lambda_A = \\lambda_B\\)\n2. \\(\\lambda_A = 2\\lambda_B\\)\n3. \\(\\lambda_A = \\lambda_B \\ln 2\\)\n4. \\(\\lambda_A \\ln 2 = \\lambda_B\\)",
+    "options": {
+      "0": "1. \\(\\lambda_A = \\lambda_B\\)",
+      "1": "2. \\(\\lambda_A = 2\\lambda_B\\)",
+      "2": "3. \\(\\lambda_A = \\lambda_B \\ln 2\\)",
+      "3": "4. \\(\\lambda_A \\ln 2 = \\lambda_B\\)"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A flask contains Hydrogen and Argon in the ratio 2:1 by mass. The temperature of the mixture is 30\u00b0C. The ratio of average kinetic energy per molecule of the two gases (K argon/K hydrogen) is: (Given: Atomic Weight of Ar = 39.9",
+    "options": {
+      "0": "1",
+      "1": "2",
+      "2": "39.9/2",
+      "3": "39.9"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A proton and an Alpha-particle are accelerated from rest by 2V and 4V potentials, respectively. The ratio of their de-Broglie wavelength is: ",
+    "options": {
+      "0": "4:1",
+      "1": "2:1",
+      "2": "8:1",
+      "3": "16:1"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "If the r.m.s. speed of chlorine molecule is 490 m/s at 27 C, the r.m.s. speed of argon molecules at the same temperature will be (Atomic mass of argon = 39.9u, molecular mass of chlorine = 70.9u)",
+    "options": {
+      "0": "751.7",
+      "1": "451.7",
+      "2": "651.7",
+      "3": "551.7"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Under isothermal condition, the pressure of a gas is given by P = aV^-3, where a is a constant and V is the volume of the gas. The bulk modulus at constant temperature is equal to ",
+    "options": {
+      "0": "P/2",
+      "1": "3P",
+      "2": "2P",
+      "3": "P"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A 12.5 eV electron beam is used to bombard gaseous hydrogen at room temperature. The number of spectral lines emitted will be: ",
+    "options": {
+      "0": "2",
+      "1": "1",
+      "2": "3",
+      "3": "4"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The half-life of a radioactive nucleus is 5 years, The fraction of the original sample that would decay in 15 years is :",
+    "options": {
+      "0": "1/8",
+      "1": "1/4",
+      "2": "7/8",
+      "3": "3/4"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The mean free path of molecules of a certain gas at STP is 1500d, where d is the diameter of the gas molecules. While maintaining the standard pressure, the mean free path of the molecules at 373K is approximately : ",
+    "options": {
+      "0": "1098d",
+      "1": "2049d",
+      "2": "750d",
+      "3": "1500d"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "An engine operating between the boiling and freezing points of water will have 1. efficiency more than 27% 2. efficiency less than the efficiency a Carnot engine operating between the same two temperatures. 3. efficiency equal to 27% 4. efficiency less than 27% ",
+    "options": {
+      "0": " 2, 3 and 4 only",
+      "1": " 2 and 3 only",
+      "2": "2 and 4 only ",
+      "3": "1 and 2 only "
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
+    "options": {
+      "0": "Both A and R are true but R is NOT the correct",
+      "1": "explanation of AA is true but R is false",
+      "2": "A is false but R is true",
+      "3": "Both A and R are true and R is the correct explanation of A"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A flask contains Hydrogen and Helium in the ratio 5:1 by mass. The temperature of the mixture is 42CC. The ratio of average kinetic energy per molecule of the two gases (K argon/K hydrogen) is: (Given: Atomic Weight of He = 4.0032",
+    "options": {
+      "0": "3",
+      "1": "2",
+      "2": "4.0032/2",
+      "3": "39.9"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A proton and an Alpha-particle are accelerated from rest by 4V and 6V potentials, respectively. The ratio of their de-Broglie wavelength is: ",
+    "options": {
+      "0": "4:1",
+      "1": "2:1",
+      "2": "8:1",
+      "3": "16:1"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "If the r.m.s. speed of chlorine molecule is 520 m/s at 29 C, the r.m.s. speed of argon molecules at the same temperature will be (Atomic mass of argon = 39.9u, molecular mass of chlorine = 70.9u)",
+    "options": {
+      "0": "751.7",
+      "1": "451.7",
+      "2": "701.7",
+      "3": "551.7"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Under isothermal condition, the pressure of a gas is given by P = aV^-3, where a is a constant and V is the volume of the gas. The bulk modulus at constant temperature is equal to ",
+    "options": {
+      "0": "P/2",
+      "1": "3P",
+      "2": "2P",
+      "3": "P"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A 12.5 eV electron beam is used to bombard gaseous hydrogen at room temperature. The number of spectral lines emitted will be: ",
+    "options": {
+      "0": "2",
+      "1": "1",
+      "2": "3",
+      "3": "4"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The half-life of a radioactive nucleus is 5 years, The fraction of the original sample that would decay in 15 years is :",
+    "options": {
+      "0": "1/8",
+      "1": "1/4",
+      "2": "7/8",
+      "3": "3/4"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The mean free path of molecules of a certain gas at STP is 1500d, where d is the diameter of the gas molecules. While maintaining the standard pressure, the mean free path of the molecules at 373K is approximately : ",
+    "options": {
+      "0": "1098d",
+      "1": "2049d",
+      "2": "750d",
+      "3": "1500d"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "An engine operating between the boiling and freezing points of water will have 1. efficiency more than 27% 2. efficiency less than the efficiency a Carnot engine operating between the same two temperatures. 3. efficiency equal to 27% 4. efficiency less than 27% ",
+    "options": {
+      "0": " 2, 3 and 4 only",
+      "1": " 2 and 3 only",
+      "2": "2 and 4 only ",
+      "3": "1 and 2 only "
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
+    "options": {
+      "0": "Both A and R are true but R is NOT the correct",
+      "1": "explanation of AA is true but R is false",
+      "2": "A is false but R is true",
+      "3": "Both A and R are true and R is the correct explanation of A"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A flask contains Hydrogen and Helium in the ratio 5:1 by mass. The temperature of the mixture is 42\u00b0C. The ratio of average kinetic energy per molecule of the two gases (K argon/K hydrogen) is: (Given: Atomic Weight of He = 4.0032)",
+    "options": {
+      "0": "3",
+      "1": "2",
+      "2": "4.0032/2",
+      "3": "39.9"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A proton and an Alpha-particle are accelerated from rest by 4V and 6V potentials, respectively. The ratio of their de-Broglie wavelength is: ",
+    "options": {
+      "0": "4:1",
+      "1": "2:1",
+      "2": "8:1",
+      "3": "16:1"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "If the r.m.s. speed of chlorine molecule is 520 m/s at 29 C, the r.m.s. speed of argon molecules at the same temperature will be (Atomic mass of argon = 39.9u, molecular mass of chlorine = 70.9u)",
+    "options": {
+      "0": "751.7",
+      "1": "451.7",
+      "2": "701.7",
+      "3": "551.7"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "Under isothermal condition, the pressure of a gas is given by P = aV^-3, where a is a constant and V is the volume of the gas. The bulk modulus at constant temperature is equal to ",
+    "options": {
+      "0": "P/2",
+      "1": "3P",
+      "2": "2P",
+      "3": "P"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A 12.5 eV electron beam is used to bombard gaseous hydrogen at room temperature. The number of spectral lines emitted will be: ",
+    "options": {
+      "0": "2",
+      "1": "1",
+      "2": "3",
+      "3": "4"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "The half-life of a radioactive nucleus is 5 years, The fraction of the original sample that would decay in 15 years is :",
+    "options": {
+      "0": "1/8",
+      "1": "1/4",
+      "2": "7/8",
+      "3": "3/4"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "The mean free path of molecules of a certain gas at STP is 1500d, where d is the diameter of the gas molecules. While maintaining the standard pressure, the mean free path of the molecules at 373K is approximately : ",
+    "options": {
+      "0": "1098d",
+      "1": "2049d",
+      "2": "750d",
+      "3": "1500d"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Medium"
+  },
+  {
+    "question": "An engine operating between the boiling and freezing points of water will have 1. efficiency more than 27% 2. efficiency less than the efficiency a Carnot engine operating between the same two temperatures. 3. efficiency equal to 27% 4. efficiency less than 27% ",
+    "options": {
+      "0": " 2, 3 and 4 only",
+      "1": " 2 and 3 only",
+      "2": "2 and 4 only ",
+      "3": "1 and 2 only "
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Hard"
+  },
+  {
+    "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
+    "options": {
+      "0": "Both A and R are true but R is NOT the correct",
+      "1": "explanation of AA is true but R is false",
+      "2": "A is false but R is true",
+      "3": "Both A and R are true and R is the correct explanation of A"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Hard"
+  },
+  {
+    "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
+    "options": {
+      "0": "Both A and R are true but R is NOT the correct",
+      "1": "explanation of AA is true but R is false",
+      "2": "A is false but R is true",
+      "3": "Both A and R are true and R is the correct explanation of A"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Hard"
+  },
+  {
+    "question": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170. Reason R : Nuclear force is short ranged. In the light of the above statements, choose the correct answer from the options given below Option : ",
+    "options": {
+      "0": "Both A and R are true but R is NOT the correct",
+      "1": "explanation of AA is true but R is false",
+      "2": "A is false but R is true",
+      "3": "Both A and R are true and R is the correct explanation of A"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Thermodynamics and Quantum Mechanics",
+    "Level": "Hard"
+  },
+  {
+    "question": "An average force of 125 N is applied on a machine gun firing bullets each of mass 10 g at the speed of 250 m/s to keep it in position. The number of bullets fired per second by the machine gun is:",
+    "options": {
+      "0": "5",
+      "1": "50",
+      "2": "100",
+      "3": "25"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A transmitting antenna is kept on the surface of the earth. The minimum height of receiving antenna required to receive the signal in line of sight at 4 km distance from it is \\(x\\times 10^2\\) m. The value of x is (\\(Let\\), radius of earth \\(R=6400\\text{ km}\\)).",
+    "options": {
+      "0": "125",
+      "1": "1.25",
+      "2": "12.5",
+      "3": "1250"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "If \\(f(x) = \\frac{(\\tan^{-1}x)+log_{e}(123)}{xlog_{e}(1234)-(\\tan^{-1}x)^{\\circ}}\\), x>0, then the least value of \\(f(x) + f(\\frac{4}{x})\\) is",
+    "options": {
+      "0": "8",
+      "1": "4",
+      "2": "2",
+      "3": "0"
+    },
+    "answer": "4",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A particle executes S.H.M. of amplitude A along x-axis. At t = 0, the position of the particle is \\(x = \\frac{A}{2}\\) and it moves along positive x-axis the displacement of particle in time t is \\(x = A\\sin(\\omega t + \\delta)\\), then the value of \\(\\delta\\) will be:",
+    "options": {
+      "0": "\\(\\frac{\\pi}{6}\\)",
+      "1": "\\(\\frac{\\pi}{3}\\)",
+      "2": "\\(\\frac{4}{3}\\)",
+      "3": "\\(\\frac{\\pi}{2}\\)"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Let C be the point -2i-3. What is the value of |C|?",
+    "options": {
+      "0": "(A) 5",
+      "1": "(B) 13",
+      "2": "(C) 2",
+      "3": "(D) \u221a13"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A physical quantity P is given as $$P = \\frac{a^2b^3}{c\\sqrt{d}}$$ The percentage error in the measurement of a, b, c and d are 1%, 2%, 3% and 4% respectively. The percentage error in the measurement of quantity P will be:",
+    "options": {
+      "0": "13%",
+      "1": "14%",
+      "2": "12%",
+      "3": "16%"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A carrier wave of amplitude 15 V is modulated by a sinusoidal baseband signal of amplitude 3 V. The ratio of maximum amplitude to minimum amplitude in an amplitude modulated wave is:",
+    "options": {
+      "1": "2",
+      "2": "3/2",
+      "3": "5",
+      "4": "1"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "If force (F), velocity (V) and time (T) are considered as fundamental physical quantity, then dimensional formula of density will be:",
+    "options": {
+      "0": "FV\\(^2\\)T\\(^2\\)",
+      "1": "FV\\(^4\\)T\\(^2\\)",
+      "2": "FV\\(^4\\)T\\(^-6\\)",
+      "3": "F\\(^2\\)V\\(^2\\)T\\(^6\\)"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A car P travelling at 20 m s-1 sounds its horn at a frequency of 400 Hz. Another car Q is travelling behind the first car in the same direction with a velocity 40 m s-1. The frequency heard by the passenger of the car Q is approximately [Take, velocity of sound = 360 m s-1]",
+    "options": {
+      "0": "514 Hz",
+      "1": "421 Hz",
+      "2": "485 Hz",
+      "3": "471 Hz"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Given below are two statements:\nStatement I: Astronomical unit (AU), Parsec (Pc) and Light year (ly) are units for measuring astronomical distances.\nStatement II: AU < Parsec (Pc) < ly\nIn the light of the above statements, choose the most appropriate answer from the options given below:\n(1) Both Statements I and Statements II are correct.\n(2) Statement I is correct but Statements II is incorrect.\n(3) Both Statements I and Statements II are incorrect.\n(4) Statement I is incorrect but statements II is correct.",
+    "options": {
+      "0": "Both Statements I and Statements II are correct.",
+      "1": "Statement I is correct but Statements II is incorrect.",
+      "2": "Both Statements I and Statements II are incorrect.",
+      "3": "Statement I is incorrect but statements II is correct."
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Which of the following is correct about Polonium ?",
+    "options": {
+      "0": "It is a gas and a radioactive element",
+      "1": "It is an essential element for plants and a non-radioactive",
+      "2": "It is a lithophile element",
+      "3": "It is a siderophile element"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The electric field in an electromagnetic wave is given as \\(E = 20\\sin\\omega t\\hat{j}NC^{-1}\\) where \\(\\omega\\) and \\(c\\) are angular frequency and velocity of electromagnetic wave respectively. The energy contained in a volume of \\(5\\times10^{-4}m^3\\) will be (\\(Given\\ \\varepsilon_0=8.85\\times10^{-12}C^2/Nm^2\\))",
+    "options": {
+      "0": "1. \\(28.5\\times10^{-13}J\\)",
+      "1": "2. \\(17.7\\times10^{-13}J\\)",
+      "2": "3. \\(8.85\\times10^{-13}J\\)",
+      "3": "4. \\(88.5\\times10^{-13}J\\)"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "Let O be the origin and the position vectors of the point P be \u22122 i^ + 3 j^ + k^. If the position vectors of the points A, B and C are \u22122 i^ + j^ + 3 k^, 2 i^ + 4 j^ \u2212 2 k^ and \u22124 i^ + 2 j^ \u2212 k^ respectively then the projection of the vector OP on a vector perpendicular to the vectors AB and AC is",
+    "options": {
+      "0": "3",
+      "1": "8/3",
+      "2": "10/3",
+      "3": "7/3"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A plane electromagnetic wave of frequency 20 MHz propagates in free space along x-direction. At a particular space and time, \\(E = 6.6j\\) V/m. What is \\(B\\) at this point?",
+    "options": {
+      "0": "\\(-2.2\\times 10^{-8}\\hat{i}T\\)",
+      "1": "\\(2.2\\times 10^{-8}\\hat{k}T\\)",
+      "2": "\\(-2.2\\times 10^{-8}\\hat{k}T\\)",
+      "3": "\\(2.2\\times 10^{-8}\\hat{i}T\\)"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "When vector \\(\\overrightarrow A = 2\\hat{i} + 3\\hat{j} + 2\\hat{k}\\) is subtracted from vector \\(\\overrightarrow B\\), it gives a vector equal to \\(2\\hat{j}\\). Then the magnitude of vector \\(\\overrightarrow B\\) will be:",
+    "options": {
+      "0": "\\(\\sqrt{13}\\)",
+      "1": "3",
+      "2": "\\(\\sqrt{6}\\)",
+      "3": "\\(\\sqrt{5}\\)"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "In a Young's double slits experiment, the ratio of amplitude of light coming from slits is 2:1. The ratio of the maximum to minimum intensity in the interference pattern is : ",
+    "options": {
+      "0": "9:4",
+      "1": "9:1",
+      "2": "2:1",
+      "3": "25:9"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A particle executes SHM of amplitude A. The distance from the mean position when its's kinetic energy becomes equal to its potential energy is :",
+    "options": {
+      "0": "Sqrt(2A)",
+      "1": "2A",
+      "2": "1/Sqrt(2) x A",
+      "3": "1/2 x A"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A body cools from 80 C to 60 C in 5 minutes. The temperature of the surrounding is 20 C. The time it takes to cool from 60 C to 40 C is: ",
+    "options": {
+      "0": "500 s",
+      "1": "25/3 s",
+      "2": "450 s",
+      "3": "420 s"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "An ice cube has a bubble inside. When viewed from one side the apparent distance of the bubble is 12 cm. when viewed from the opposite side, the apparent distance of the bubble is observed as 4 cm. If the side of the ice cube is 24 cm, the refractive index of the ice cube is",
+    "options": {
+      "0": "4/3",
+      "1": "3/2",
+      "2": "2/3",
+      "3": "6/5"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A wire of length \u2018L\u2019 and radius \u2018r\u2019 is clamped rigidly at one end. When the other end of the wire is pulled by a force f, its length increases by \u2018\uf06c\u2019. Another wire of same material of length \u20182L\u2019 and radius \u20182r\u2019 is pulled by a force \u20182f\u2019. Then the increase in its length will be ",
+    "options": {
+      "0": "2 l",
+      "1": "l",
+      "2": "4 l",
+      "3": "l/2"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "The amplitude of 15 sin (1000 pi t) is modulated by 10 sin (4 pi t) signal. The amplitude modulated signal contains frequencies of 1. 500 Hz. 2. 2 Hz 3. 250 Hz 4. 498 Hz 5. 502 Hz",
+    "options": {
+      "0": "(1) and (3) only",
+      "1": "(1) and (4) only",
+      "2": " (1) and (2) only",
+      "3": " (1), (4) and (5) only"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "In an electromagnetic wave, at an instant and at a particular position, the electric field is along the negative z-axis and magnetic field is along the positive x-axis. Then the direction of propagation of electromagnetic wave is : ",
+    "options": {
+      "0": " at 45\u00ba angle from positive y-axis ",
+      "1": " negative y-axis",
+      "2": " positive z-axis",
+      "3": "positive y-axis "
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A single slit of width a is illuminated by a monochromatic light of wavelength 600 nm. The value of \u2018a\u2019 for which first minimum appears at theta = 30\u00b0 on the screen will be : ",
+    "options": {
+      "0": "0.6 micro m",
+      "1": "1.2 micro m",
+      "2": "1.2 micro m",
+      "3": "3 micro m"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "In a linear simple harmonic motion (SHM) (A) Restoring force is directly proportional to the",
+    "options": {
+      "0": "displacement. (B) The acceleration and displacement are opposite in direction. (C) The velocity is maximum at mean position. (D) The acceleration is minimum at extreme points. Choose the correct answer from the options given below :(A), (B) and (C) only",
+      "1": "(C) and (D) only",
+      "2": "(A), (B) and (D) only",
+      "3": "(A), (C) and (D) only"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "level": "Medium",
+    "Level": "Easy"
+  },
+  {
+    "question": "A body of mass 5 +/- 0.5 kg is moving with a velocity of 20 +/- 0.4 m/s. Its kinetic energy will be",
+    "options": {
+      "0": "1000 +/- 140 J",
+      "1": "1000 +/- 0.14 J",
+      "2": "500 +/- 0.14 J",
+      "3": "500 +/- 140 J"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A vector in x-y plane makes an angle of 30\u00b0 with y-axis The magnitude of y-component of vector is 2xsqrt(3). The magnitude of x-component of the vector will be : ",
+    "options": {
+      "0": "1/sqrt(3)",
+      "1": "6",
+      "2": "sqrt(3)",
+      "3": "2"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "In a Young's double slits experiment, the ratio of amplitude of light coming from slits is 7:1. The ratio of the maximum to minimum intensity in the interference pattern is : ",
+    "options": {
+      "0": "7:4",
+      "1": "9:2",
+      "2": "4:3",
+      "3": "24:9"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A particle executes SHM of amplitude A. The distance from the mean position when its's kinetic energy becomes equal to its potential energy is :",
+    "options": {
+      "0": "Sqrt(4A)",
+      "1": "3A",
+      "2": "1/Sqrt(2) x A",
+      "3": "1/4 x A"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "A body cools from 80 C to 60 C in 5 minutes. The temperature of the surrounding is 20 C. The time it takes to cool from 60 C to 40 C is: ",
+    "options": {
+      "0": "500 s",
+      "1": "25/3 s",
+      "2": "450 s",
+      "3": "420 s"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Easy"
+  },
+  {
+    "question": "An ice cube has a bubble inside. When viewed from one side the apparent distance of the bubble is 12 cm. when viewed from the opposite side, the apparent distance of the bubble is observed as 4 cm. If the side of the ice cube is 24 cm, the refractive index of the ice cube is",
+    "options": {
+      "0": "4/3",
+      "1": "3/2",
+      "2": "2/3",
+      "3": "6/5"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "level": "Hard",
+    "Level": "Medium"
+  },
+  {
+    "question": "A wire of length \u2018L\u2019 and radius \u2018r\u2019 is clamped rigidly at one end. When the other end of the wire is pulled by a force f, its length increases by \u2018\uf06c\u2019. Another wire of same material of length \u20182L\u2019 and radius \u20182r\u2019 is pulled by a force \u20182f\u2019. Then the increase in its length will be ",
+    "options": {
+      "0": "2 l",
+      "1": "l",
+      "2": "4 l",
+      "3": "l/2"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "The amplitude of 15 sin (1000 pi t) is modulated by 10 sin (4 pi t) signal. The amplitude modulated signal contains frequencies of 1. 500 Hz. 2. 2 Hz 3. 250 Hz 4. 498 Hz 5. 502 Hz",
+    "options": {
+      "0": "(1) and (3) only",
+      "1": "(1) and (4) only",
+      "2": " (1) and (2) only",
+      "3": " (1), (4) and (5) only"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "In an electromagnetic wave, at an instant and at a particular position, the electric field is along the negative z-axis and magnetic field is along the positive x-axis. Then the direction of propagation of electromagnetic wave is : ",
+    "options": {
+      "0": " at 45\u00ba angle from positive y-axis ",
+      "1": " negative y-axis",
+      "2": " positive z-axis",
+      "3": "positive y-axis "
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A single slit of width a is illuminated by a monochromatic light of wavelength 600 nm. The value of \u2018a\u2019 for which first minimum appears at theta = 30\u00b0 on the screen will be : ",
+    "options": {
+      "0": "0.6 micro m",
+      "1": "1.2 micro m",
+      "2": "1.2 micro m",
+      "3": "3 micro m"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "In a linear simple harmonic motion (SHM) (A) Restoring force is directly proportional to the",
+    "options": {
+      "0": "displacement. (B) The acceleration and displacement are opposite in direction. (C) The velocity is maximum at mean position. (D) The acceleration is minimum at extreme points. Choose the correct answer from the options given below :(A), (B) and (C) only",
+      "1": "(C) and (D) only",
+      "2": "(A), (B) and (D) only",
+      "3": "(A), (C) and (D) only"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "level": "Medium",
+    "Level": "Medium"
+  },
+  {
+    "question": "A body of mass 5 +/- 0.5 kg is moving with a velocity of 20 +/- 0.4 m/s. Its kinetic energy will be",
+    "options": {
+      "0": "1000 +/- 140 J",
+      "1": "1000 +/- 0.14 J",
+      "2": "500 +/- 0.14 J",
+      "3": "500 +/- 140 J"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A vector in x-y plane makes an angle of 30\u00b0 with y-axis The magnitude of y-component of vector is 2xsqrt(3). The magnitude of x-component of the vector will be : ",
+    "options": {
+      "0": "1/sqrt(3)",
+      "1": "6",
+      "2": "sqrt(3)",
+      "3": "2"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "In a Young's double slits experiment, the ratio of amplitude of light coming from slits is 7:1. The ratio of the maximum to minimum intensity in the interference pattern is : ",
+    "options": {
+      "0": "7:4",
+      "1": "9:2",
+      "2": "4:3",
+      "3": "24:9"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A particle executes SHM of amplitude A. The distance from the mean position when its kinetic energy becomes equal to its potential energy is :",
+    "options": {
+      "0": "Sqrt(4A)",
+      "1": "3A",
+      "2": "1/Sqrt(2) x A",
+      "3": "1/4 x A"
+    },
+    "answer": "2",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "A body cools from 80 C to 60 C in 5 minutes. The temperature of the surrounding is 20 C. The time it takes to cool from 60 C to 40 C is: ",
+    "options": {
+      "0": "500 s",
+      "1": "25/3 s",
+      "2": "450 s",
+      "3": "420 s"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "An ice cube has a bubble inside. When viewed from one side the apparent distance of the bubble is 12 cm. when viewed from the opposite side, the apparent distance of the bubble is observed as 4 cm. If the side of the ice cube is 24 cm, the refractive index of the ice cube is",
+    "options": {
+      "0": "4/3",
+      "1": "3/2",
+      "2": "2/3",
+      "3": "6/5"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "level": "Hard",
+    "Level": "Medium"
+  },
+  {
+    "question": "A wire of length \u2018L\u2019 and radius \u2018r\u2019 is clamped rigidly at one end. When the other end of the wire is pulled by a force f, its length increases by \u2018\u2113\u2019. Another wire of same material of length \u20182L\u2019 and radius \u20182r\u2019 is pulled by a force \u20182f\u2019. Then the increase in its length will be ",
+    "options": {
+      "0": "2 l",
+      "1": "l",
+      "2": "4 l",
+      "3": "l/2"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Medium"
+  },
+  {
+    "question": "The amplitude of 15 sin (1000 pi t) is modulated by 10 sin (4 pi t) signal. The amplitude modulated signal contains frequencies of 1. 500 Hz. 2. 2 Hz 3. 250 Hz 4. 498 Hz 5. 502 Hz",
+    "options": {
+      "0": "(1) and (3) only",
+      "1": "(1) and (4) only",
+      "2": "(1) and (2) only",
+      "3": "(1), (4) and (5) only"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Hard"
+  },
+  {
+    "question": "In an electromagnetic wave, at an instant and at a particular position, the electric field is along the negative z-axis and magnetic field is along the positive x-axis. Then the direction of propagation of electromagnetic wave is : ",
+    "options": {
+      "0": " at 45\u00ba angle from positive y-axis ",
+      "1": " negative y-axis",
+      "2": " positive z-axis",
+      "3": "positive y-axis "
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Hard"
+  },
+  {
+    "question": "A single slit of width a is illuminated by a monochromatic light of wavelength 600 nm. The value of \u2018a\u2019 for which first minimum appears at theta = 30\u00b0 on the screen will be : ",
+    "options": {
+      "0": "0.6 micro m",
+      "1": "1.2 micro m",
+      "2": "1.2 micro m",
+      "3": "3 micro m"
+    },
+    "answer": "1",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Hard"
+  },
+  {
+    "question": "A body of mass 5 +/- 0.5 kg is moving with a velocity of 20 +/- 0.4 m/s. Its kinetic energy will be",
+    "options": {
+      "0": "1000 +/- 140 J",
+      "1": "1000 +/- 0.14 J",
+      "2": "500 +/- 0.14 J",
+      "3": "500 +/- 140 J"
+    },
+    "answer": "0",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Hard"
+  },
+  {
+    "question": "A vector in x-y plane makes an angle of 30\u00b0 with y-axis The magnitude of y-component of vector is 2xsqrt(3). The magnitude of x-component of the vector will be : ",
+    "options": {
+      "0": "1/sqrt(3)",
+      "1": "6",
+      "2": "sqrt(3)",
+      "3": "2"
+    },
+    "answer": "3",
+    "reason": "",
+    "topic": "Waves and Optics",
+    "Level": "Hard"
+  }
 ]
