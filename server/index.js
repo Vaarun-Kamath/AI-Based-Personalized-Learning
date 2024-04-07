@@ -70,6 +70,38 @@ app.get('/api/getExams', async (req, res, err) => {
   }
 });
 
+//url:/api/getUserData?username={}
+app.get('/api/getUserData', async (req, res, err) => {
+  try {
+    if (!req.query || !req.query.username) {
+      console.log('Invalid Query!', req.query);
+      res.status(400).json({ msg: 'No Query object', err: err });
+    }
+    // const exams = await Exam.find({username:req.query.username});
+    // for(let i=0;i<exams.length;i++){
+    //   for(let j=0;j<exams[i].questions.length;j++){
+    //     await Physics.findById(exams[i].questions[j])
+    //   }
+    // }
+    const user = await User.findOne({username:username})
+    const data = {
+      name: user.name,
+      email:user.email,
+      username: user.username,
+      probability: user.probability,
+      currentExam: user.currentExam,
+      topics: user.topics,
+    }
+    res.status(200).json({
+      status: 200,
+      statusText: 'Success',
+      topics: data.topics,//send the entire data object
+    });
+  } catch {
+    res.status(500).json({ msg: 'Error in getting exam ids', err: err });
+  }
+});
+
 //url:/api/getExamStartTime?examId={}
 app.get('/api/getExamStartTime', async (req, res, err) => {
   try {
@@ -293,6 +325,7 @@ app.post('/api/submitExam', async (req, res) => {
     await User.find({ username: exam.username }).then((user) => {
       user[0].probability = response.data.updated_weights;
       user[0].currentExam = '';
+      user[0].topics = topics;
       user[0].save();
     });
 
