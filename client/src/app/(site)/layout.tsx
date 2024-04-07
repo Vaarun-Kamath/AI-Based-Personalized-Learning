@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Sidebar";
+import Sidebar from '@/components/Sidebar';
 
 export default async function MainLayout({
   children,
@@ -8,7 +8,9 @@ export default async function MainLayout({
   return (
     <>
       <Sidebar />
-      <div className="flex max-w-screen h-screen pt-20 p-7">{children}</div>
+      <div className='flex max-w-screen min-h-screen pt-20 p-7 mb-10'>
+        {children}
+      </div>
     </>
   );
 }

@@ -163,15 +163,12 @@ export const getQuestionSolutions = async (
   question: number
 ) => {
   try {
-    const response = await axiosInstance.get(
-      `${BACKEND_URL}/api/getSolution`,
-      {
-        params: {
-          examId: examId,
-          question: question,
-        },
-      }
-    );
+    const response = await axiosInstance.get(`${BACKEND_URL}/api/getSolution`, {
+      params: {
+        examId: examId,
+        question: question,
+      },
+    });
     const { data } = response;
     return data;
   } catch (error) {
@@ -183,6 +180,30 @@ export const getQuestionSolutions = async (
       return {
         status: 500,
         errorCode: 'GET_EXAMS_GET_API_CALL_ERROR',
+        errorMessage: 'Please try again later.',
+      };
+    }
+  }
+};
+
+export const getPastExams = async (username: string) => {
+  try {
+    const response = await axiosInstance.get(`${BACKEND_URL}/api/getExams`, {
+      params: {
+        username: username,
+      },
+    });
+    const { data } = response;
+    return data;
+  } catch (error) {
+    if (isAxiosError(error) && error.response) {
+      const { status, errorCode, errorMessage } = error.response.data;
+      return { status, errorCode, errorMessage };
+    } else {
+      console.error(error);
+      return {
+        status: 500,
+        errorCode: 'GET_PAST_EXAMS_GET_API_CALL_ERROR',
         errorMessage: 'Please try again later.',
       };
     }

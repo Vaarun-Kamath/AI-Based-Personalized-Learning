@@ -2,6 +2,7 @@
 
 import { isUserInExam } from '@/app/api/exam/handler';
 import AllExamsSection from '@/components/section/AllExamsSection';
+import PastExamsSection from '@/components/section/PastExamsSection';
 import UserAnalyticsSection from '@/components/section/UserAnalyticsSection';
 import { useSession } from 'next-auth/react';
 import { redirect, useRouter } from 'next/navigation';
@@ -50,6 +51,8 @@ function HomePage() {
           <AllExamsSection />
           <hr className='border-2 border-gray-200 rounded-lg' />
           <UserAnalyticsSection />
+          <hr className='border-2 border-gray-200 rounded-lg' />
+          <PastExamsSection />
         </div>
       )}
     </>
