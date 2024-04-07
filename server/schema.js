@@ -7,6 +7,7 @@ module.exports.userSchema = new mongoose.Schema({
   username: String,
   probability: [[Number]],
   currentExam: String,
+  topics: Object,
 });
 module.exports.physicsSchema = new mongoose.Schema({
   question: { type: String, required: true },
@@ -22,7 +23,7 @@ module.exports.examSchema = new mongoose.Schema(
     questions: { type: Array, required: true },
     selectedOptions: { type: Array, required: true },
     subject: { type: String, required: true },
-    probability: [[Number]]
+    probability: [[Number]],
   },
   {
     timestamps: true,

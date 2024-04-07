@@ -57,13 +57,13 @@ app.get('/api/getExams', async (req, res, err) => {
       console.log('Invalid Query!', req.query);
       res.status(400).json({ msg: 'No Query object', err: err });
     }
-    const exams = await Exam.find({username:req.query.username});
-    exams.map(exam => exam._id)
+    const exams = await Exam.find({ username: req.query.username });
+    exams.map((exam) => exam._id);
 
     res.status(200).json({
       status: 200,
       statusText: 'Success',
-      exams: exams.map(exam => exam._id)
+      exams: exams.map((exam) => exam._id),
     });
   } catch {
     res.status(500).json({ msg: 'Error in getting exam ids', err: err });
@@ -71,34 +71,38 @@ app.get('/api/getExams', async (req, res, err) => {
 });
 
 //url:/api/getUserData?username={}
-app.get('/api/getUserData', async (req, res, err) => {
+app.get('/api/getUserData', async (req, res) => {
   try {
+    console.log(req.query)
     if (!req.query || !req.query.username) {
       console.log('Invalid Query!', req.query);
       res.status(400).json({ msg: 'No Query object', err: err });
     }
-    // const exams = await Exam.find({username:req.query.username});
-    // for(let i=0;i<exams.length;i++){
-    //   for(let j=0;j<exams[i].questions.length;j++){
-    //     await Physics.findById(exams[i].questions[j])
-    //   }
-    // }
-    const user = await User.findOne({username:username})
+    const exams = await Exam.find({username:req.query.username});
+    for(let i=0;i<exams.length;i++){
+      for(let j=0;j<exams[i].questions.length;j++){
+        await Physics.findById(exams[i].questions[j])
+      }
+    }
+    console.log(req.query.username);
+    const user = await User.findOne({ username: req.query.username });
+    console.log(user);
     const data = {
       name: user.name,
-      email:user.email,
+      email: user.email,
       username: user.username,
       probability: user.probability,
       currentExam: user.currentExam,
       topics: user.topics,
-    }
+    };
     res.status(200).json({
       status: 200,
       statusText: 'Success',
-      topics: data.topics,//send the entire data object
+      topics: data.topics, //send the entire data object
     });
-  } catch {
-    res.status(500).json({ msg: 'Error in getting exam ids', err: err });
+  } catch (err) {
+    res.status(500).json({ msg: 'Error in getting user info', err: err });
+    console.log(err);
   }
 });
 
