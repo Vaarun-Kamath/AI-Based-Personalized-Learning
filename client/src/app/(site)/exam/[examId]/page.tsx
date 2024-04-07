@@ -17,6 +17,7 @@ function ExamPage({ params }: { params: { examId: number } }) {
   const [optionsSelected, setOptionsSelected] = useState<Array<number>>([]); //! Fetch question only when option is selected
   const [currQuestion, setCurrQuestion] = useState<string>('');
   const [options, setOptions] = useState<Object>({});
+  const [loading, setLoading] = useState<boolean>(false);
   const [optionSelectedIndex, setOptionSelectedIndex] = useState<number>(-1);
 
   const { data: session } = useSession({
@@ -59,21 +60,23 @@ function ExamPage({ params }: { params: { examId: number } }) {
   }, [params.examId, qno]);
 
   const handleTestSubmit = async () => {
+    setLoading(true);
     try {
       if (!user) {
-        console.error('User is undefined');
+        console.log('User is undefined');
         return;
       }
       const res = await submitExam(params.examId);
       if (res.errorCode) {
-        console.error('Error submitting exam', res.errorMessage);
+        console.log('Error submitting exam', res.errorMessage);
+        setLoading(false);
       } else if (res.status === 200) {
-        console.log('res:', res);
         router.push(`/solutions/${params.examId}`);
         // router.push(`/home`);
       }
     } catch {
       console.error('Please try again after some time');
+      setLoading(false);
     }
   };
 
@@ -127,7 +130,13 @@ function ExamPage({ params }: { params: { examId: number } }) {
         <div>
           <button
             onClick={handleTestSubmit}
-            className='bg-red-500 hover:bg-red-600 p-4 rounded-md text-white font-semibold flex flex-row gap-2 justify-center items-center'
+            disabled={loading}
+            className={
+              'p-4 rounded-md text-white font-semibold flex flex-row gap-2 justify-center items-center ' +
+              (loading
+                ? ' bg-gray-600 cursor-not-allowed'
+                : 'bg-red-500 hover:bg-red-600')
+            }
           >
             End Test
             <span className='text-xl'>

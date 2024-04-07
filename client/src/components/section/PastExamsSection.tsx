@@ -41,32 +41,38 @@ function PastExamsSection() {
     <>
       <h2 className='font-bold text-3xl'>Your Past Exams</h2>
       <div className='w-full grid grid-cols-3 gap-x-10'>
-        {pastExams.map((exam, i) => (
-          <StyledLink
-            key={i}
-            href={`/solutions/` + exam}
-            className='border-2 border-gray-300 p-4 text-left hover:border-blue-500 rounded-md flex flex-col gap-2 transition-all duration-200'
-          >
-            <span className='font-semibold flex flex-row items-center gap-2 text-black'>
-              <span className='text-black'>
-                <FaBook />
+        {pastExams.length > 0 ? (
+          pastExams.map((exam, i) => (
+            <StyledLink
+              key={i}
+              href={`/solutions/` + exam}
+              className='border-2 border-gray-300 p-4 text-left hover:border-blue-500 rounded-md flex flex-col gap-2 transition-all duration-200'
+            >
+              <span className='font-semibold flex flex-row items-center gap-2 text-black'>
+                <span className='text-black'>
+                  <FaBook />
+                </span>
+                Physics
               </span>
-              Physics
-            </span>
-            <span className='text-gray-500 font-light flex flex-row items-center gap-2'>
-              <span className='text-black'>
-                <TiDocumentText />
+              <span className='text-gray-500 font-light flex flex-row items-center gap-2'>
+                <span className='text-black'>
+                  <TiDocumentText />
+                </span>
+                40 Questions
               </span>
-              40 Questions
-            </span>
-            <span className='text-gray-500 font-light flex flex-row items-center gap-2'>
-              <span className='text-black'>
-                <IoMdTime />
+              <span className='text-gray-500 font-light flex flex-row items-center gap-2'>
+                <span className='text-black'>
+                  <IoMdTime />
+                </span>
+                40 Minutes
               </span>
-              40 Minutes
-            </span>
-          </StyledLink>
-        ))}
+            </StyledLink>
+          ))
+        ) : (
+          <p className='text-gray-500 font-semibold mx-2'>
+            No past exams found
+          </p>
+        )}
       </div>
     </>
   );
